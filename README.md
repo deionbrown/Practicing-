@@ -1,5 +1,5 @@
 # German A1 Trainer
 
-Friendly Streamlit interface.
+Modern gamified Streamlit language-learning interface.
 
 Main file: `app.py`
