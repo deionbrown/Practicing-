@@ -4,30 +4,248 @@ import random
 from pathlib import Path
 import streamlit as st
 
-st.set_page_config(page_title="German A1 Trainer", page_icon="🇩🇪", layout="centered")
+st.set_page_config(
+    page_title="German A1 Trainer",
+    page_icon="🇩🇪",
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
 
 BASE_DIR = Path(__file__).resolve().parent
 CSV_FILE = BASE_DIR / "German_A1_800_with_IPA.csv"
 INITIAL_PROGRESS_FILE = BASE_DIR / "german_a1_progress.json"
 
+# ------------------------------------------------------------
+# FRIENDLIER VISUAL DESIGN
+# ------------------------------------------------------------
 st.markdown("""
 <style>
-.block-container {max-width: 760px; padding-top: 2rem; padding-bottom: 3rem;}
-.main-title {text-align:center;font-size:2.3rem;font-weight:800;margin-bottom:.2rem;}
-.subtitle {text-align:center;color:#888;margin-bottom:1.5rem;}
-.flashcard {border:1px solid rgba(128,128,128,.30);border-radius:18px;padding:32px 22px;text-align:center;margin:18px 0;box-shadow:0 4px 18px rgba(0,0,0,.08);}
-.topic {font-size:.9rem;opacity:.65;margin-bottom:12px;}
-.word {font-size:2.5rem;font-weight:800;line-height:1.15;margin-top:8px;}
-.ipa {font-size:1.25rem;opacity:.70;margin-top:10px;}
-.answer {font-size:1.7rem;font-weight:650;margin-top:14px;}
-div.stButton > button {width:100%;min-height:48px;border-radius:12px;}
+:root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #ff5a5f;
+    --accent2: #7c3aed;
+    --good: #ecfdf5;
+    --good-text: #166534;
+    --bad: #fff1f2;
+    --bad-text: #9f1239;
+}
+
+html, body, [class*="css"] {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(circle at 15% 10%, rgba(124,58,237,.06), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(255,90,95,.08), transparent 24%),
+        var(--bg);
+    color: var(--text);
+}
+
+.block-container {
+    max-width: 820px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+[data-testid="stSidebar"] {
+    background: #ffffff;
+    border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] * {
+    color: var(--text);
+}
+
+.hero {
+    background: linear-gradient(135deg, rgba(124,58,237,.10), rgba(255,90,95,.10));
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 28px 28px 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(17,24,39,.05);
+}
+
+.hero-title {
+    font-size: 2rem;
+    font-weight: 850;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+    color: var(--muted);
+    margin-top: 6px;
+    font-size: .98rem;
+}
+
+.stats-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 14px 0 18px 0;
+}
+
+.stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 14px rgba(17,24,39,.04);
+}
+
+.stat-label {
+    color: var(--muted);
+    font-size: .8rem;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 1.45rem;
+    font-weight: 800;
+}
+
+.study-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 26px;
+    padding: 38px 28px 34px 28px;
+    text-align: center;
+    box-shadow: 0 14px 34px rgba(17,24,39,.07);
+    margin: 18px 0;
+}
+
+.topic-pill {
+    display: inline-block;
+    background: rgba(124,58,237,.09);
+    color: #6d28d9;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.word {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+}
+
+.ipa {
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+.helper {
+    text-align: center;
+    color: var(--muted);
+    margin: 4px 0 12px 0;
+    font-size: .92rem;
+}
+
+.feedback-good {
+    background: var(--good);
+    color: var(--good-text);
+    border: 1px solid #bbf7d0;
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+
+.feedback-bad {
+    background: var(--bad);
+    color: var(--bad-text);
+    border: 1px solid #fecdd3;
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin: 16px 0;
+    font-weight: 700;
+}
+
+.answer-box {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin: 12px 0;
+}
+
+.answer-label {
+    color: var(--muted);
+    font-size: .82rem;
+    margin-bottom: 4px;
+}
+
+.answer-text {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.mastered {
+    background: #fff7ed;
+    color: #9a3412;
+    border: 1px solid #fed7aa;
+    border-radius: 16px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.stButton > button,
+div.stFormSubmitButton > button {
+    width: 100%;
+    min-height: 52px;
+    border-radius: 14px;
+    font-weight: 750;
+    font-size: 1rem;
+}
+
+div[data-testid="stTextInput"] input {
+    min-height: 52px;
+    border-radius: 14px;
+    font-size: 1rem;
+}
+
+[data-testid="stProgress"] > div > div > div > div {
+    border-radius: 999px;
+}
+
+.small-note {
+    color: var(--muted);
+    text-align: center;
+    font-size: .85rem;
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    .block-container {padding-top: 1rem;}
+    .hero {padding: 22px 18px;}
+    .hero-title {font-size: 1.55rem;}
+    .word {font-size: 2.25rem;}
+    .study-card {padding: 28px 18px;}
+    .stats-wrap {grid-template-columns: 1fr;}
+}
 </style>
 """, unsafe_allow_html=True)
 
+# ------------------------------------------------------------
+# DATA
+# ------------------------------------------------------------
 @st.cache_data
 def load_vocabulary():
     if not CSV_FILE.exists():
         return []
+
     with CSV_FILE.open("r", encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))
 
@@ -54,14 +272,14 @@ def load_initial_progress():
             with INITIAL_PROGRESS_FILE.open("r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
-            return {}
+            pass
     return {}
 
 def normalize(text):
     text = text.lower().strip()
-    replacements = {"ä":"ae","ö":"oe","ü":"ue","ß":"ss"}
-    for a,b in replacements.items():
-        text = text.replace(a,b)
+    replacements = {"ä":"ae", "ö":"oe", "ü":"ue", "ß":"ss"}
+    for a, b in replacements.items():
+        text = text.replace(a, b)
     text = "".join(ch for ch in text if ch.isalnum() or ch.isspace())
     return " ".join(text.split())
 
@@ -97,6 +315,7 @@ defaults = {
     "mode": "German → English",
     "answer_input": ""
 }
+
 for key, value in defaults.items():
     if key not in st.session_state:
         st.session_state[key] = value
@@ -104,10 +323,10 @@ for key, value in defaults.items():
 def ensure_progress(card_id):
     if card_id not in st.session_state.progress:
         st.session_state.progress[card_id] = {
-            "correct":0,
-            "wrong":0,
-            "streak":0,
-            "mastered":False
+            "correct": 0,
+            "wrong": 0,
+            "streak": 0,
+            "mastered": False
         }
 
 def update_progress(card_id, correct):
@@ -154,8 +373,11 @@ def next_card(pool):
     st.session_state.last_user_answer = ""
     st.session_state.answer_input = ""
 
+# ------------------------------------------------------------
 # SIDEBAR
-st.sidebar.title("🇩🇪 German A1")
+# ------------------------------------------------------------
+st.sidebar.markdown("## 🇩🇪 German A1")
+st.sidebar.caption("Your personal vocabulary trainer")
 
 mode = st.sidebar.radio(
     "Study mode",
@@ -183,11 +405,33 @@ if mistakes_only:
         and not st.session_state.progress.get(v["id"], {}).get("mastered", False)
     ]
 
-if st.sidebar.button("🔀 New random card"):
+if st.sidebar.button("🎲 Give me another card"):
     next_card(pool)
 
 st.sidebar.divider()
 
+progress_json = json.dumps(st.session_state.progress, ensure_ascii=False, indent=2)
+st.sidebar.download_button(
+    "💾 Save my progress",
+    data=progress_json,
+    file_name="german_a1_progress.json",
+    mime="application/json"
+)
+
+uploaded_progress = st.sidebar.file_uploader("Restore saved progress", type=["json"])
+if uploaded_progress is not None:
+    try:
+        new_progress = json.load(uploaded_progress)
+        if st.sidebar.button("Load this progress"):
+            st.session_state.progress = new_progress
+            st.session_state.current_card = None
+            st.rerun()
+    except Exception:
+        st.sidebar.error("Invalid JSON file.")
+
+# ------------------------------------------------------------
+# STATS
+# ------------------------------------------------------------
 studied = sum(1 for v in VOCAB if v["id"] in st.session_state.progress)
 mastered = sum(
     1 for v in VOCAB
@@ -199,35 +443,41 @@ attempts = sum(
     for x in st.session_state.progress.values()
 )
 correct_total = sum(x.get("correct",0) for x in st.session_state.progress.values())
-accuracy = (correct_total/attempts*100) if attempts else 0
+accuracy = (correct_total / attempts * 100) if attempts else 0
 
-st.sidebar.metric("Studied", f"{studied}/{len(VOCAB)}")
-st.sidebar.metric("Mastered", mastered)
-st.sidebar.metric("Overall accuracy", f"{accuracy:.1f}%")
+# ------------------------------------------------------------
+# MAIN
+# ------------------------------------------------------------
+st.markdown("""
+<div class="hero">
+    <div class="hero-title">🇩🇪 German A1 Trainer</div>
+    <div class="hero-subtitle">Build your German vocabulary one card at a time.</div>
+</div>
+""", unsafe_allow_html=True)
 
-progress_json = json.dumps(st.session_state.progress, ensure_ascii=False, indent=2)
-st.sidebar.download_button(
-    "⬇️ Download progress",
-    data=progress_json,
-    file_name="german_a1_progress.json",
-    mime="application/json"
+st.markdown(
+    f"""
+    <div class="stats-wrap">
+        <div class="stat-card">
+            <div class="stat-label">Studied</div>
+            <div class="stat-value">{studied} / {len(VOCAB)}</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Mastered</div>
+            <div class="stat-value">{mastered}</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">Accuracy</div>
+            <div class="stat-value">{accuracy:.0f}%</div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
 )
 
-uploaded_progress = st.sidebar.file_uploader("Upload saved progress", type=["json"])
-if uploaded_progress is not None:
-    try:
-        new_progress = json.load(uploaded_progress)
-        if st.sidebar.button("Load this progress"):
-            st.session_state.progress = new_progress
-            st.session_state.current_card = None
-            st.rerun()
-    except Exception:
-        st.sidebar.error("Invalid JSON file.")
-
-# MAIN
-st.markdown('<div class="main-title">German A1 Trainer 🇩🇪</div>', unsafe_allow_html=True)
+st.progress(mastered / len(VOCAB) if VOCAB else 0)
 st.markdown(
-    f'<div class="subtitle">{len(VOCAB)} words · IPA · 25 topics</div>',
+    f'<div class="small-note">Mastery progress · {mastered} of {len(VOCAB)} words</div>',
     unsafe_allow_html=True
 )
 
@@ -248,13 +498,13 @@ if st.session_state.mode == "German → English":
     question = card["german"]
     ipa_line = card["ipa"]
     expected = card["english"]
-    input_label = "Write the English meaning"
+    input_label = "What does this mean in English?"
 
 elif st.session_state.mode == "English → German":
     question = card["english"]
     ipa_line = ""
     expected = card["german"]
-    input_label = "Write the German word"
+    input_label = "Write it in German"
 
 else:
     question = card["german"]
@@ -264,8 +514,8 @@ else:
 
 st.markdown(
     f"""
-    <div class="flashcard">
-        <div class="topic">{card["topic"]}</div>
+    <div class="study-card">
+        <div class="topic-pill">{card["topic"]}</div>
         <div class="word">{question}</div>
         <div class="ipa">{ipa_line}</div>
     </div>
@@ -275,38 +525,47 @@ st.markdown(
 
 # FLASHCARD MODE
 if st.session_state.mode == "Flashcards":
+    st.markdown('<div class="helper">Think of the answer before revealing it.</div>', unsafe_allow_html=True)
+
     if not st.session_state.show_result:
-        if st.button("Show answer", type="primary"):
+        if st.button("👀 Show answer", type="primary"):
             st.session_state.show_result = True
             st.rerun()
     else:
         st.markdown(
             f"""
-            <div class="flashcard">
-                <div class="answer">{expected}</div>
+            <div class="answer-box">
+                <div class="answer-label">Answer</div>
+                <div class="answer-text">{expected}</div>
             </div>
             """,
             unsafe_allow_html=True
         )
 
-        if st.button("Next card", type="primary"):
+        if st.button("➡️ Next card", type="primary"):
             next_card(pool)
             st.rerun()
 
 # QUIZ MODES
 else:
     if not st.session_state.show_result:
+        st.markdown(
+            f'<div class="helper">{input_label}</div>',
+            unsafe_allow_html=True
+        )
+
         with st.form("answer_form", clear_on_submit=False):
             user_answer = st.text_input(
-                input_label,
+                "Your answer",
                 key="answer_input",
-                placeholder="Type your answer here..."
+                placeholder="Type your answer here...",
+                label_visibility="collapsed"
             )
             submitted = st.form_submit_button("Check answer", type="primary")
 
         if submitted:
             if not user_answer.strip():
-                st.warning("Write an answer first.")
+                st.warning("Type an answer first.")
             else:
                 correct = answer_matches(user_answer, expected)
                 st.session_state.last_user_answer = user_answer
@@ -317,49 +576,72 @@ else:
 
     else:
         if st.session_state.last_correct:
-            st.success("✅ Correct!")
+            st.markdown(
+                '<div class="feedback-good">✅ Excellent! You got it right.</div>',
+                unsafe_allow_html=True
+            )
         else:
-            st.error("❌ Not correct")
+            st.markdown(
+                '<div class="feedback-bad">💡 Almost! Review the correct answer below.</div>',
+                unsafe_allow_html=True
+            )
 
-        st.write(f"**Your answer:** {st.session_state.last_user_answer}")
-        st.write(f"**Correct answer:** {expected}")
+        st.markdown(
+            f"""
+            <div class="answer-box">
+                <div class="answer-label">Your answer</div>
+                <div class="answer-text">{st.session_state.last_user_answer}</div>
+            </div>
+            <div class="answer-box">
+                <div class="answer-label">Correct answer</div>
+                <div class="answer-text">{expected}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
         if st.session_state.mode == "English → German":
-            st.write(f"**IPA:** {card['ipa']}")
+            st.markdown(
+                f"""
+                <div class="answer-box">
+                    <div class="answer-label">Pronunciation</div>
+                    <div class="answer-text">{card["ipa"]}</div>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
 
         ensure_progress(card["id"])
         p = st.session_state.progress[card["id"]]
 
-        st.caption(
-            f"This word: {p['correct']} correct · "
-            f"{p['wrong']} wrong · streak {p['streak']}/3"
+        st.markdown(
+            f'<div class="small-note">This word · {p["correct"]} correct · {p["wrong"]} wrong · streak {p["streak"]}/3</div>',
+            unsafe_allow_html=True
         )
 
         if p["mastered"]:
-            st.success("★ Mastered")
+            st.markdown(
+                '<div class="mastered">⭐ Mastered — great work!</div>',
+                unsafe_allow_html=True
+            )
 
-        if st.button("Next card", type="primary"):
+        if st.button("➡️ Next card", type="primary"):
             next_card(pool)
             st.rerun()
 
+# SESSION FOOTER
 st.divider()
-
-c1, c2, c3 = st.columns(3)
-c1.metric("Session cards", st.session_state.session_total)
-c2.metric("Correct", st.session_state.session_correct)
 
 session_accuracy = (
     st.session_state.session_correct /
     st.session_state.session_total * 100
     if st.session_state.session_total else 0
 )
-c3.metric("Session accuracy", f"{session_accuracy:.0f}%")
 
-st.progress(mastered/len(VOCAB) if VOCAB else 0)
-st.caption(f"Mastery progress: {mastered}/{len(VOCAB)} words")
+st.markdown("#### Today's session")
+c1, c2, c3 = st.columns(3)
+c1.metric("Cards", st.session_state.session_total)
+c2.metric("Correct", st.session_state.session_correct)
+c3.metric("Accuracy", f"{session_accuracy:.0f}%")
 
-with st.expander("Progress saving"):
-    st.write(
-        "Your progress is stored during the current Streamlit session. "
-        "Use Download progress to save it and Upload saved progress to continue later."
-    )
+st.caption("Keep going — short, consistent sessions work best.")

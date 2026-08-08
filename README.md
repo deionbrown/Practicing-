@@ -1,3 +1,5 @@
 # German A1 Trainer
 
-Main Streamlit file: `app.py`
+Friendly Streamlit interface.
+
+Main file: `app.py`
