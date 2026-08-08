@@ -1,0 +1,801 @@
+﻿German,IPA,English,Topic
+Hallo,/hˈaloː/,hello,01 Introductions
+Guten Morgen,/ɡˈuːtən mˈɔɾɡən/,good morning,01 Introductions
+Guten Tag,/ɡˈuːtən tˈɑːk/,good day / hello,01 Introductions
+Guten Abend,/ɡˈuːtən ˈɑːbənt/,good evening,01 Introductions
+Gute Nacht,/ɡˈuːtə nˈaxt/,good night,01 Introductions
+Tschüss,/tʃˈʏs/,bye,01 Introductions
+Auf Wiedersehen,/aʊf viːdɜzˈeːən/,goodbye,01 Introductions
+bitte,/bˈɪtə/,please / you're welcome,01 Introductions
+danke,/dˈaŋkə/,thank you,01 Introductions
+Danke schön,/dˈaŋkə ʃˈøːn/,thank you very much,01 Introductions
+Entschuldigung,/ɛntʃˈʊldɪɡˌʊŋ/,excuse me / sorry,01 Introductions
+ja,/jˈɑː/,yes,01 Introductions
+nein,/nˈaɪn/,no,01 Introductions
+vielleicht,/fiːllˈaɪçt/,maybe,01 Introductions
+heißen,/hˈaɪsən/,to be called,01 Introductions
+sein,/zˈaɪn/,to be,01 Introductions
+ich,/ˈɪç/,I,01 Introductions
+du,/dˈuː/,you (informal singular),01 Introductions
+Sie,/zˈiː/,you (formal),01 Introductions
+er,/ˈɛɾ/,he,01 Introductions
+es,/ˈɛs/,it,01 Introductions
+wir,/vˈiːɾ/,we,01 Introductions
+ihr,/ˈiːɾ/,you (informal plural),01 Introductions
+der Name,/dɛɾ nˈɑːmə/,name,01 Introductions
+der Vorname,/dɛɾ fˈɔɾnɑːmə/,first name,01 Introductions
+der Nachname,/dɛɾ nˈaxnɑːmə/,last name,01 Introductions
+die Person,/diː pɛɾzˈoːn/,person,01 Introductions
+der Mann,/dɛɾ mˈan/,man,01 Introductions
+die Frau,/diː frˈaʊ/,woman,01 Introductions
+das Kind,/das kˈɪnt/,child,01 Introductions
+der Freund,/dɛɾ frˈɔønt/,male friend / boyfriend,01 Introductions
+die Freundin,/diː frˈɔøndɪn/,female friend / girlfriend,01 Introductions
+kennen,/kˈɛnən/,to know / be acquainted with,01 Introductions
+kennenlernen,/kˈɛnənlɜnən/,to get to know,01 Introductions
+vorstellen,/fˈoːɾʃtˌɛlən/,to introduce,01 Introductions
+sich vorstellen,/zɪç fˈoːɾʃtˌɛlən/,to introduce oneself,01 Introductions
+Wie heißt du?,/viː hˈaɪst duː/,What is your name?,01 Introductions
+Wie geht es dir?,/viː ɡˈeːt ɛs dˈiːɾ/,How are you?,01 Introductions
+Mir geht es gut.,/miːɾ ɡˈeːt ɛs ɡˈuːt/,I am fine.,01 Introductions
+das Land,/das lˈant/,country,02 Countries and Languages
+die Stadt,/diː ʃtˈat/,city,02 Countries and Languages
+das Dorf,/das dˈɔɾf/,village,02 Countries and Languages
+die Hauptstadt,/diː hˈaʊptstat/,capital city,02 Countries and Languages
+die Sprache,/diː ʃpɾˈɑːxə/,language,02 Countries and Languages
+Deutsch,/dˈɔøtʃ/,German,02 Countries and Languages
+Englisch,/ˈɛŋlɪʃ/,English,02 Countries and Languages
+Spanisch,/ʃpˈɑnɪʃ/,Spanish,02 Countries and Languages
+Französisch,/frantsˈøːzɪʃ/,French,02 Countries and Languages
+Italienisch,/ˌiːtalɪˈeːnɪʃ/,Italian,02 Countries and Languages
+Chinesisch,/çiːnˈeːzɪʃ/,Chinese,02 Countries and Languages
+Deutschland,/dˈɔøtʃlant/,Germany,02 Countries and Languages
+Österreich,/ˈœstɜrˌaɪç/,Austria,02 Countries and Languages
+die Schweiz,/diː ʃvˈaɪts/,Switzerland,02 Countries and Languages
+Peru,/pˈeːruː/,Peru,02 Countries and Languages
+Spanien,/ʃpˈɑnɪən/,Spain,02 Countries and Languages
+Frankreich,/frˈaŋkɾaɪç/,France,02 Countries and Languages
+Italien,/ˌiːtalɪˈeːn/,Italy,02 Countries and Languages
+China,/çˈiːnɑː/,China,02 Countries and Languages
+die USA,/diː ˈuːzɑː/,United States,02 Countries and Languages
+kommen,/kˈɔmən/,to come,02 Countries and Languages
+aus,/ˈaʊs/,from,02 Countries and Languages
+wohnen,/vˈoːnən/,to live,02 Countries and Languages
+leben,/lˈeːbən/,to live,02 Countries and Languages
+sprechen,/ʃpɾˈɛçən/,to speak,02 Countries and Languages
+verstehen,/fɛɾʃtˈeːən/,to understand,02 Countries and Languages
+lernen,/lˈɛɾnən/,to learn / study,02 Countries and Languages
+lesen,/lˈeːzən/,to read,02 Countries and Languages
+schreiben,/ʃrˈaɪbən/,to write,02 Countries and Languages
+fragen,/frˈɑːɡən/,to ask,02 Countries and Languages
+antworten,/ˈantvɔɾtən/,to answer,02 Countries and Languages
+buchstabieren,/bˌʊxstabˈiːrən/,to spell,02 Countries and Languages
+die Nationalität,/diː nˌatsɪˌoːnˈɑːliːtˈɛːt/,nationality,02 Countries and Languages
+die Adresse,/diː ˈadɾɛsə/,address,02 Countries and Languages
+die Telefonnummer,/diː tˌeːleːfˈɔnʊmɜ/,telephone number,02 Countries and Languages
+die E-Mail-Adresse,/diː ˈeː(en)mˈeɪl(de)ˈadɾɛsə/,email address,02 Countries and Languages
+Woher kommst du?,/voːhˈeːɾ kˈɔmst duː/,Where are you from?,02 Countries and Languages
+Ich komme aus Peru.,/ɪç kˈɔmə ˌaʊs pˈeːruː/,I come from Peru.,02 Countries and Languages
+Welche Sprachen sprichst du?,/vˈɛlçə ʃpɾˈɑːxən ʃpɾˈɪkst duː/,Which languages do you speak?,02 Countries and Languages
+Ich spreche Deutsch.,/ɪç ʃpɾˈɛçə dˈɔøtʃ/,I speak German.,02 Countries and Languages
+die Familie,/diː famˈiːlɪə/,family,03 Family
+die Eltern,/diː ˈɛltɜn/,parents,03 Family
+die Mutter,/diː mˈʊtɜ/,mother,03 Family
+der Vater,/dɛɾ fˈɑːtɜ/,father,03 Family
+die Mama,/diː mˈɑmɑː/,mom,03 Family
+der Papa,/dɛɾ pˈɑpɑː/,dad,03 Family
+die Tochter,/diː tˈɔxtɜ/,daughter,03 Family
+der Sohn,/dɛɾ zˈoːn/,son,03 Family
+die Schwester,/diː ʃvˈɛstɜ/,sister,03 Family
+der Bruder,/dɛɾ bɾˈuːdɜ/,brother,03 Family
+die Geschwister,/diː ɡəʃvˈɪstɜ/,siblings,03 Family
+die Großmutter,/diː ɡɾˈɔsmʊtɜ/,grandmother,03 Family
+der Großvater,/dɛɾ ɡɾˈɔsfɑːtɜ/,grandfather,03 Family
+die Oma,/diː ˈoːmɑː/,grandma,03 Family
+der Opa,/dɛɾ ˈoːpɑː/,grandpa,03 Family
+die Großeltern,/diː ɡɾˈoːsɛltɜn/,grandparents,03 Family
+die Tante,/diː tˈantə/,aunt,03 Family
+der Onkel,/dɛɾ ˈɔnkəl/,uncle,03 Family
+die Cousine,/diː kuːzˈiːnə/,female cousin,03 Family
+der Cousin,/dɛɾ kuːzˈiːn/,male cousin,03 Family
+die Ehefrau,/diː ˈeːɛfrˌaʊ/,wife,03 Family
+der Ehemann,/dɛɾ ˈeːeːmˌan/,husband,03 Family
+die Partnerin,/diː pˈaɾtnərˌɪn/,female partner,03 Family
+der Partner,/dɛɾ pˈaɾtnɜ/,male partner,03 Family
+die Enkelin,/diː ˌɛnkəlˈiːn/,granddaughter,03 Family
+der Enkel,/dɛɾ ˈɛnkəl/,grandson,03 Family
+verheiratet,/fɛɾhaɪrˈɑːtət/,married,03 Family
+ledig,/lˈeːdɪç/,single,03 Family
+geschieden,/ɡəʃˈiːdən/,divorced,03 Family
+alt,/ˈalt/,old / years old,03 Family
+jung,/jˈʊŋ/,young,03 Family
+haben,/hˈɑːbən/,to have,03 Family
+lieben,/lˈiːbən/,to love,03 Family
+besuchen,/bəzˈuːxən/,to visit,03 Family
+zusammen,/tsuːzˈamən/,together,03 Family
+allein,/alˈaɪn/,alone,03 Family
+Wie alt bist du?,/viː ˈalt bɪst duː/,How old are you?,03 Family
+Ich bin 20 Jahre alt.,/ɪç bɪn tsvˈantsɪç jˈɑːrə ˈalt/,I am 20 years old.,03 Family
+Hast du Geschwister?,/hast duː ɡəʃvˈɪstɜ/,Do you have siblings?,03 Family
+Das ist meine Familie.,/das ɪst mˌaɪnə famˈiːlɪə/,This is my family.,03 Family
+null,/nˈʊl/,zero,04 Numbers and Time
+eins,/ˈaɪns/,one,04 Numbers and Time
+zwei,/tsvˈaɪ/,two,04 Numbers and Time
+drei,/dɾˈaɪ/,three,04 Numbers and Time
+vier,/fˈiːɾ/,four,04 Numbers and Time
+fünf,/fˈʏnf/,five,04 Numbers and Time
+sechs,/zˈɛks/,six,04 Numbers and Time
+sieben,/zˈiːbən/,seven,04 Numbers and Time
+acht,/ˈaxt/,eight,04 Numbers and Time
+neun,/nˈɔøn/,nine,04 Numbers and Time
+zehn,/tsˈeːn/,ten,04 Numbers and Time
+elf,/ˈɛlf/,eleven,04 Numbers and Time
+zwölf,/tsvˈœlf/,twelve,04 Numbers and Time
+zwanzig,/tsvˈantsɪç/,twenty,04 Numbers and Time
+hundert,/hˈʊndɜt/,hundred,04 Numbers and Time
+tausend,/tˈaʊzənt/,thousand,04 Numbers and Time
+die Zahl,/diː tsˈɑːl/,number,04 Numbers and Time
+die Uhr,/diː ˈuːɾ/,clock / o'clock,04 Numbers and Time
+die Stunde,/diː ʃtˈʊndə/,hour,04 Numbers and Time
+die Minute,/diː miːnˈuːtə/,minute,04 Numbers and Time
+die Sekunde,/diː zˈeːkʊndə/,second,04 Numbers and Time
+die Zeit,/diː tsˈaɪt/,time,04 Numbers and Time
+heute,/hˈɔøtə/,today,04 Numbers and Time
+gestern,/ɡˈɛstɜn/,yesterday,04 Numbers and Time
+morgen,/mˈɔɾɡən/,tomorrow,04 Numbers and Time
+jetzt,/jˈɛtst/,now,04 Numbers and Time
+später,/ʃpˈɛːtɜ/,later,04 Numbers and Time
+früh,/frˈyː/,early,04 Numbers and Time
+spät,/ʃpˈɛːt/,late,04 Numbers and Time
+halb,/hˈalp/,half,04 Numbers and Time
+Viertel,/fˈiːɾtəl/,quarter,04 Numbers and Time
+um,/ˈʊm/,at (time),04 Numbers and Time
+vor,/fˈɔɾ/,before / to,04 Numbers and Time
+nach,/nˈɑːx/,after / past,04 Numbers and Time
+Wie spät ist es?,/viː ʃpˈɛːt ɪst ɛs/,What time is it?,04 Numbers and Time
+Es ist acht Uhr.,/ɛsɪst ˈaxt ˈuːɾ/,It is eight o'clock.,04 Numbers and Time
+Wie viel Uhr ist es?,/viː fˈiːl ˈuːɾ ɪst ɛs/,What time is it?,04 Numbers and Time
+pünktlich,/pˈʏŋktlɪç/,punctual / on time,04 Numbers and Time
+beginnen,/bəɡˈɪnən/,to begin,04 Numbers and Time
+enden,/ˈɛndən/,to end,04 Numbers and Time
+aufstehen,/ˈaʊfʃtˌeːən/,to get up,05 Daily Routine
+aufwachen,/ˈaʊfvˌaxən/,to wake up,05 Daily Routine
+schlafen,/ʃlˈɑːfən/,to sleep,05 Daily Routine
+ins Bett gehen,/ɪns bˈɛt ɡˈeːən/,to go to bed,05 Daily Routine
+sich waschen,/zɪç vˈaʃən/,to wash oneself,05 Daily Routine
+duschen,/dˈuːʃən/,to shower,05 Daily Routine
+baden,/bˈɑːdən/,to bathe,05 Daily Routine
+sich anziehen,/zɪç ˈantsˌiːən/,to get dressed,05 Daily Routine
+sich ausziehen,/zɪç ˈaʊstsˌiːən/,to get undressed,05 Daily Routine
+frühstücken,/frˈyːʃtʏkən/,to have breakfast,05 Daily Routine
+essen,/ˈɛsən/,to eat,05 Daily Routine
+trinken,/tɾˈɪŋkən/,to drink,05 Daily Routine
+arbeiten,/ˈaɾbaɪtən/,to work,05 Daily Routine
+studieren,/ʃtuːdˈiːrən/,to study at university,05 Daily Routine
+zur Arbeit gehen,/tsuːɾ ˈaɾbaɪt ɡˈeːən/,to go to work,05 Daily Routine
+zur Schule gehen,/tsuːɾ ʃˈuːlə ɡˈeːən/,to go to school,05 Daily Routine
+nach Hause gehen,/nɑːx hˈaʊzə ɡˈeːən/,to go home,05 Daily Routine
+kochen,/kˈɔxən/,to cook,05 Daily Routine
+putzen,/pˈʊtsən/,to clean,05 Daily Routine
+aufräumen,/ˈaʊfrˌɔømən/,to tidy up,05 Daily Routine
+einkaufen,/ˈaɪnkˌaʊfən/,to shop,05 Daily Routine
+fernsehen,/fˈɛɾnzeːən/,to watch television,05 Daily Routine
+Musik hören,/muːzˈiːk hˈøːrən/,to listen to music,05 Daily Routine
+telefonieren,/tˌeːleːfoːnˈiːrən/,to make a phone call,05 Daily Routine
+spazieren gehen,/ʃpatsˈiːrən ɡˈeːən/,to go for a walk,05 Daily Routine
+sich treffen,/zɪç tɾˈɛfən/,to meet,05 Daily Routine
+sich ausruhen,/zɪç ˈaʊsrˌuːən/,to rest,05 Daily Routine
+jeden Tag,/jˈeːdən tˈɑːk/,every day,05 Daily Routine
+morgens,/mˈɔɾɡəns/,in the morning,05 Daily Routine
+mittags,/mˈɪtɑːks/,at noon / midday,05 Daily Routine
+nachmittags,/nˈaxmɪtˌɑːks/,in the afternoon,05 Daily Routine
+abends,/ˈɑːbənts/,in the evening,05 Daily Routine
+nachts,/nˈaxts/,at night,05 Daily Routine
+oft,/ˈɔft/,often,05 Daily Routine
+manchmal,/mˈançmɑːl/,sometimes,05 Daily Routine
+selten,/zˈɛltən/,rarely,05 Daily Routine
+nie,/nˈiː/,never,05 Daily Routine
+immer,/ˈɪmɜ/,always,05 Daily Routine
+das Haus,/das hˈaʊs/,house,06 Home
+die Wohnung,/diː vˈoːnʊŋ/,apartment,06 Home
+das Zimmer,/das tsˈɪmɜ/,room,06 Home
+das Wohnzimmer,/das vˈoːntsɪmɜ/,living room,06 Home
+das Schlafzimmer,/das ʃlˈaftsɪmɜ/,bedroom,06 Home
+das Kinderzimmer,/das kˈɪndɜtsˌɪmɜ/,children's room,06 Home
+die Küche,/diː kˈʏçə/,kitchen,06 Home
+das Badezimmer,/das bˈɑdeːtsˌɪmɜ/,bathroom,06 Home
+der Flur,/dɛɾ flˈuːɾ/,hallway,06 Home
+der Balkon,/dɛɾ balkˈoːn/,balcony,06 Home
+der Garten,/dɛɾ ɡˈaɾtən/,garden,06 Home
+die Tür,/diː tˈyːɾ/,door,06 Home
+das Fenster,/das fˈeːnstɜ/,window,06 Home
+die Wand,/diː vˈant/,wall,06 Home
+der Boden,/dɛɾ bˈoːdən/,floor,06 Home
+die Treppe,/diː tɾˈɛpə/,stairs,06 Home
+der Tisch,/dɛɾ tˈɪʃ/,table,06 Home
+der Stuhl,/dɛɾ ʃtˈuːl/,chair,06 Home
+das Sofa,/das zˈoːfɑː/,sofa,06 Home
+das Bett,/das bˈɛt/,bed,06 Home
+der Schrank,/dɛɾ ʃrˈaŋk/,cupboard / wardrobe,06 Home
+das Regal,/das reːɡˈɑːl/,shelf,06 Home
+die Lampe,/diː lˈampə/,lamp,06 Home
+der Kühlschrank,/dɛɾ kˈyːlʃraŋk/,refrigerator,06 Home
+der Herd,/dɛɾ hˈeːɾt/,stove,06 Home
+die Waschmaschine,/diː vˈaʃmˌaʃɪnə/,washing machine,06 Home
+der Fernseher,/dɛɾ fˈɛɾnzeːɜ/,television set,06 Home
+der Schlüssel,/dɛɾ ʃlˈʏsəl/,key,06 Home
+mieten,/mˈiːtən/,to rent,06 Home
+die Miete,/diː mˈiːtə/,rent,06 Home
+der Vermieter,/dɛɾ fɛɾmˈiːtɜ/,landlord,06 Home
+die Vermieterin,/diː fɛɾmˈiːtərˌɪn/,landlady,06 Home
+groß,/ɡɾˈoːs/,big,06 Home
+klein,/klˈaɪn/,small,06 Home
+hell,/hˈɛl/,bright,06 Home
+dunkel,/dˈʊnkəl/,dark,06 Home
+sauber,/zˈaʊbɜ/,clean,06 Home
+schmutzig,/ʃmˈʊtsɪç/,dirty,06 Home
+gemütlich,/ɡəmˈyːtlɪç/,cozy,06 Home
+die Straße,/diː ʃtɾˈɑːsə/,street,07 City and Places
+der Platz,/dɛɾ plˈats/,square / place,07 City and Places
+die Kreuzung,/diː kɾˈɔøtsʊŋ/,intersection,07 City and Places
+die Ampel,/diː ˈampəl/,traffic light,07 City and Places
+die Brücke,/diː bɾˈʏkə/,bridge,07 City and Places
+der Park,/dɛɾ pˈaɾk/,park,07 City and Places
+der Bahnhof,/dɛɾ bˈɑːnhoːf/,train station,07 City and Places
+die Haltestelle,/diː hˈaltɛʃtˌɛlə/,stop / station,07 City and Places
+der Flughafen,/dɛɾ flˈuːɡhɑːfən/,airport,07 City and Places
+die Bank,/diː bˈaŋk/,bank,07 City and Places
+die Post,/diː pˈɔst/,post office,07 City and Places
+das Rathaus,/das rˈathaʊs/,town hall,07 City and Places
+die Polizei,/diː pˌoːliːtsˈaɪ/,police,07 City and Places
+das Krankenhaus,/das kɾˈankənhˌaʊs/,hospital,07 City and Places
+die Apotheke,/diː ˈɑpɔthˌeːkə/,pharmacy,07 City and Places
+der Supermarkt,/dɛɾ zˈuːpɜmˌaɾkt/,supermarket,07 City and Places
+die Bäckerei,/diː bˌɛkeːrˈaɪ/,bakery,07 City and Places
+die Metzgerei,/diː mˌɛtsɡeːrˈaɪ/,butcher shop,07 City and Places
+das Geschäft,/das ɡəʃˈɛft/,shop / business,07 City and Places
+das Kaufhaus,/das kˈaʊfhaʊs/,department store,07 City and Places
+das Restaurant,/das rˌɛstaʊrˈant/,restaurant,07 City and Places
+das Café,/das kafˈeː/,café,07 City and Places
+das Hotel,/das hˈoːtəl/,hotel,07 City and Places
+die Schule,/diː ʃˈuːlə/,school,07 City and Places
+die Universität,/diː ˌuːniːvˌɛɾziːtˈɛːt/,university,07 City and Places
+das Museum,/das muːzˈeːʊm/,museum,07 City and Places
+das Kino,/das kˈiːnoː/,cinema,07 City and Places
+die Bibliothek,/diː bˈɪblɪˌoːtheːk/,library,07 City and Places
+die Kirche,/diː kˈɪɾçə/,church,07 City and Places
+links,/lˈɪŋks/,left,07 City and Places
+rechts,/rˈɛçts/,right,07 City and Places
+geradeaus,/ɡərˈɑdeːˌaʊs/,straight ahead,07 City and Places
+hier,/hˈiːɾ/,here,07 City and Places
+dort,/dˈɔɾt/,there,07 City and Places
+nah,/nˈɑː/,near,07 City and Places
+weit,/vˈaɪt/,far,07 City and Places
+Wo ist ...?,/vˈoː ɪst/,Where is ...?,07 City and Places
+Wie komme ich zu ...?,/viː kˈɔmə ɪç tsˈuː/,How do I get to ...?,07 City and Places
+zeigen,/tsˈaɪɡən/,to show,07 City and Places
+suchen,/zˈuːxən/,to look for,07 City and Places
+das Auto,/das ˈaʊtoː/,car,08 Transport
+der Bus,/dɛɾ bˈʊs/,bus,08 Transport
+die Straßenbahn,/diː ʃtɾˈɑsənbˌɑːn/,tram,08 Transport
+die U-Bahn,/diː ˈuːbˈɑːn/,subway,08 Transport
+die S-Bahn,/diː ˈɛsbˈɑːn/,suburban train,08 Transport
+der Zug,/dɛɾ tsˈuːk/,train,08 Transport
+das Taxi,/das tˈaksiː/,taxi,08 Transport
+das Fahrrad,/das fˈɑːrɑːt/,bicycle,08 Transport
+das Motorrad,/das mˈoːtoːɾrˌɑːt/,motorcycle,08 Transport
+das Flugzeug,/das flˈuːɡtsɔøk/,airplane,08 Transport
+das Schiff,/das ʃˈɪf/,ship,08 Transport
+die Fahrkarte,/diː fˈɑːɾkaɾtə/,ticket,08 Transport
+das Ticket,/das tˈɪkət/,ticket,08 Transport
+der Fahrplan,/dɛɾ fɑːɾplˈɑːn/,timetable,08 Transport
+die Abfahrt,/diː ˈapfˌɑːɾt/,departure,08 Transport
+die Ankunft,/diː ˈankˌʊnft/,arrival,08 Transport
+das Gleis,/das ɡlˈaɪs/,platform / track,08 Transport
+der Bahnsteig,/dɛɾ bˈɑːnstaɪk/,platform,08 Transport
+der Fahrer,/dɛɾ fˈɑːrɜ/,driver,08 Transport
+die Fahrerin,/diː fˈɑːrərˌɪn/,female driver,08 Transport
+fahren,/fˈɑːrən/,to drive / travel,08 Transport
+fliegen,/flˈiːɡən/,to fly,08 Transport
+gehen,/ɡˈeːən/,to go / walk,08 Transport
+laufen,/lˈaʊfən/,to walk / run,08 Transport
+einsteigen,/ˈaɪnʃtˌaɪɡən/,to get in / board,08 Transport
+aussteigen,/ˈaʊsʃtˌaɪɡən/,to get out / get off,08 Transport
+umsteigen,/ˈʊmʃtˌaɪɡən/,to change trains/buses,08 Transport
+abfahren,/ˈapfˌɑːrən/,to depart,08 Transport
+ankommen,/ˈankˌɔmən/,to arrive,08 Transport
+warten,/vˈaɾtən/,to wait,08 Transport
+schnell,/ʃnˈɛl/,fast,08 Transport
+langsam,/lˈaŋzɑːm/,slow,08 Transport
+zu Fuß,/tsuː fˈuːs/,on foot,08 Transport
+mit dem Bus,/mɪt deːm bˈʊs/,by bus,08 Transport
+mit dem Zug,/mɪt deːm tsˈuːk/,by train,08 Transport
+eine Fahrkarte kaufen,/ˌaɪnə fˈɑːɾkaɾtə kˈaʊfən/,to buy a ticket,08 Transport
+hin und zurück,/hˈɪn ʊnt tsuːrˈʏk/,round trip,08 Transport
+einfach,/ˈaɪnfˌax/,one-way / simple,08 Transport
+verspätet,/fɛɾʃpˈɛːtət/,delayed,08 Transport
+die Verspätung,/diː fɛɾʃpˈɛːtʊŋ/,delay,08 Transport
+kaufen,/kˈaʊfən/,to buy,09 Shopping and Clothes
+verkaufen,/fɛɾkˈaʊfən/,to sell,09 Shopping and Clothes
+bezahlen,/bətsˈɑːlən/,to pay,09 Shopping and Clothes
+kosten,/kˈɔstən/,to cost,09 Shopping and Clothes
+der Preis,/dɛɾ pɾˈaɪs/,price,09 Shopping and Clothes
+das Geld,/das ɡˈɛlt/,money,09 Shopping and Clothes
+der Euro,/dɛɾ ˈɔøroː/,euro,09 Shopping and Clothes
+die Kasse,/diː kˈasə/,checkout / cash desk,09 Shopping and Clothes
+die Rechnung,/diː rˈɛçnʊŋ/,bill / invoice,09 Shopping and Clothes
+die Quittung,/diː kvˈɪtʊŋ/,receipt,09 Shopping and Clothes
+billig,/bˈɪlɪç/,cheap,09 Shopping and Clothes
+teuer,/tˈɔøɜ/,expensive,09 Shopping and Clothes
+das Angebot,/das ˈanɡəbˌoːt/,offer / special,09 Shopping and Clothes
+die Größe,/diː ɡɾˈøːsə/,size,09 Shopping and Clothes
+die Farbe,/diː fˈaɾbə/,color,09 Shopping and Clothes
+die Kleidung,/diː klˈaɪdʊŋ/,clothing,09 Shopping and Clothes
+das Hemd,/das hˈɛmt/,shirt,09 Shopping and Clothes
+das T-Shirt,/das tˈeː(en)ʃˈɜːt(de)/,T-shirt,09 Shopping and Clothes
+die Bluse,/diː blˈʊsə/,blouse,09 Shopping and Clothes
+die Hose,/diː hˈoːzə/,trousers,09 Shopping and Clothes
+die Jeans,/diː (en)dʒˈiːnz(de)/,jeans,09 Shopping and Clothes
+das Kleid,/das klˈaɪt/,dress,09 Shopping and Clothes
+der Rock,/dɛɾ rˈɔk/,skirt,09 Shopping and Clothes
+die Jacke,/diː jˈakə/,jacket,09 Shopping and Clothes
+der Mantel,/dɛɾ mˈantəl/,coat,09 Shopping and Clothes
+der Pullover,/dɛɾ pˈʊloːvɜ/,sweater,09 Shopping and Clothes
+die Schuhe,/diː ʃˈuːə/,shoes,09 Shopping and Clothes
+die Socke,/diː zˈɔkə/,sock,09 Shopping and Clothes
+die Mütze,/diː mˈʏtsə/,cap / beanie,09 Shopping and Clothes
+der Hut,/dɛɾ hˈuːt/,hat,09 Shopping and Clothes
+die Tasche,/diː tˈaʃə/,bag,09 Shopping and Clothes
+tragen,/tɾˈɑːɡən/,to wear / carry,09 Shopping and Clothes
+anprobieren,/ˈanpɾoːbˌiːrən/,to try on,09 Shopping and Clothes
+passen,/pˈasən/,to fit,09 Shopping and Clothes
+gefallen,/ɡəfˈalən/,to please / be liked,09 Shopping and Clothes
+rot,/rˈoːt/,red,09 Shopping and Clothes
+blau,/blˈaʊ/,blue,09 Shopping and Clothes
+schwarz,/ʃvˈaɾts/,black,09 Shopping and Clothes
+weiß,/vˈaɪs/,white,09 Shopping and Clothes
+das Essen,/das ˈɛsən/,food,10 Food and Drink
+das Getränk,/das ɡətɾˈɛŋk/,drink,10 Food and Drink
+das Wasser,/das vˈasɜ/,water,10 Food and Drink
+der Kaffee,/dɛɾ kˈafeː/,coffee,10 Food and Drink
+der Tee,/dɛɾ tˈeː/,tea,10 Food and Drink
+die Milch,/diː mˈɪlç/,milk,10 Food and Drink
+der Saft,/dɛɾ zˈaft/,juice,10 Food and Drink
+das Brot,/das bɾˈoːt/,bread,10 Food and Drink
+das Brötchen,/das bɾˈøːtçən/,bread roll,10 Food and Drink
+die Butter,/diː bˈʊtɜ/,butter,10 Food and Drink
+der Käse,/dɛɾ kˈɛːzə/,cheese,10 Food and Drink
+das Ei,/das ˈaɪ/,egg,10 Food and Drink
+das Fleisch,/das flˈaɪʃ/,meat,10 Food and Drink
+der Fisch,/dɛɾ fˈɪʃ/,fish,10 Food and Drink
+das Hähnchen,/das hˈɛːnçən/,chicken,10 Food and Drink
+die Wurst,/diː vˈuːɾst/,sausage,10 Food and Drink
+der Reis,/dɛɾ rˈaɪs/,rice,10 Food and Drink
+die Nudeln,/diː nˈuːdəln/,pasta,10 Food and Drink
+die Kartoffel,/diː kaɾtˈɔfəl/,potato,10 Food and Drink
+das Gemüse,/das ɡəmˈyːzə/,vegetables,10 Food and Drink
+das Obst,/das ˈoːpst/,fruit,10 Food and Drink
+der Apfel,/dɛɾ ˈapfəl/,apple,10 Food and Drink
+die Banane,/diː banˈɑːnə/,banana,10 Food and Drink
+die Orange,/diː ˈoːraŋə/,orange,10 Food and Drink
+die Tomate,/diː toːmˈɑːtə/,tomato,10 Food and Drink
+die Zwiebel,/diː tsvˈiːbəl/,onion,10 Food and Drink
+der Salat,/dɛɾ zalˈɑːt/,salad,10 Food and Drink
+die Suppe,/diː zˈʊpə/,soup,10 Food and Drink
+der Kuchen,/dɛɾ kˈʊxən/,cake,10 Food and Drink
+die Schokolade,/diː ʃˈoːkoːlˌɑːdə/,chocolate,10 Food and Drink
+der Zucker,/dɛɾ tsˈʊkɜ/,sugar,10 Food and Drink
+das Salz,/das zˈalts/,salt,10 Food and Drink
+hungrig,/hˈʊŋɡɾɪç/,hungry,10 Food and Drink
+durstig,/dˈʊɐstɪç/,thirsty,10 Food and Drink
+lecker,/lˈɛkɜ/,delicious,10 Food and Drink
+süß,/zˈyːs/,sweet,10 Food and Drink
+salzig,/zˈaltsɪç/,salty,10 Food and Drink
+frisch,/frˈɪʃ/,fresh,10 Food and Drink
+backen,/bˈakən/,to bake,10 Food and Drink
+der Kellner,/dɛɾ kˈɛlnɜ/,waiter,11 Restaurant
+die Kellnerin,/diː kˈɛlnərˌɪn/,waitress,11 Restaurant
+der Gast,/dɛɾ ɡˈast/,guest / customer,11 Restaurant
+die Speisekarte,/diː ʃpˈaɪzeːkˌaɾtə/,menu,11 Restaurant
+die Getränkekarte,/diː ɡətɾˈɛnkeːkˌaɾtə/,drinks menu,11 Restaurant
+das Frühstück,/das frˈyːʃtʏk/,breakfast,11 Restaurant
+das Mittagessen,/das mˈɪtaɡˌɛsən/,lunch,11 Restaurant
+das Abendessen,/das ˈɑːbəndˌɛsən/,dinner,11 Restaurant
+die Vorspeise,/diː fˈoːɾʃpˌaɪzə/,starter,11 Restaurant
+das Hauptgericht,/das hˈaʊptɡərˌɪçt/,main course,11 Restaurant
+der Nachtisch,/dɛɾ nˈaxtɪʃ/,dessert,11 Restaurant
+das Gericht,/das ɡərˈɪçt/,dish,11 Restaurant
+die Portion,/diː pˌɔɾtsɪˈoːn/,portion,11 Restaurant
+die Bestellung,/diː bəʃtˈɛlʊŋ/,order,11 Restaurant
+bestellen,/bəʃtˈɛlən/,to order,11 Restaurant
+reservieren,/rˌeːzɛɾvˈiːrən/,to reserve,11 Restaurant
+die Reservierung,/diː rˌeːzɛɾvˈiːrʊŋ/,reservation,11 Restaurant
+bringen,/bɾˈɪŋən/,to bring,11 Restaurant
+nehmen,/nˈeːmən/,to take / have,11 Restaurant
+möchten,/mˈœçtən/,would like,11 Restaurant
+zahlen,/tsˈɑːlən/,to pay,11 Restaurant
+bar,/bˈɑːɾ/,in cash,11 Restaurant
+mit Karte,/mɪt kˈaɾtə/,by card,11 Restaurant
+getrennt,/ɡətɾˈɛnt/,separately,11 Restaurant
+noch,/nˈɔx/,another / still,11 Restaurant
+etwas,/ˈɛtvɑːs/,something,11 Restaurant
+nichts,/nˈɪçts/,nothing,11 Restaurant
+genug,/ɡənˈuːk/,enough,11 Restaurant
+mehr,/mˈeːɾ/,more,11 Restaurant
+weniger,/vˈeːnɪɡɜ/,less,11 Restaurant
+Guten Appetit!,/ɡˈuːtən ˌapeːtˈɪt/,Enjoy your meal!,11 Restaurant
+Ich möchte ...,/ɪç mˈœçtə/,I would like ...,11 Restaurant
+"Die Rechnung, bitte.",/diː rˈɛçnʊŋ bˈɪtə/,"The bill, please.",11 Restaurant
+Was möchten Sie?,/vˈas mˈœçtən ziː/,What would you like?,11 Restaurant
+Ist das scharf?,/ɪst das ʃˈaɾf/,Is that spicy?,11 Restaurant
+ohne,/ˈoːnə/,without,11 Restaurant
+mit,/mˈɪt/,with,11 Restaurant
+die Arbeit,/diː ˈaɾbaɪt/,work,12 Work
+der Beruf,/dɛɾ bərˈuːf/,profession / occupation,12 Work
+die Firma,/diː fˈɪɾmɑː/,company,12 Work
+das Büro,/das bˈyːroː/,office,12 Work
+der Chef,/dɛɾ ʃˈɛf/,boss,12 Work
+die Chefin,/diː çˈeːfɪn/,female boss,12 Work
+der Kollege,/dɛɾ kɔlˈeːɡə/,male colleague,12 Work
+die Kollegin,/diː kɔlˈeːɡɪn/,female colleague,12 Work
+der Mitarbeiter,/dɛɾ mˈɪtˌaɾbaɪtɜ/,male employee,12 Work
+die Mitarbeiterin,/diː mˈɪtˌaɾbaɪtərˌɪn/,female employee,12 Work
+der Kunde,/dɛɾ kˈʊndə/,male customer,12 Work
+die Kundin,/diː kˈʊndɪn/,female customer,12 Work
+der Ingenieur,/dɛɾ ˌɪndʒənjˈuːɾ/,engineer,12 Work
+die Ingenieurin,/diː ˈɪŋeːnˌiːuːrˌɪn/,female engineer,12 Work
+der Lehrer,/dɛɾ lˈeːrɜ/,teacher,12 Work
+die Lehrerin,/diː lˈeːrərˌɪn/,female teacher,12 Work
+der Arzt,/dɛɾ ˈaɾtst/,doctor,12 Work
+die Ärztin,/diː ˈɛɾtstɪn/,female doctor,12 Work
+der Verkäufer,/dɛɾ fɛɾkˈɔøfɜ/,salesman,12 Work
+die Verkäuferin,/diː fɛɾkˈɔøfərˌɪn/,saleswoman,12 Work
+der Koch,/dɛɾ kˈɔx/,cook / chef,12 Work
+die Köchin,/diː kˈœçɪn/,female cook / chef,12 Work
+der Student,/dɛɾ ʃtuːdˈɛnt/,male student,12 Work
+die Studentin,/diː ʃtˈuːdəntˌɪn/,female student,12 Work
+verdienen,/fɛɾdˈiːnən/,to earn,12 Work
+die Stelle,/diː ʃtˈɛlə/,job / position,12 Work
+die Bewerbung,/diː bəvˈɛɾbʊŋ/,application,12 Work
+sich bewerben,/zɪç bəvˈɛɾbən/,to apply,12 Work
+der Lebenslauf,/dɛɾ lˈeːbənslˌaʊf/,CV / résumé,12 Work
+das Gespräch,/das ɡəʃpɾˈɛç/,conversation / interview,12 Work
+die Pause,/diː pˈaʊzə/,break,12 Work
+Vollzeit,/fˈɔltsˌaɪt/,full-time,12 Work
+Teilzeit,/tˈaɪltsaɪt/,part-time,12 Work
+frei,/frˈaɪ/,free / off work,12 Work
+beschäftigt,/bəʃˈɛftɪçt/,busy,12 Work
+anfangen,/ˈanfˌaŋən/,to start,12 Work
+aufhören,/ˈaʊfhˌøːrən/,to stop,12 Work
+helfen,/hˈɛlfən/,to help,12 Work
+die Klasse,/diː klˈasə/,class,13 School and Learning
+der Kurs,/dɛɾ kˈuːɾs/,course,13 School and Learning
+der Unterricht,/dɛɾ ˌʊntɜrˈɪçt/,lesson / instruction,13 School and Learning
+der Schüler,/dɛɾ ʃˈyːlɜ/,male pupil,13 School and Learning
+die Schülerin,/diː ʃˈyːlərˌɪn/,female pupil,13 School and Learning
+das Buch,/das bˈʊx/,book,13 School and Learning
+das Heft,/das hˈɛft/,notebook,13 School and Learning
+der Stift,/dɛɾ ʃtˈɪft/,pen,13 School and Learning
+der Bleistift,/dɛɾ blˈaɪstɪft/,pencil,13 School and Learning
+der Radiergummi,/dɛɾ rˌɑdiːɾɡˈʊmiː/,eraser,13 School and Learning
+das Papier,/das papˈiːɾ/,paper,13 School and Learning
+die Aufgabe,/diː ˈaʊfɡˌɑːbə/,task / exercise,13 School and Learning
+die Hausaufgabe,/diː hˈaʊsˌaʊfɡˌɑːbə/,homework,13 School and Learning
+die Prüfung,/diː pɾˈyːfʊŋ/,exam,13 School and Learning
+der Test,/dɛɾ tˈɛst/,test,13 School and Learning
+die Frage,/diː frˈɑːɡə/,question,13 School and Learning
+die Antwort,/diː ˈantvɔɾt/,answer,13 School and Learning
+das Wort,/das vˈɔɾt/,word,13 School and Learning
+der Satz,/dɛɾ zˈats/,sentence,13 School and Learning
+die Seite,/diː zˈaɪtə/,page,13 School and Learning
+üben,/ˈyːbən/,to practice,13 School and Learning
+wiederholen,/viːdɜhˈoːlən/,to repeat,13 School and Learning
+erklären,/ɛɾklˈɛːrən/,to explain,13 School and Learning
+wissen,/vˈɪsən/,to know (a fact),13 School and Learning
+können,/kˈœnən/,can / to be able to,13 School and Learning
+müssen,/mˈʏsən/,must / to have to,13 School and Learning
+richtig,/rˈɪçtɪç/,correct,13 School and Learning
+falsch,/fˈalʃ/,wrong,13 School and Learning
+leicht,/lˈaɪçt/,easy,13 School and Learning
+schwer,/ʃvˈeːɾ/,difficult,13 School and Learning
+laut,/lˈaʊt/,loud,13 School and Learning
+leise,/lˈaɪzə/,quiet,13 School and Learning
+aufpassen,/ˈaʊfpˌasən/,to pay attention,13 School and Learning
+die Freizeit,/diː frˈaɪtsaɪt/,free time,14 Hobbies and Sports
+das Hobby,/das hˈɔbiː/,hobby,14 Hobbies and Sports
+der Sport,/dɛɾ ʃpˈɔɾt/,sport,14 Hobbies and Sports
+Fußball,/fˈʊsbal/,football / soccer,14 Hobbies and Sports
+Basketball,/bˈaskɛtbˌal/,basketball,14 Hobbies and Sports
+Tennis,/tˈɛnɪs/,tennis,14 Hobbies and Sports
+Volleyball,/fˈɔlaɪbˌal/,volleyball,14 Hobbies and Sports
+Schwimmen,/ʃvˈɪmən/,swimming,14 Hobbies and Sports
+Radfahren,/rˈatfɑːrən/,cycling,14 Hobbies and Sports
+Joggen,/jˈɔɡən/,jogging,14 Hobbies and Sports
+Wandern,/vˈandɜn/,hiking,14 Hobbies and Sports
+tanzen,/tˈantsən/,to dance,14 Hobbies and Sports
+singen,/zˈɪŋən/,to sing,14 Hobbies and Sports
+spielen,/ʃpˈiːlən/,to play,14 Hobbies and Sports
+trainieren,/tɾɛnˈiːrən/,to train,14 Hobbies and Sports
+das Fitnessstudio,/das fˈɪtnɛsstˌuːdɪˌoː/,gym,14 Hobbies and Sports
+die Mannschaft,/diː mˈanʃaft/,team,14 Hobbies and Sports
+das Spiel,/das ʃpˈiːl/,game / match,14 Hobbies and Sports
+der Ball,/dɛɾ bˈal/,ball,14 Hobbies and Sports
+gewinnen,/ɡəvˈɪnən/,to win,14 Hobbies and Sports
+verlieren,/fɛɾlˈiːrən/,to lose,14 Hobbies and Sports
+Musik,/muːzˈiːk/,music,14 Hobbies and Sports
+das Lied,/das lˈiːt/,song,14 Hobbies and Sports
+die Gitarre,/diː ɡˈiːtarə/,guitar,14 Hobbies and Sports
+das Klavier,/das klavˈiːɾ/,piano,14 Hobbies and Sports
+fotografieren,/fˌoːtoːɡɾafˈiːrən/,to photograph,14 Hobbies and Sports
+zeichnen,/tsˈaɪçnən/,to draw,14 Hobbies and Sports
+malen,/mˈɑːlən/,to paint,14 Hobbies and Sports
+reisen,/rˈaɪzən/,to travel,14 Hobbies and Sports
+Freunde treffen,/frˈɔøndə tɾˈɛfən/,to meet friends,14 Hobbies and Sports
+Spaß haben,/ʃpˈɑːs hˈɑːbən/,to have fun,14 Hobbies and Sports
+gern,/ɡˈɛɾn/,gladly / like to,14 Hobbies and Sports
+lieber,/lˈiːbɜ/,preferably,14 Hobbies and Sports
+am liebsten,/am lˈiːbstən/,most preferably / favorite,14 Hobbies and Sports
+interessant,/ˌɪntərɛsˈant/,interesting,14 Hobbies and Sports
+das Wetter,/das vˈɛtɜ/,weather,15 Weather and Seasons
+die Sonne,/diː zˈɔnə/,sun,15 Weather and Seasons
+der Regen,/dɛɾ rˈeːɡən/,rain,15 Weather and Seasons
+der Schnee,/dɛɾ ʃnˈeː/,snow,15 Weather and Seasons
+der Wind,/dɛɾ vˈɪnt/,wind,15 Weather and Seasons
+die Wolke,/diː vˈɔlkə/,cloud,15 Weather and Seasons
+der Himmel,/dɛɾ hˈɪməl/,sky,15 Weather and Seasons
+die Temperatur,/diː tˈɛmpeːrˌɑtuːɾ/,temperature,15 Weather and Seasons
+der Grad,/dɛɾ ɡɾˈɑːt/,degree,15 Weather and Seasons
+warm,/vˈaɾm/,warm,15 Weather and Seasons
+heiß,/hˈaɪs/,hot,15 Weather and Seasons
+kühl,/kˈyːl/,cool,15 Weather and Seasons
+kalt,/kˈalt/,cold,15 Weather and Seasons
+sonnig,/zˈɔnɪç/,sunny,15 Weather and Seasons
+regnerisch,/rˈɛɡnərˌɪʃ/,rainy,15 Weather and Seasons
+windig,/vˈɪndɪç/,windy,15 Weather and Seasons
+bewölkt,/bəvˈœlkt/,cloudy,15 Weather and Seasons
+trocken,/tɾˈɔkən/,dry,15 Weather and Seasons
+nass,/nˈas/,wet,15 Weather and Seasons
+regnen,/rˈɛɡnən/,to rain,15 Weather and Seasons
+schneien,/ʃnˈaɪən/,to snow,15 Weather and Seasons
+scheinen,/ʃˈaɪnən/,to shine,15 Weather and Seasons
+der Frühling,/dɛɾ frˈyːlɪŋ/,spring,15 Weather and Seasons
+der Sommer,/dɛɾ zˈɔmɜ/,summer,15 Weather and Seasons
+der Herbst,/dɛɾ hˈɛɾpst/,autumn,15 Weather and Seasons
+der Winter,/dɛɾ vˈɪntɜ/,winter,15 Weather and Seasons
+der Januar,/dɛɾ jˈanuːˌɑːɾ/,January,15 Weather and Seasons
+der Februar,/dɛɾ fˈɛbɾuːˌɑːɾ/,February,15 Weather and Seasons
+der März,/dɛɾ mˈɛɾts/,March,15 Weather and Seasons
+der April,/dɛɾ apɾˈiːl/,April,15 Weather and Seasons
+der Mai,/dɛɾ mˈaɪ/,May,15 Weather and Seasons
+der Juni,/dɛɾ jˈuːniː/,June,15 Weather and Seasons
+der Juli,/dɛɾ jˈuːliː/,July,15 Weather and Seasons
+der August,/dɛɾ ˈaʊɡʊst/,August,15 Weather and Seasons
+der September,/dɛɾ zˈɛptɛmbɜ/,September,15 Weather and Seasons
+der Oktober,/dɛɾ ˈɔktoːbɜ/,October,15 Weather and Seasons
+der November,/dɛɾ nˈoːvɛmbɜ/,November,15 Weather and Seasons
+der Dezember,/dɛɾ deːtsˈɛmbɜ/,December,15 Weather and Seasons
+Wie ist das Wetter?,/viː ɪst das vˈɛtɜ/,How is the weather?,15 Weather and Seasons
+der Körper,/dɛɾ kˈœɾpɜ/,body,16 Body and Health
+der Kopf,/dɛɾ kˈɔpf/,head,16 Body and Health
+das Gesicht,/das ɡəzˈɪçt/,face,16 Body and Health
+das Auge,/das ˈaʊɡə/,eye,16 Body and Health
+das Ohr,/das ˈoːɾ/,ear,16 Body and Health
+die Nase,/diː nˈɑːzə/,nose,16 Body and Health
+der Mund,/dɛɾ mˈʊnt/,mouth,16 Body and Health
+der Zahn,/dɛɾ tsˈɑːn/,tooth,16 Body and Health
+der Hals,/dɛɾ hˈɑːls/,throat / neck,16 Body and Health
+die Schulter,/diː ʃˈuːltɜ/,shoulder,16 Body and Health
+der Arm,/dɛɾ ˈaɾm/,arm,16 Body and Health
+die Hand,/diː hˈant/,hand,16 Body and Health
+der Finger,/dɛɾ fˈɪŋɜ/,finger,16 Body and Health
+der Rücken,/dɛɾ rˈʏkən/,back,16 Body and Health
+der Bauch,/dɛɾ bˈaʊx/,stomach / belly,16 Body and Health
+das Bein,/das bˈaɪn/,leg,16 Body and Health
+das Knie,/das knˈiː/,knee,16 Body and Health
+der Fuß,/dɛɾ fˈuːs/,foot,16 Body and Health
+das Herz,/das hˈɛɾts/,heart,16 Body and Health
+die Gesundheit,/diː ɡəzˈʊnthaɪt/,health,16 Body and Health
+krank,/kɾˈaŋk/,ill,16 Body and Health
+gesund,/ɡəzˈʊnt/,healthy,16 Body and Health
+müde,/mˈyːdə/,tired,16 Body and Health
+fit,/fˈiːt/,fit / healthy,16 Body and Health
+weh tun,/vˈeː tˈuːn/,to hurt,16 Body and Health
+der Schmerz,/dɛɾ ʃmˈɛɾts/,pain,16 Body and Health
+die Kopfschmerzen,/diː kˈɔpfʃmɜtsən/,headache,16 Body and Health
+die Bauchschmerzen,/diː bˈaʊxʃmɜtsən/,stomachache,16 Body and Health
+die Zahnschmerzen,/diː tsˈɑːnʃmɜtsən/,toothache,16 Body and Health
+der Husten,/dɛɾ hˈʊstən/,cough,16 Body and Health
+der Schnupfen,/dɛɾ ʃnˈʊpfən/,cold / runny nose,16 Body and Health
+das Fieber,/das fˈiːbɜ/,fever,16 Body and Health
+sich fühlen,/zɪç fˈyːlən/,to feel,16 Body and Health
+liegen,/lˈiːɡən/,to lie down,16 Body and Health
+sitzen,/zˈɪtsən/,to sit,16 Body and Health
+stehen,/ʃtˈeːən/,to stand,16 Body and Health
+atmen,/ˈatmən/,to breathe,16 Body and Health
+die Praxis,/diː pɾˈaksɪs/,medical practice,17 Doctor Pharmacy Emergency
+das Medikament,/das mˌeːdiːkamˈɛnt/,medicine,17 Doctor Pharmacy Emergency
+die Tablette,/diː tˈablɛtə/,tablet / pill,17 Doctor Pharmacy Emergency
+die Salbe,/diː zˈalbə/,ointment,17 Doctor Pharmacy Emergency
+das Rezept,/das reːtsˈɛpt/,prescription,17 Doctor Pharmacy Emergency
+die Untersuchung,/diː ˌʊntɜzˈuːxʊŋ/,examination,17 Doctor Pharmacy Emergency
+der Termin,/dɛɾ tɛɾmˈiːn/,appointment,17 Doctor Pharmacy Emergency
+der Notfall,/dɛɾ nˈɔtfal/,emergency,17 Doctor Pharmacy Emergency
+der Krankenwagen,/dɛɾ kɾˈankənvˌɑːɡən/,ambulance,17 Doctor Pharmacy Emergency
+die Feuerwehr,/diː fˈɔøɜvˌeːɾ/,fire brigade,17 Doctor Pharmacy Emergency
+untersuchen,/ˌʊntɜzˈuːxən/,to examine,17 Doctor Pharmacy Emergency
+brauchen,/bɾˈaʊxən/,to need,17 Doctor Pharmacy Emergency
+öffnen,/ˈœfnən/,to open,17 Doctor Pharmacy Emergency
+schließen,/ʃlˈiːsən/,to close,17 Doctor Pharmacy Emergency
+die Versicherung,/diː fɛɾzˈɪçərˌʊŋ/,insurance,17 Doctor Pharmacy Emergency
+die Krankenversicherung,/diː kɾˌankənfɛɾzˈɪçərˌʊŋ/,health insurance,17 Doctor Pharmacy Emergency
+die Versichertenkarte,/diː fɛɾzˈɪçɜtˌɛnkaɾtə/,health insurance card,17 Doctor Pharmacy Emergency
+die Allergie,/diː ˈalɜɡˌiː/,allergy,17 Doctor Pharmacy Emergency
+allergisch,/ˈalɜɡˌɪʃ/,allergic,17 Doctor Pharmacy Emergency
+verletzt,/fɛɾlˈɛtst/,injured,17 Doctor Pharmacy Emergency
+die Verletzung,/diː fɛɾlˈɛtsʊŋ/,injury,17 Doctor Pharmacy Emergency
+der Unfall,/dɛɾ ˈʊnfˌal/,accident,17 Doctor Pharmacy Emergency
+bluten,/blˈuːtən/,to bleed,17 Doctor Pharmacy Emergency
+gefährlich,/ɡəfˈɛːɾlɪç/,dangerous,17 Doctor Pharmacy Emergency
+sofort,/zoːfˈɔɾt/,immediately,17 Doctor Pharmacy Emergency
+dringend,/dɾˈɪŋənt/,urgent,17 Doctor Pharmacy Emergency
+Hilfe!,/hˈɪlfə/,Help!,17 Doctor Pharmacy Emergency
+Rufen Sie einen Krankenwagen!,/rˈuːfən ziː ˌaɪnən kɾˈankənvˌɑːɡən/,Call an ambulance!,17 Doctor Pharmacy Emergency
+Ich brauche einen Arzt.,/ɪç bɾˈaʊxə ˌaɪnən ˈaɾtst/,I need a doctor.,17 Doctor Pharmacy Emergency
+Wo ist die nächste Apotheke?,/vˌoː ɪst diː nˈɛçstə ˈɑpɔthˌeːkə/,Where is the nearest pharmacy?,17 Doctor Pharmacy Emergency
+Wie oft?,/viː ˈɔft/,How often?,17 Doctor Pharmacy Emergency
+zweimal täglich,/tsvˈaɪmɑːl tˈɛːklɪç/,twice daily,17 Doctor Pharmacy Emergency
+die Reise,/diː rˈaɪzə/,trip / journey,18 Travel and Hotel
+der Urlaub,/dɛɾ ˈuːɾlaʊp/,vacation,18 Travel and Hotel
+der Tourist,/dɛɾ tuːrˈɪst/,male tourist,18 Travel and Hotel
+die Touristin,/diː tˈuːrɪstˌɪn/,female tourist,18 Travel and Hotel
+die Jugendherberge,/diː jˈuːɡənthɜbɜɡə/,youth hostel,18 Travel and Hotel
+das Einzelzimmer,/das ˈaɪntsˌɛltsɪmɜ/,single room,18 Travel and Hotel
+das Doppelzimmer,/das dˈɔpəltsˌɪmɜ/,double room,18 Travel and Hotel
+die Rezeption,/diː rˌeːtsɛptsɪˈoːn/,reception,18 Travel and Hotel
+der Empfang,/dɛɾ ɛmpfˈaŋ/,reception,18 Travel and Hotel
+die Schlüsselkarte,/diː ʃlˈʏsəlkˌaɾtə/,key card,18 Travel and Hotel
+die Nacht,/diː nˈaxt/,night,18 Travel and Hotel
+die Übernachtung,/diː ˌyːbɜnˈaxtʊŋ/,overnight stay,18 Travel and Hotel
+buchen,/bˈʊxən/,to book,18 Travel and Hotel
+abreisen,/ˈapɾˌaɪzən/,to depart,18 Travel and Hotel
+bleiben,/blˈaɪbən/,to stay,18 Travel and Hotel
+der Pass,/dɛɾ pˈas/,passport,18 Travel and Hotel
+der Ausweis,/dɛɾ ˈaʊsvˌaɪs/,identity card,18 Travel and Hotel
+der Koffer,/dɛɾ kˈɔfɜ/,suitcase,18 Travel and Hotel
+das Gepäck,/das ɡəpˈɛk/,luggage,18 Travel and Hotel
+die Information,/diː ˌɪnfɔɾmˌatsɪˈoːn/,information,18 Travel and Hotel
+der Stadtplan,/dɛɾ ʃtatplˈɑːn/,city map,18 Travel and Hotel
+die Sehenswürdigkeit,/diː zˈeːənsvˌʏɾdɪçkˌaɪt/,sight / attraction,18 Travel and Hotel
+besichtigen,/bəzˈɪçtɪɡən/,to visit / sightsee,18 Travel and Hotel
+das Meer,/das mˈeːɾ/,sea,18 Travel and Hotel
+der Strand,/dɛɾ ʃtɾˈant/,beach,18 Travel and Hotel
+der Berg,/dɛɾ bˈɛɾk/,mountain,18 Travel and Hotel
+die Insel,/diː ˈɪnzəl/,island,18 Travel and Hotel
+besetzt,/bəzˈɛtst/,occupied,18 Travel and Hotel
+inklusive,/ɪnkluːzˈiːvə/,included,18 Travel and Hotel
+pro Nacht,/pɾˌoː nˈaxt/,per night,18 Travel and Hotel
+Ich habe reserviert.,/ɪç hɑːbə rˌeːzɛɾvˈiːɾt/,I have a reservation.,18 Travel and Hotel
+das Telefon,/das tˌeːleːfˈoːn/,telephone,19 Communication and Post
+das Handy,/das hˈɛndiː/,mobile phone,19 Communication and Post
+der Anruf,/dɛɾ ˈanrˌuːf/,phone call,19 Communication and Post
+anrufen,/ˈanrˌuːfən/,to call,19 Communication and Post
+die Nachricht,/diː nˈaxrɪçt/,message,19 Communication and Post
+die SMS,/diː ˌɛsˌɛmˈɛs/,text message,19 Communication and Post
+die E-Mail,/diː ˈeː(en)mˈeɪl(de)/,email,19 Communication and Post
+das Internet,/das ˈɪntɜnˌɛt/,internet,19 Communication and Post
+die Webseite,/diː vˈɛbzaɪtə/,website,19 Communication and Post
+die Nummer,/diː nˈʊmɜ/,number,19 Communication and Post
+der Brief,/dɛɾ bɾˈiːf/,letter,19 Communication and Post
+die Postkarte,/diː pˈɔstkaɾtə/,postcard,19 Communication and Post
+das Paket,/das pakˈeːt/,parcel,19 Communication and Post
+der Umschlag,/dɛɾ ʊmʃlˈɑːk/,envelope,19 Communication and Post
+die Briefmarke,/diː bɾˈiːfmaɾkə/,stamp,19 Communication and Post
+schicken,/ʃˈɪkən/,to send,19 Communication and Post
+senden,/zˈɛndən/,to send,19 Communication and Post
+bekommen,/bəkˈɔmən/,to receive / get,19 Communication and Post
+erreichen,/ɛɾrˈaɪçən/,to reach / contact,19 Communication and Post
+hören,/hˈøːrən/,to hear,19 Communication and Post
+Wer ist da?,/vˈeːɾ ɪst dˈɑː/,Who is there?,19 Communication and Post
+Kann ich ... sprechen?,/kˈan ɪç ʃpɾˈɛçən/,Can I speak to ...?,19 Communication and Post
+"Einen Moment, bitte.",/ˌaɪnən moːmˈɛnt bˈɪtə/,"One moment, please.",19 Communication and Post
+Ich rufe später an.,/ɪç rˈuːfə ʃpˈɛːtɜ ˈan/,I'll call later.,19 Communication and Post
+Wie ist Ihre Nummer?,/viː ɪst ˌiːrə nˈʊmɜ/,What is your number?,19 Communication and Post
+der Kalender,/dɛɾ kˈɑːləndɜ/,calendar,20 Calendar and Appointments
+das Datum,/das dˈɑtuːm/,date,20 Calendar and Appointments
+der Tag,/dɛɾ tˈɑːk/,day,20 Calendar and Appointments
+die Woche,/diː vˈɔxə/,week,20 Calendar and Appointments
+das Wochenende,/das vˈɔxənəndə/,weekend,20 Calendar and Appointments
+der Monat,/dɛɾ moːnˈɑːt/,month,20 Calendar and Appointments
+das Jahr,/das jˈɑːɾ/,year,20 Calendar and Appointments
+der Montag,/dɛɾ mˈoːntɑːk/,Monday,20 Calendar and Appointments
+der Dienstag,/dɛɾ dˈiːnstɑːk/,Tuesday,20 Calendar and Appointments
+der Mittwoch,/dɛɾ mˈɪtvɔx/,Wednesday,20 Calendar and Appointments
+der Donnerstag,/dɛɾ dˈɔnɜstˌɑːk/,Thursday,20 Calendar and Appointments
+der Freitag,/dɛɾ frˈaɪtɑːk/,Friday,20 Calendar and Appointments
+der Samstag,/dɛɾ zˈamstɑːk/,Saturday,20 Calendar and Appointments
+der Sonntag,/dɛɾ zˈɔntɑːk/,Sunday,20 Calendar and Appointments
+übermorgen,/ˌyːbɜmˈɔɾɡən/,the day after tomorrow,20 Calendar and Appointments
+vorgestern,/fˈoːɾɡˌɛstɜn/,the day before yesterday,20 Calendar and Appointments
+diese Woche,/dˌiːzə vˈɔxə/,this week,20 Calendar and Appointments
+nächste Woche,/nˈɛçstə vˈɔxə/,next week,20 Calendar and Appointments
+letzte Woche,/lˈɛtstə vˈɔxə/,last week,20 Calendar and Appointments
+Zeit haben,/tsˈaɪt hˈɑːbən/,to have time,20 Calendar and Appointments
+einen Termin machen,/ˌaɪnən tɛɾmˈiːn mˈaxən/,to make an appointment,20 Calendar and Appointments
+vereinbaren,/fɛrˈaɪnbɑːrən/,to arrange,20 Calendar and Appointments
+absagen,/ˈapzˌɑːɡən/,to cancel,20 Calendar and Appointments
+verschieben,/fɛɾʃˈiːbən/,to postpone / reschedule,20 Calendar and Appointments
+möglich,/mˈøːklɪç/,possible,20 Calendar and Appointments
+leider,/lˈaɪdɜ/,unfortunately,20 Calendar and Appointments
+sicher,/zˈɪçɜ/,certain / sure,20 Calendar and Appointments
+am Montag,/am mˈoːntɑːk/,on Monday,20 Calendar and Appointments
+am Wochenende,/am vˈɔxənəndə/,at the weekend,20 Calendar and Appointments
+Wann hast du Zeit?,/vˈan hast duː tsˈaɪt/,When do you have time?,20 Calendar and Appointments
+Passt dir Dienstag?,/pˈast diːɾ dˈiːnstɑːk/,Does Tuesday work for you?,20 Calendar and Appointments
+Bis morgen!,/bɪs mˈɔɾɡən/,See you tomorrow!,20 Calendar and Appointments
+Bis später!,/bɪs ʃpˈɛːtɜ/,See you later!,20 Calendar and Appointments
+der Umzug,/dɛɾ ʊmtsˈuːk/,move / relocation,21 Moving and Neighborhood
+umziehen,/ʊmtsˈiːən/,to move house,21 Moving and Neighborhood
+einziehen,/ˈaɪntsˌiːən/,to move in,21 Moving and Neighborhood
+ausziehen,/ˈaʊstsˌiːən/,to move out,21 Moving and Neighborhood
+die neue Wohnung,/diː nˈɔøə vˈoːnʊŋ/,new apartment,21 Moving and Neighborhood
+der Nachbar,/dɛɾ nˈɑːxbɑːɾ/,male neighbor,21 Moving and Neighborhood
+die Nachbarin,/diː nˈaxbarˌɪn/,female neighbor,21 Moving and Neighborhood
+die Nachbarschaft,/diː nˈaxbɑːɾʃˌaft/,neighborhood,21 Moving and Neighborhood
+das Gebäude,/das ɡəbˈɔødə/,building,21 Moving and Neighborhood
+der Aufzug,/dɛɾ ˈaʊftsˌuːk/,elevator,21 Moving and Neighborhood
+der Keller,/dɛɾ kˈɛlɜ/,basement,21 Moving and Neighborhood
+der Hof,/dɛɾ hˈoːf/,courtyard,21 Moving and Neighborhood
+die Garage,/diː ɡˈɑrɑːɡə/,garage,21 Moving and Neighborhood
+der Parkplatz,/dɛɾ pˈaɾkplats/,parking space,21 Moving and Neighborhood
+der Müll,/dɛɾ mˈʏl/,garbage,21 Moving and Neighborhood
+die Mülltonne,/diː mˈʏltɔnə/,trash bin,21 Moving and Neighborhood
+die Hausordnung,/diː hˈaʊsˌɔɾdnʊŋ/,house rules,21 Moving and Neighborhood
+die Klingel,/diː klˈɪŋəl/,doorbell,21 Moving and Neighborhood
+der Briefkasten,/dɛɾ bɾˈiːfkastən/,mailbox,21 Moving and Neighborhood
+die Möbel,/diː mˈøːbəl/,furniture,21 Moving and Neighborhood
+der Karton,/dɛɾ kˈaɾtoːn/,cardboard box,21 Moving and Neighborhood
+packen,/pˈakən/,to pack,21 Moving and Neighborhood
+auspacken,/ˈaʊspˌakən/,to unpack,21 Moving and Neighborhood
+reparieren,/rˌeːparˈiːrən/,to repair,21 Moving and Neighborhood
+kaputt,/kˈɑpʊt/,broken,21 Moving and Neighborhood
+ruhig,/rˈuːɪç/,quiet,21 Moving and Neighborhood
+freundlich,/frˈɔøntlɪç/,friendly,21 Moving and Neighborhood
+nett,/nˈɛt/,nice,21 Moving and Neighborhood
+neu,/nˈɔø/,new,21 Moving and Neighborhood
+oben,/ˈoːbən/,upstairs / above,21 Moving and Neighborhood
+unten,/ˈʊntən/,downstairs / below,21 Moving and Neighborhood
+nebenan,/nˈeːbənˌan/,next door,21 Moving and Neighborhood
+Willkommen!,/vˈɪlkɔmən/,Welcome!,21 Moving and Neighborhood
+der Computer,/dɛɾ (en)kəmpjˈuːtə(de)/,computer,22 Technology and Media
+der Laptop,/dɛɾ (en)lˈaptɒp(de)/,laptop,22 Technology and Media
+das Tablet,/das tˈablət/,tablet,22 Technology and Media
+der Bildschirm,/dɛɾ bˈɪltʃɪɾm/,screen,22 Technology and Media
+die Tastatur,/diː tˈastatˌuːɾ/,keyboard,22 Technology and Media
+die Maus,/diː mˈaʊs/,mouse,22 Technology and Media
+der Drucker,/dɛɾ dɾˈʊkɜ/,printer,22 Technology and Media
+das Kabel,/das kˈɑbəl/,cable,22 Technology and Media
+das Ladegerät,/das lˈɑdeːɡərˌɛːt/,charger,22 Technology and Media
+die Batterie,/diː bˌateːrˈiː/,battery,22 Technology and Media
+der Akku,/dɛɾ ˈakuː/,rechargeable battery,22 Technology and Media
+das WLAN,/das vˈeːlˈɑːn/,Wi-Fi,22 Technology and Media
+das Passwort,/das pˈasvɔɾt/,password,22 Technology and Media
+die App,/diː ˈap/,app,22 Technology and Media
+das Programm,/das pɾoːɡɾˈam/,program,22 Technology and Media
+die Datei,/diː datˈaɪ/,file,22 Technology and Media
+das Foto,/das fˈoːtoː/,photo,22 Technology and Media
+das Video,/das vˈiːdeːˌoː/,video,22 Technology and Media
+die Musik,/diː muːzˈiːk/,music,22 Technology and Media
+die Zeitung,/diː tsˈaɪtˌʊŋ/,newspaper,22 Technology and Media
+die Zeitschrift,/diː tsˈaɪtʃrˌɪft/,magazine,22 Technology and Media
+das Radio,/das rˈɑdɪˌoː/,radio,22 Technology and Media
+anschalten,/ˈanʃˌaltən/,to switch on,22 Technology and Media
+ausschalten,/ˈaʊsʃˌaltən/,to switch off,22 Technology and Media
+laden,/lˈɑːdən/,to charge / load,22 Technology and Media
+speichern,/ʃpˈaɪçɜn/,to save,22 Technology and Media
+löschen,/lˈœʃən/,to delete,22 Technology and Media
+klicken,/klˈɪkən/,to click,22 Technology and Media
+sehen,/zˈeːən/,to see / watch,22 Technology and Media
+online,/(en)ˈɒnlaɪn(de)/,online,22 Technology and Media
+offline,/(en)ˈɒflaɪn(de)/,offline,22 Technology and Media
+funktionieren,/fˌʊŋktsɪˌoːnˈiːrən/,to work / function,22 Technology and Media
+die Natur,/diː nˈɑtuːɾ/,nature,23 Nature and Environment
