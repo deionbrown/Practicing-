@@ -1,3 +1,5 @@
-# Inglés A1 para hispanohablantes
+# Inglés A1
 
-Aplicación Streamlit. Archivo principal: `app.py`.
+Aplicación Streamlit para hispanohablantes.
+
+Archivo principal: `app.py`.
