@@ -1,0 +1,801 @@
+﻿Topic,English,Spanish,IPA
+01 Saludos y presentaciones,hello,hola,/həˈloʊ/
+01 Saludos y presentaciones,hi,hola,/haɪ/
+01 Saludos y presentaciones,goodbye,adiós,/ˌɡʊdˈbaɪ/
+01 Saludos y presentaciones,please,por favor,/pliːz/
+01 Saludos y presentaciones,thanks,gracias,/θæŋks/
+01 Saludos y presentaciones,sorry,lo siento,/ˈsɑːri/
+01 Saludos y presentaciones,yes,sí,/jes/
+01 Saludos y presentaciones,no,no,/noʊ/
+01 Saludos y presentaciones,name,nombre,/neɪm/
+01 Saludos y presentaciones,first name,nombre,/ˈfɜːrst neɪm/
+01 Saludos y presentaciones,last name,apellido,/ˈlæst neɪm/
+01 Saludos y presentaciones,address,dirección,/əˈdres/
+01 Saludos y presentaciones,age,edad,/eɪdʒ/
+01 Saludos y presentaciones,country,país,/ˈkʌntri/
+01 Saludos y presentaciones,city,ciudad,/ˈsɪti/
+01 Saludos y presentaciones,language,idioma,/ˈlæŋɡwɪdʒ/
+01 Saludos y presentaciones,English,inglés,/ˈɪŋɡlɪʃ/
+01 Saludos y presentaciones,Spanish,español,/ˈspænɪʃ/
+01 Saludos y presentaciones,student,estudiante,/ˈstuːdənt/
+01 Saludos y presentaciones,teacher,profesor,/ˈtiːtʃər/
+01 Saludos y presentaciones,friend,amigo,/frend/
+01 Saludos y presentaciones,man,hombre,/mæn/
+01 Saludos y presentaciones,woman,mujer,/ˈwʊmən/
+01 Saludos y presentaciones,boy,niño,/bɔɪ/
+01 Saludos y presentaciones,girl,niña,/ɡɜːrl/
+01 Saludos y presentaciones,Mr.,señor,/ˈmɪstər/
+01 Saludos y presentaciones,Mrs.,señora,/ˈmɪsɪz/
+01 Saludos y presentaciones,welcome,bienvenido,/ˈwelkəm/
+01 Saludos y presentaciones,nice,agradable,/naɪs/
+01 Saludos y presentaciones,meet,conocer,/miːt/
+01 Saludos y presentaciones,live,vivir,/lɪv/
+01 Saludos y presentaciones,from,de,/frəm/
+02 Familia,family,familia,/ˈfæməli/
+02 Familia,mother,madre,/ˈmʌðər/
+02 Familia,father,padre,/ˈfɑːðər/
+02 Familia,parents,padres,/ˈperənts/
+02 Familia,sister,hermana,/ˈsɪstər/
+02 Familia,brother,hermano,/ˈbrʌðər/
+02 Familia,daughter,hija,/ˈdɔːtər/
+02 Familia,son,hijo,/sʌn/
+02 Familia,child,niño; hijo,/tʃaɪld/
+02 Familia,children,niños; hijos,/ˈtʃɪldrən/
+02 Familia,grandmother,abuela,/ˈɡrænˌmʌðər/
+02 Familia,grandfather,abuelo,/ˈɡrænˌfɑːðər/
+02 Familia,grandparents,abuelos,/ˈɡrænˌperənts/
+02 Familia,aunt,tía,/ænt/
+02 Familia,uncle,tío,/ˈʌŋkəl/
+02 Familia,cousin,primo; prima,/ˈkʌzən/
+02 Familia,wife,esposa,/waɪf/
+02 Familia,husband,esposo,/ˈhʌzbənd/
+02 Familia,baby,bebé,/ˈbeɪbi/
+02 Familia,married,casado,/ˈmærid/
+02 Familia,single,soltero,/ˈsɪŋɡəl/
+02 Familia,young,joven,/jʌŋ/
+02 Familia,old,viejo,/oʊld/
+02 Familia,love,amar,/lʌv/
+02 Familia,person,persona,/ˈpɜːrsən/
+02 Familia,people,personas,/ˈpiːpəl/
+02 Familia,pet,mascota,/pet/
+02 Familia,dog,perro,/dɔːɡ/
+02 Familia,cat,gato,/kæt/
+02 Familia,home,hogar,/hoʊm/
+02 Familia,together,juntos,/təˈɡeðər/
+02 Familia,birthday,cumpleaños,/ˈbɜːrθdeɪ/
+03 Números y tiempo,one,uno,/wʌn/
+03 Números y tiempo,two,dos,/tuː/
+03 Números y tiempo,three,tres,/θriː/
+03 Números y tiempo,four,cuatro,/fɔːr/
+03 Números y tiempo,five,cinco,/faɪv/
+03 Números y tiempo,six,seis,/sɪks/
+03 Números y tiempo,seven,siete,/ˈsevən/
+03 Números y tiempo,eight,ocho,/eɪt/
+03 Números y tiempo,nine,nueve,/naɪn/
+03 Números y tiempo,ten,diez,/ten/
+03 Números y tiempo,eleven,once,/ɪˈlevən/
+03 Números y tiempo,twelve,doce,/twelv/
+03 Números y tiempo,thirteen,trece,/ˌθɜːrˈtiːn/
+03 Números y tiempo,fourteen,catorce,/ˌfɔːrˈtiːn/
+03 Números y tiempo,fifteen,quince,/ˌfɪfˈtiːn/
+03 Números y tiempo,twenty,veinte,/ˈtwenti/
+03 Números y tiempo,thirty,treinta,/ˈθɜːrti/
+03 Números y tiempo,forty,cuarenta,/ˈfɔːrti/
+03 Números y tiempo,fifty,cincuenta,/ˈfɪfti/
+03 Números y tiempo,hundred,cien,/ˈhʌndrəd/
+03 Números y tiempo,time,tiempo; hora,/taɪm/
+03 Números y tiempo,hour,hora,/ˈaʊər/
+03 Números y tiempo,minute,minuto,/ˈmɪnɪt/
+03 Números y tiempo,second,segundo,/ˈsekənd/
+03 Números y tiempo,morning,mañana,/ˈmɔːrnɪŋ/
+03 Números y tiempo,afternoon,tarde,/ˌæftərˈnuːn/
+03 Números y tiempo,evening,tarde; noche,/ˈiːvnɪŋ/
+03 Números y tiempo,night,noche,/naɪt/
+03 Números y tiempo,today,hoy,/təˈdeɪ/
+03 Números y tiempo,tomorrow,mañana,/təˈmɑːroʊ/
+03 Números y tiempo,yesterday,ayer,/ˈjestərdeɪ/
+03 Números y tiempo,now,ahora,/naʊ/
+"04 Días, meses y fechas",Monday,lunes,/ˈmʌndeɪ/
+"04 Días, meses y fechas",Tuesday,martes,/ˈtuːzdeɪ/
+"04 Días, meses y fechas",Wednesday,miércoles,/ˈwenzdeɪ/
+"04 Días, meses y fechas",Thursday,jueves,/ˈθɜːrzdeɪ/
+"04 Días, meses y fechas",Friday,viernes,/ˈfraɪdeɪ/
+"04 Días, meses y fechas",Saturday,sábado,/ˈsætərdeɪ/
+"04 Días, meses y fechas",Sunday,domingo,/ˈsʌndeɪ/
+"04 Días, meses y fechas",week,semana,/wiːk/
+"04 Días, meses y fechas",weekend,fin de semana,/ˌwiːkˈend/
+"04 Días, meses y fechas",month,mes,/mʌnθ/
+"04 Días, meses y fechas",year,año,/jɪr/
+"04 Días, meses y fechas",January,enero,/ˈdʒænjuˌeri/
+"04 Días, meses y fechas",February,febrero,/ˈfebruˌeri/
+"04 Días, meses y fechas",March,marzo,/mɑːrtʃ/
+"04 Días, meses y fechas",April,abril,/ˈeɪprəl/
+"04 Días, meses y fechas",May,mayo,/meɪ/
+"04 Días, meses y fechas",June,junio,/dʒuːn/
+"04 Días, meses y fechas",July,julio,/dʒuˈlaɪ/
+"04 Días, meses y fechas",August,agosto,/ˈɔːɡəst/
+"04 Días, meses y fechas",September,septiembre,/sepˈtembər/
+"04 Días, meses y fechas",October,octubre,/ɑːkˈtoʊbər/
+"04 Días, meses y fechas",November,noviembre,/noʊˈvembər/
+"04 Días, meses y fechas",December,diciembre,/dɪˈsembər/
+"04 Días, meses y fechas",date,fecha,/deɪt/
+"04 Días, meses y fechas",calendar,calendario,/ˈkæləndər/
+"04 Días, meses y fechas",early,temprano,/ˈɜːrli/
+"04 Días, meses y fechas",late,tarde,/leɪt/
+"04 Días, meses y fechas",daily,diario,/ˈdeɪli/
+"04 Días, meses y fechas",weekly,semanal,/ˈwiːkli/
+"04 Días, meses y fechas",first,primero,/fɜːrst/
+"04 Días, meses y fechas",last,último,/læst/
+"04 Días, meses y fechas",next,siguiente,/nekst/
+05 Casa,house,casa,/haʊs/
+05 Casa,apartment,apartamento,/əˈpɑːrtmənt/
+05 Casa,room,habitación,/ruːm/
+05 Casa,bedroom,dormitorio,/ˈbedruːm/
+05 Casa,bathroom,baño,/ˈbæθruːm/
+05 Casa,kitchen,cocina,/ˈkɪtʃən/
+05 Casa,living room,sala,/ˈlɪvɪŋ ruːm/
+05 Casa,garden,jardín,/ˈɡɑːrdən/
+05 Casa,door,puerta,/dɔːr/
+05 Casa,window,ventana,/ˈwɪndoʊ/
+05 Casa,wall,pared,/wɔːl/
+05 Casa,floor,piso,/flɔːr/
+05 Casa,table,mesa,/ˈteɪbəl/
+05 Casa,chair,silla,/tʃer/
+05 Casa,bed,cama,/bed/
+05 Casa,sofa,sofá,/ˈsoʊfə/
+05 Casa,lamp,lámpara,/læmp/
+05 Casa,television,televisión,/ˈteləvɪʒən/
+05 Casa,fridge,refrigerador,/frɪdʒ/
+05 Casa,shower,ducha,/ˈʃaʊər/
+05 Casa,toilet,inodoro,/ˈtɔɪlət/
+05 Casa,key,llave,/kiː/
+05 Casa,clean,limpio; limpiar,/kliːn/
+05 Casa,dirty,sucio,/ˈdɜːrti/
+05 Casa,open,abrir; abierto,/ˈoʊpən/
+05 Casa,close,cerrar,/kloʊz/
+05 Casa,inside,dentro,/ˌɪnˈsaɪd/
+05 Casa,outside,afuera,/ˌaʊtˈsaɪd/
+05 Casa,upstairs,arriba,/ˌʌpˈsterz/
+05 Casa,downstairs,abajo,/ˌdaʊnˈsterz/
+05 Casa,rent,alquilar,/rent/
+05 Casa,move,mudarse,/muːv/
+06 Comida y bebida,food,comida,/fuːd/
+06 Comida y bebida,water,agua,/ˈwɔːtər/
+06 Comida y bebida,coffee,café,/ˈkɔːfi/
+06 Comida y bebida,tea,té,/tiː/
+06 Comida y bebida,milk,leche,/mɪlk/
+06 Comida y bebida,juice,jugo,/dʒuːs/
+06 Comida y bebida,bread,pan,/bred/
+06 Comida y bebida,rice,arroz,/raɪs/
+06 Comida y bebida,meat,carne,/miːt/
+06 Comida y bebida,chicken,pollo,/ˈtʃɪkɪn/
+06 Comida y bebida,fish,pescado,/fɪʃ/
+06 Comida y bebida,egg,huevo,/eɡ/
+06 Comida y bebida,cheese,queso,/tʃiːz/
+06 Comida y bebida,fruit,fruta,/fruːt/
+06 Comida y bebida,apple,manzana,/ˈæpəl/
+06 Comida y bebida,banana,plátano,/bəˈnænə/
+06 Comida y bebida,orange,naranja,/ˈɔːrɪndʒ/
+06 Comida y bebida,vegetable,verdura,/ˈvedʒtəbəl/
+06 Comida y bebida,potato,papa,/pəˈteɪtoʊ/
+06 Comida y bebida,tomato,tomate,/təˈmeɪtoʊ/
+06 Comida y bebida,salad,ensalada,/ˈsæləd/
+06 Comida y bebida,soup,sopa,/suːp/
+06 Comida y bebida,breakfast,desayuno,/ˈbrekfəst/
+06 Comida y bebida,lunch,almuerzo,/lʌntʃ/
+06 Comida y bebida,dinner,cena,/ˈdɪnər/
+06 Comida y bebida,hungry,hambriento,/ˈhʌŋɡri/
+06 Comida y bebida,thirsty,sediento,/ˈθɜːrsti/
+06 Comida y bebida,eat,comer,/iːt/
+06 Comida y bebida,drink,beber,/drɪŋk/
+06 Comida y bebida,cook,cocinar,/kʊk/
+06 Comida y bebida,delicious,delicioso,/dɪˈlɪʃəs/
+06 Comida y bebida,menu,menú,/ˈmenjuː/
+07 Rutina diaria,wake up,despertarse,/weɪk ʌp/
+07 Rutina diaria,get up,levantarse,/ɡet ʌp/
+07 Rutina diaria,wash,lavar,/wɑːʃ/
+07 Rutina diaria,brush,cepillar,/brʌʃ/
+07 Rutina diaria,dress,vestirse,/dres/
+07 Rutina diaria,start,empezar,/stɑːrt/
+07 Rutina diaria,finish,terminar,/ˈfɪnɪʃ/
+07 Rutina diaria,work,trabajar,/wɜːrk/
+07 Rutina diaria,study,estudiar,/ˈstʌdi/
+07 Rutina diaria,go,ir,/ɡoʊ/
+07 Rutina diaria,come,venir,/kʌm/
+07 Rutina diaria,leave,salir,/liːv/
+07 Rutina diaria,arrive,llegar,/əˈraɪv/
+07 Rutina diaria,sleep,dormir,/sliːp/
+07 Rutina diaria,rest,descansar,/rest/
+07 Rutina diaria,read,leer,/riːd/
+07 Rutina diaria,write,escribir,/raɪt/
+07 Rutina diaria,listen,escuchar,/ˈlɪsən/
+07 Rutina diaria,speak,hablar,/spiːk/
+07 Rutina diaria,watch,mirar,/wɑːtʃ/
+07 Rutina diaria,play,jugar,/pleɪ/
+07 Rutina diaria,walk,caminar,/wɔːk/
+07 Rutina diaria,run,correr,/rʌn/
+07 Rutina diaria,usually,usualmente,/ˈjuːʒuəli/
+07 Rutina diaria,always,siempre,/ˈɔːlweɪz/
+07 Rutina diaria,often,a menudo,/ˈɔːfən/
+07 Rutina diaria,sometimes,a veces,/ˈsʌmtaɪmz/
+07 Rutina diaria,never,nunca,/ˈnevər/
+07 Rutina diaria,before,antes,/bɪˈfɔːr/
+07 Rutina diaria,after,después,/ˈæftər/
+07 Rutina diaria,every day,todos los días,/ˈevri deɪ/
+07 Rutina diaria,routine,rutina,/ruːˈtiːn/
+08 Escuela y estudio,school,escuela,/skuːl/
+08 Escuela y estudio,class,clase,/klæs/
+08 Escuela y estudio,lesson,lección,/ˈlesən/
+08 Escuela y estudio,book,libro,/bʊk/
+08 Escuela y estudio,notebook,cuaderno,/ˈnoʊtbʊk/
+08 Escuela y estudio,pen,bolígrafo,/pen/
+08 Escuela y estudio,pencil,lápiz,/ˈpensəl/
+08 Escuela y estudio,paper,papel,/ˈpeɪpər/
+08 Escuela y estudio,desk,escritorio,/desk/
+08 Escuela y estudio,board,pizarra,/bɔːrd/
+08 Escuela y estudio,question,pregunta,/ˈkwestʃən/
+08 Escuela y estudio,answer,respuesta,/ˈænsər/
+08 Escuela y estudio,word,palabra,/wɜːrd/
+08 Escuela y estudio,sentence,oración,/ˈsentəns/
+08 Escuela y estudio,homework,tarea,/ˈhoʊmwɜːrk/
+08 Escuela y estudio,test,examen,/test/
+08 Escuela y estudio,exam,examen,/ɪɡˈzæm/
+08 Escuela y estudio,learn,aprender,/lɜːrn/
+08 Escuela y estudio,understand,entender,/ˌʌndərˈstænd/
+08 Escuela y estudio,remember,recordar,/rɪˈmembər/
+08 Escuela y estudio,know,saber; conocer,/noʊ/
+08 Escuela y estudio,ask,preguntar,/æsk/
+08 Escuela y estudio,repeat,repetir,/rɪˈpiːt/
+08 Escuela y estudio,spell,deletrear,/spel/
+08 Escuela y estudio,easy,fácil,/ˈiːzi/
+08 Escuela y estudio,difficult,difícil,/ˈdɪfɪkəlt/
+08 Escuela y estudio,correct,correcto,/kəˈrekt/
+08 Escuela y estudio,wrong,incorrecto,/rɔːŋ/
+08 Escuela y estudio,example,ejemplo,/ɪɡˈzæmpəl/
+08 Escuela y estudio,practice,práctica,/ˈpræktɪs/
+08 Escuela y estudio,computer,computadora,/kəmˈpjuːtər/
+08 Escuela y estudio,dictionary,diccionario,/ˈdɪkʃəneri/
+09 Trabajo,job,trabajo,/dʒɑːb/
+09 Trabajo,office,oficina,/ˈɔːfɪs/
+09 Trabajo,company,empresa,/ˈkʌmpəni/
+09 Trabajo,worker,trabajador,/ˈwɜːrkər/
+09 Trabajo,manager,gerente,/ˈmænɪdʒər/
+09 Trabajo,boss,jefe,/bɔːs/
+09 Trabajo,customer,cliente,/ˈkʌstəmər/
+09 Trabajo,doctor,médico,/ˈdɑːktər/
+09 Trabajo,nurse,enfermero,/nɜːrs/
+09 Trabajo,driver,conductor,/ˈdraɪvər/
+09 Trabajo,engineer,ingeniero,/ˌendʒɪˈnɪr/
+09 Trabajo,waiter,mesero,/ˈweɪtər/
+09 Trabajo,waitress,mesera,/ˈweɪtrəs/
+09 Trabajo,shop assistant,dependiente,/ˈʃɑːp əsɪstənt/
+09 Trabajo,police officer,policía,/pəˈliːs ˌɔːfɪsər/
+09 Trabajo,farmer,agricultor,/ˈfɑːrmər/
+09 Trabajo,email,correo electrónico,/ˈiːmeɪl/
+09 Trabajo,meeting,reunión,/ˈmiːtɪŋ/
+09 Trabajo,phone,teléfono,/foʊn/
+09 Trabajo,busy,ocupado,/ˈbɪzi/
+09 Trabajo,free,libre,/friː/
+09 Trabajo,money,dinero,/ˈmʌni/
+09 Trabajo,pay,pagar,/peɪ/
+09 Trabajo,help,ayudar,/help/
+09 Trabajo,send,enviar,/send/
+09 Trabajo,call,llamar,/kɔːl/
+09 Trabajo,use,usar,/juːz/
+09 Trabajo,make,hacer,/meɪk/
+09 Trabajo,do,hacer,/duː/
+09 Trabajo,need,necesitar,/niːd/
+09 Trabajo,want,querer,/wɑːnt/
+09 Trabajo,important,importante,/ɪmˈpɔːrtənt/
+10 Compras y dinero,shop,tienda,/ʃɑːp/
+10 Compras y dinero,store,tienda,/stɔːr/
+10 Compras y dinero,market,mercado,/ˈmɑːrkɪt/
+10 Compras y dinero,supermarket,supermercado,/ˈsuːpərˌmɑːrkɪt/
+10 Compras y dinero,buy,comprar,/baɪ/
+10 Compras y dinero,sell,vender,/sel/
+10 Compras y dinero,price,precio,/praɪs/
+10 Compras y dinero,cheap,barato,/tʃiːp/
+10 Compras y dinero,expensive,caro,/ɪkˈspensɪv/
+10 Compras y dinero,cash,efectivo,/kæʃ/
+10 Compras y dinero,card,tarjeta,/kɑːrd/
+10 Compras y dinero,coin,moneda,/kɔɪn/
+10 Compras y dinero,change,cambio,/tʃeɪndʒ/
+10 Compras y dinero,cost,costar,/kɔːst/
+10 Compras y dinero,size,talla; tamaño,/saɪz/
+10 Compras y dinero,small,pequeño,/smɔːl/
+10 Compras y dinero,medium,mediano,/ˈmiːdiəm/
+10 Compras y dinero,large,grande,/lɑːrdʒ/
+10 Compras y dinero,bag,bolsa,/bæɡ/
+10 Compras y dinero,basket,canasta,/ˈbæskɪt/
+10 Compras y dinero,bottle,botella,/ˈbɑːtəl/
+10 Compras y dinero,box,caja,/bɑːks/
+10 Compras y dinero,kilo,kilo,/ˈkiːloʊ/
+10 Compras y dinero,pair,par,/per/
+10 Compras y dinero,some,algunos,/sʌm/
+10 Compras y dinero,any,algún,/ˈeni/
+10 Compras y dinero,much,mucho,/mʌtʃ/
+10 Compras y dinero,many,muchos,/ˈmeni/
+10 Compras y dinero,enough,suficiente,/ɪˈnʌf/
+10 Compras y dinero,receipt,recibo,/rɪˈsiːt/
+10 Compras y dinero,open,abierto,/ˈoʊpən/
+10 Compras y dinero,closed,cerrado,/kloʊzd/
+11 Ropa y colores,clothes,ropa,/kloʊðz/
+11 Ropa y colores,shirt,camisa,/ʃɜːrt/
+11 Ropa y colores,T-shirt,camiseta,/ˈtiː ʃɜːrt/
+11 Ropa y colores,trousers,pantalones,/ˈtraʊzərz/
+11 Ropa y colores,jeans,jeans,/dʒiːnz/
+11 Ropa y colores,dress,vestido,/dres/
+11 Ropa y colores,skirt,falda,/skɜːrt/
+11 Ropa y colores,jacket,chaqueta,/ˈdʒækɪt/
+11 Ropa y colores,coat,abrigo,/koʊt/
+11 Ropa y colores,shoes,zapatos,/ʃuːz/
+11 Ropa y colores,socks,calcetines,/sɑːks/
+11 Ropa y colores,hat,sombrero,/hæt/
+11 Ropa y colores,wear,llevar puesto,/wer/
+11 Ropa y colores,red,rojo,/red/
+11 Ropa y colores,blue,azul,/bluː/
+11 Ropa y colores,green,verde,/ɡriːn/
+11 Ropa y colores,yellow,amarillo,/ˈjeloʊ/
+11 Ropa y colores,black,negro,/blæk/
+11 Ropa y colores,white,blanco,/waɪt/
+11 Ropa y colores,brown,marrón,/braʊn/
+11 Ropa y colores,gray,gris,/ɡreɪ/
+11 Ropa y colores,pink,rosado,/pɪŋk/
+11 Ropa y colores,purple,morado,/ˈpɜːrpəl/
+11 Ropa y colores,orange,naranja,/ˈɔːrɪndʒ/
+11 Ropa y colores,beautiful,hermoso,/ˈbjuːtəfəl/
+11 Ropa y colores,new,nuevo,/nuː/
+11 Ropa y colores,short,corto,/ʃɔːrt/
+11 Ropa y colores,long,largo,/lɔːŋ/
+11 Ropa y colores,fit,quedar bien,/fɪt/
+11 Ropa y colores,try on,probarse,/traɪ ɑːn/
+11 Ropa y colores,color,color,/ˈkʌlər/
+11 Ropa y colores,style,estilo,/staɪl/
+12 Ciudad y lugares,place,lugar,/pleɪs/
+12 Ciudad y lugares,street,calle,/striːt/
+12 Ciudad y lugares,road,carretera,/roʊd/
+12 Ciudad y lugares,park,parque,/pɑːrk/
+12 Ciudad y lugares,bank,banco,/bæŋk/
+12 Ciudad y lugares,hospital,hospital,/ˈhɑːspɪtəl/
+12 Ciudad y lugares,pharmacy,farmacia,/ˈfɑːrməsi/
+12 Ciudad y lugares,restaurant,restaurante,/ˈrestərɑːnt/
+12 Ciudad y lugares,café,cafetería,/kæˈfeɪ/
+12 Ciudad y lugares,hotel,hotel,/hoʊˈtel/
+12 Ciudad y lugares,station,estación,/ˈsteɪʃən/
+12 Ciudad y lugares,airport,aeropuerto,/ˈerpɔːrt/
+12 Ciudad y lugares,museum,museo,/mjuˈziːəm/
+12 Ciudad y lugares,library,biblioteca,/ˈlaɪbreri/
+12 Ciudad y lugares,cinema,cine,/ˈsɪnəmə/
+12 Ciudad y lugares,church,iglesia,/tʃɜːrtʃ/
+12 Ciudad y lugares,post office,oficina de correos,/ˈpoʊst ˌɔːfɪs/
+12 Ciudad y lugares,police station,comisaría,/pəˈliːs ˌsteɪʃən/
+12 Ciudad y lugares,center,centro,/ˈsentər/
+12 Ciudad y lugares,near,cerca,/nɪr/
+12 Ciudad y lugares,far,lejos,/fɑːr/
+12 Ciudad y lugares,left,izquierda,/left/
+12 Ciudad y lugares,right,derecha,/raɪt/
+12 Ciudad y lugares,straight,recto,/streɪt/
+12 Ciudad y lugares,corner,esquina,/ˈkɔːrnər/
+12 Ciudad y lugares,here,aquí,/hɪr/
+12 Ciudad y lugares,there,allí,/ðer/
+12 Ciudad y lugares,map,mapa,/mæp/
+12 Ciudad y lugares,building,edificio,/ˈbɪldɪŋ/
+12 Ciudad y lugares,square,plaza,/skwer/
+12 Ciudad y lugares,bridge,puente,/brɪdʒ/
+12 Ciudad y lugares,traffic,tráfico,/ˈtræfɪk/
+13 Transporte y viajes,car,auto,/kɑːr/
+13 Transporte y viajes,bus,autobús,/bʌs/
+13 Transporte y viajes,train,tren,/treɪn/
+13 Transporte y viajes,taxi,taxi,/ˈtæksi/
+13 Transporte y viajes,bicycle,bicicleta,/ˈbaɪsɪkəl/
+13 Transporte y viajes,bike,bicicleta,/baɪk/
+13 Transporte y viajes,plane,avión,/pleɪn/
+13 Transporte y viajes,boat,barco,/boʊt/
+13 Transporte y viajes,ticket,boleto,/ˈtɪkɪt/
+13 Transporte y viajes,trip,viaje,/trɪp/
+13 Transporte y viajes,travel,viajar,/ˈtrævəl/
+13 Transporte y viajes,holiday,vacaciones,/ˈhɑːlədeɪ/
+13 Transporte y viajes,vacation,vacaciones,/veɪˈkeɪʃən/
+13 Transporte y viajes,passport,pasaporte,/ˈpæspɔːrt/
+13 Transporte y viajes,suitcase,maleta,/ˈsuːtkeɪs/
+13 Transporte y viajes,journey,viaje,/ˈdʒɜːrni/
+13 Transporte y viajes,stop,parada,/stɑːp/
+13 Transporte y viajes,platform,andén,/ˈplætfɔːrm/
+13 Transporte y viajes,drive,conducir,/draɪv/
+13 Transporte y viajes,ride,montar,/raɪd/
+13 Transporte y viajes,fly,volar,/flaɪ/
+13 Transporte y viajes,visit,visitar,/ˈvɪzɪt/
+13 Transporte y viajes,stay,quedarse,/steɪ/
+13 Transporte y viajes,book,reservar,/bʊk/
+13 Transporte y viajes,return,regresar,/rɪˈtɜːrn/
+13 Transporte y viajes,way,camino,/weɪ/
+13 Transporte y viajes,north,norte,/nɔːrθ/
+13 Transporte y viajes,south,sur,/saʊθ/
+13 Transporte y viajes,east,este,/iːst/
+13 Transporte y viajes,west,oeste,/west/
+13 Transporte y viajes,fast,rápido,/fæst/
+13 Transporte y viajes,slow,lento,/sloʊ/
+14 Cuerpo y salud,body,cuerpo,/ˈbɑːdi/
+14 Cuerpo y salud,head,cabeza,/hed/
+14 Cuerpo y salud,face,cara,/feɪs/
+14 Cuerpo y salud,eye,ojo,/aɪ/
+14 Cuerpo y salud,ear,oreja,/ɪr/
+14 Cuerpo y salud,nose,nariz,/noʊz/
+14 Cuerpo y salud,mouth,boca,/maʊθ/
+14 Cuerpo y salud,tooth,diente,/tuːθ/
+14 Cuerpo y salud,teeth,dientes,/tiːθ/
+14 Cuerpo y salud,neck,cuello,/nek/
+14 Cuerpo y salud,arm,brazo,/ɑːrm/
+14 Cuerpo y salud,hand,mano,/hænd/
+14 Cuerpo y salud,finger,dedo,/ˈfɪŋɡər/
+14 Cuerpo y salud,leg,pierna,/leɡ/
+14 Cuerpo y salud,foot,pie,/fʊt/
+14 Cuerpo y salud,feet,pies,/fiːt/
+14 Cuerpo y salud,back,espalda,/bæk/
+14 Cuerpo y salud,stomach,estómago,/ˈstʌmək/
+14 Cuerpo y salud,health,salud,/helθ/
+14 Cuerpo y salud,sick,enfermo,/sɪk/
+14 Cuerpo y salud,ill,enfermo,/ɪl/
+14 Cuerpo y salud,pain,dolor,/peɪn/
+14 Cuerpo y salud,medicine,medicina,/ˈmedɪsɪn/
+14 Cuerpo y salud,healthy,saludable,/ˈhelθi/
+14 Cuerpo y salud,tired,cansado,/ˈtaɪərd/
+14 Cuerpo y salud,well,bien,/wel/
+14 Cuerpo y salud,better,mejor,/ˈbetər/
+14 Cuerpo y salud,hurt,doler,/hɜːrt/
+14 Cuerpo y salud,cold,resfriado,/koʊld/
+14 Cuerpo y salud,fever,fiebre,/ˈfiːvər/
+14 Cuerpo y salud,appointment,cita,/əˈpɔɪntmənt/
+14 Cuerpo y salud,emergency,emergencia,/ɪˈmɜːrdʒənsi/
+15 Tiempo y clima,weather,clima,/ˈweðər/
+15 Tiempo y clima,sun,sol,/sʌn/
+15 Tiempo y clima,sunny,soleado,/ˈsʌni/
+15 Tiempo y clima,rain,lluvia,/reɪn/
+15 Tiempo y clima,rainy,lluvioso,/ˈreɪni/
+15 Tiempo y clima,cloud,nube,/klaʊd/
+15 Tiempo y clima,cloudy,nublado,/ˈklaʊdi/
+15 Tiempo y clima,wind,viento,/wɪnd/
+15 Tiempo y clima,windy,ventoso,/ˈwɪndi/
+15 Tiempo y clima,snow,nieve,/snoʊ/
+15 Tiempo y clima,hot,caluroso,/hɑːt/
+15 Tiempo y clima,warm,cálido,/wɔːrm/
+15 Tiempo y clima,cool,fresco,/kuːl/
+15 Tiempo y clima,cold,frío,/koʊld/
+15 Tiempo y clima,temperature,temperatura,/ˈtemprətʃər/
+15 Tiempo y clima,degree,grado,/dɪˈɡriː/
+15 Tiempo y clima,spring,primavera,/sprɪŋ/
+15 Tiempo y clima,summer,verano,/ˈsʌmər/
+15 Tiempo y clima,autumn,otoño,/ˈɔːtəm/
+15 Tiempo y clima,fall,otoño,/fɔːl/
+15 Tiempo y clima,winter,invierno,/ˈwɪntər/
+15 Tiempo y clima,season,estación,/ˈsiːzən/
+15 Tiempo y clima,sky,cielo,/skaɪ/
+15 Tiempo y clima,storm,tormenta,/stɔːrm/
+15 Tiempo y clima,umbrella,paraguas,/ʌmˈbrelə/
+15 Tiempo y clima,coat,abrigo,/koʊt/
+15 Tiempo y clima,outside,afuera,/ˌaʊtˈsaɪd/
+15 Tiempo y clima,forecast,pronóstico,/ˈfɔːrkæst/
+15 Tiempo y clima,dry,seco,/draɪ/
+15 Tiempo y clima,wet,mojado,/wet/
+15 Tiempo y clima,bright,brillante,/braɪt/
+15 Tiempo y clima,dark,oscuro,/dɑːrk/
+16 Ocio y pasatiempos,hobby,pasatiempo,/ˈhɑːbi/
+16 Ocio y pasatiempos,music,música,/ˈmjuːzɪk/
+16 Ocio y pasatiempos,song,canción,/sɔːŋ/
+16 Ocio y pasatiempos,movie,película,/ˈmuːvi/
+16 Ocio y pasatiempos,film,película,/fɪlm/
+16 Ocio y pasatiempos,game,juego,/ɡeɪm/
+16 Ocio y pasatiempos,sport,deporte,/spɔːrt/
+16 Ocio y pasatiempos,football,fútbol,/ˈfʊtbɔːl/
+16 Ocio y pasatiempos,soccer,fútbol,/ˈsɑːkər/
+16 Ocio y pasatiempos,tennis,tenis,/ˈtenɪs/
+16 Ocio y pasatiempos,swim,nadar,/swɪm/
+16 Ocio y pasatiempos,dance,bailar,/dæns/
+16 Ocio y pasatiempos,sing,cantar,/sɪŋ/
+16 Ocio y pasatiempos,draw,dibujar,/drɔː/
+16 Ocio y pasatiempos,paint,pintar,/peɪnt/
+16 Ocio y pasatiempos,photo,foto,/ˈfoʊtoʊ/
+16 Ocio y pasatiempos,picture,imagen,/ˈpɪktʃər/
+16 Ocio y pasatiempos,camera,cámara,/ˈkæmərə/
+16 Ocio y pasatiempos,party,fiesta,/ˈpɑːrti/
+16 Ocio y pasatiempos,fun,diversión,/fʌn/
+16 Ocio y pasatiempos,interesting,interesante,/ˈɪntrəstɪŋ/
+16 Ocio y pasatiempos,boring,aburrido,/ˈbɔːrɪŋ/
+16 Ocio y pasatiempos,favorite,favorito,/ˈfeɪvərɪt/
+16 Ocio y pasatiempos,enjoy,disfrutar,/ɪnˈdʒɔɪ/
+16 Ocio y pasatiempos,like,gustar,/laɪk/
+16 Ocio y pasatiempos,weekend,fin de semana,/ˌwiːkˈend/
+16 Ocio y pasatiempos,club,club,/klʌb/
+16 Ocio y pasatiempos,internet,internet,/ˈɪntərnet/
+16 Ocio y pasatiempos,video,video,/ˈvɪdioʊ/
+16 Ocio y pasatiempos,radio,radio,/ˈreɪdioʊ/
+16 Ocio y pasatiempos,guitar,guitarra,/ɡɪˈtɑːr/
+16 Ocio y pasatiempos,book,libro,/bʊk/
+17 Descripciones y adjetivos,good,bueno,/ɡʊd/
+17 Descripciones y adjetivos,bad,malo,/bæd/
+17 Descripciones y adjetivos,big,grande,/bɪɡ/
+17 Descripciones y adjetivos,little,pequeño,/ˈlɪtəl/
+17 Descripciones y adjetivos,tall,alto,/tɔːl/
+17 Descripciones y adjetivos,short,bajo; corto,/ʃɔːrt/
+17 Descripciones y adjetivos,happy,feliz,/ˈhæpi/
+17 Descripciones y adjetivos,sad,triste,/sæd/
+17 Descripciones y adjetivos,angry,enojado,/ˈæŋɡri/
+17 Descripciones y adjetivos,friendly,amigable,/ˈfrendli/
+17 Descripciones y adjetivos,kind,amable,/kaɪnd/
+17 Descripciones y adjetivos,funny,divertido,/ˈfʌni/
+17 Descripciones y adjetivos,beautiful,hermoso,/ˈbjuːtəfəl/
+17 Descripciones y adjetivos,nice,agradable,/naɪs/
+17 Descripciones y adjetivos,strong,fuerte,/strɔːŋ/
+17 Descripciones y adjetivos,weak,débil,/wiːk/
+17 Descripciones y adjetivos,rich,rico,/rɪtʃ/
+17 Descripciones y adjetivos,poor,pobre,/pʊr/
+17 Descripciones y adjetivos,full,lleno,/fʊl/
+17 Descripciones y adjetivos,empty,vacío,/ˈempti/
+17 Descripciones y adjetivos,same,mismo,/seɪm/
+17 Descripciones y adjetivos,different,diferente,/ˈdɪfrənt/
+17 Descripciones y adjetivos,ready,listo,/ˈredi/
+17 Descripciones y adjetivos,sure,seguro,/ʃʊr/
+17 Descripciones y adjetivos,right,correcto,/raɪt/
+17 Descripciones y adjetivos,wrong,incorrecto,/rɔːŋ/
+17 Descripciones y adjetivos,true,verdadero,/truː/
+17 Descripciones y adjetivos,young,joven,/jʌŋ/
+17 Descripciones y adjetivos,old,viejo,/oʊld/
+17 Descripciones y adjetivos,new,nuevo,/nuː/
+17 Descripciones y adjetivos,clean,limpio,/kliːn/
+17 Descripciones y adjetivos,quiet,tranquilo,/ˈkwaɪət/
+18 Verbos esenciales,be,ser; estar,/biː/
+18 Verbos esenciales,have,tener,/hæv/
+18 Verbos esenciales,can,poder,/kæn/
+18 Verbos esenciales,get,obtener,/ɡet/
+18 Verbos esenciales,give,dar,/ɡɪv/
+18 Verbos esenciales,take,tomar; llevar,/teɪk/
+18 Verbos esenciales,put,poner,/pʊt/
+18 Verbos esenciales,see,ver,/siː/
+18 Verbos esenciales,look,mirar,/lʊk/
+18 Verbos esenciales,hear,oír,/hɪr/
+18 Verbos esenciales,say,decir,/seɪ/
+18 Verbos esenciales,tell,decir; contar,/tel/
+18 Verbos esenciales,think,pensar,/θɪŋk/
+18 Verbos esenciales,find,encontrar,/faɪnd/
+18 Verbos esenciales,feel,sentir,/fiːl/
+18 Verbos esenciales,try,intentar,/traɪ/
+18 Verbos esenciales,keep,mantener,/kiːp/
+18 Verbos esenciales,bring,traer,/brɪŋ/
+18 Verbos esenciales,show,mostrar,/ʃoʊ/
+18 Verbos esenciales,sit,sentarse,/sɪt/
+18 Verbos esenciales,stand,estar de pie,/stænd/
+18 Verbos esenciales,wait,esperar,/weɪt/
+18 Verbos esenciales,begin,comenzar,/bɪˈɡɪn/
+18 Verbos esenciales,end,terminar,/end/
+18 Verbos esenciales,stop,parar,/stɑːp/
+18 Verbos esenciales,turn,girar,/tɜːrn/
+18 Verbos esenciales,meet,conocer; reunirse,/miːt/
+18 Verbos esenciales,remember,recordar,/rɪˈmembər/
+18 Verbos esenciales,forget,olvidar,/fərˈɡet/
+18 Verbos esenciales,choose,elegir,/tʃuːz/
+18 Verbos esenciales,open,abrir,/ˈoʊpən/
+18 Verbos esenciales,close,cerrar,/kloʊz/
+19 Tecnología y comunicación,mobile phone,teléfono móvil,/ˈmoʊbəl foʊn/
+19 Tecnología y comunicación,cell phone,celular,/ˈsel foʊn/
+19 Tecnología y comunicación,computer,computadora,/kəmˈpjuːtər/
+19 Tecnología y comunicación,screen,pantalla,/skriːn/
+19 Tecnología y comunicación,keyboard,teclado,/ˈkiːbɔːrd/
+19 Tecnología y comunicación,message,mensaje,/ˈmesɪdʒ/
+19 Tecnología y comunicación,text,mensaje de texto,/tekst/
+19 Tecnología y comunicación,email,correo electrónico,/ˈiːmeɪl/
+19 Tecnología y comunicación,internet,internet,/ˈɪntərnet/
+19 Tecnología y comunicación,website,sitio web,/ˈwebsaɪt/
+19 Tecnología y comunicación,online,en línea,/ˌɑːnˈlaɪn/
+19 Tecnología y comunicación,password,contraseña,/ˈpæswɜːrd/
+19 Tecnología y comunicación,photo,foto,/ˈfoʊtoʊ/
+19 Tecnología y comunicación,video,video,/ˈvɪdioʊ/
+19 Tecnología y comunicación,call,llamada,/kɔːl/
+19 Tecnología y comunicación,number,número,/ˈnʌmbər/
+19 Tecnología y comunicación,click,hacer clic,/klɪk/
+19 Tecnología y comunicación,type,escribir a máquina,/taɪp/
+19 Tecnología y comunicación,download,descargar,/ˌdaʊnˈloʊd/
+19 Tecnología y comunicación,send,enviar,/send/
+19 Tecnología y comunicación,receive,recibir,/rɪˈsiːv/
+19 Tecnología y comunicación,talk,hablar,/tɔːk/
+19 Tecnología y comunicación,chat,chatear,/tʃæt/
+19 Tecnología y comunicación,information,información,/ˌɪnfərˈmeɪʃən/
+19 Tecnología y comunicación,address,dirección,/əˈdres/
+19 Tecnología y comunicación,app,aplicación,/æp/
+19 Tecnología y comunicación,button,botón,/ˈbʌtən/
+19 Tecnología y comunicación,file,archivo,/faɪl/
+19 Tecnología y comunicación,save,guardar,/seɪv/
+19 Tecnología y comunicación,delete,eliminar,/dɪˈliːt/
+19 Tecnología y comunicación,search,buscar,/sɜːrtʃ/
+19 Tecnología y comunicación,link,enlace,/lɪŋk/
+20 Naturaleza y animales,animal,animal,/ˈænɪməl/
+20 Naturaleza y animales,bird,pájaro,/bɜːrd/
+20 Naturaleza y animales,horse,caballo,/hɔːrs/
+20 Naturaleza y animales,cow,vaca,/kaʊ/
+20 Naturaleza y animales,sheep,oveja,/ʃiːp/
+20 Naturaleza y animales,pig,cerdo,/pɪɡ/
+20 Naturaleza y animales,tree,árbol,/triː/
+20 Naturaleza y animales,flower,flor,/ˈflaʊər/
+20 Naturaleza y animales,grass,césped,/ɡræs/
+20 Naturaleza y animales,forest,bosque,/ˈfɔːrɪst/
+20 Naturaleza y animales,river,río,/ˈrɪvər/
+20 Naturaleza y animales,sea,mar,/siː/
+20 Naturaleza y animales,beach,playa,/biːtʃ/
+20 Naturaleza y animales,mountain,montaña,/ˈmaʊntən/
+20 Naturaleza y animales,lake,lago,/leɪk/
+20 Naturaleza y animales,world,mundo,/wɜːrld/
+20 Naturaleza y animales,earth,tierra,/ɜːrθ/
+20 Naturaleza y animales,country,campo; país,/ˈkʌntri/
+20 Naturaleza y animales,farm,granja,/fɑːrm/
+20 Naturaleza y animales,plant,planta,/plænt/
+20 Naturaleza y animales,green,verde,/ɡriːn/
+20 Naturaleza y animales,water,agua,/ˈwɔːtər/
+20 Naturaleza y animales,air,aire,/er/
+20 Naturaleza y animales,fire,fuego,/faɪər/
+20 Naturaleza y animales,land,tierra,/lænd/
+20 Naturaleza y animales,island,isla,/ˈaɪlənd/
+20 Naturaleza y animales,nature,naturaleza,/ˈneɪtʃər/
+20 Naturaleza y animales,wild,salvaje,/waɪld/
+20 Naturaleza y animales,fish,pez,/fɪʃ/
+20 Naturaleza y animales,insect,insecto,/ˈɪnsekt/
+20 Naturaleza y animales,sky,cielo,/skaɪ/
+20 Naturaleza y animales,moon,luna,/muːn/
+21 Preposiciones y posición,in,en; dentro de,/ɪn/
+21 Preposiciones y posición,on,en; sobre,/ɑːn/
+21 Preposiciones y posición,at,en,/æt/
+21 Preposiciones y posición,under,debajo de,/ˈʌndər/
+21 Preposiciones y posición,over,sobre,/ˈoʊvər/
+21 Preposiciones y posición,above,encima de,/əˈbʌv/
+21 Preposiciones y posición,below,debajo de,/bɪˈloʊ/
+21 Preposiciones y posición,behind,detrás de,/bɪˈhaɪnd/
+21 Preposiciones y posición,in front of,delante de,/ɪn frʌnt əv/
+21 Preposiciones y posición,next to,al lado de,/nekst tuː/
+21 Preposiciones y posición,between,entre,/bɪˈtwiːn/
+21 Preposiciones y posición,near,cerca de,/nɪr/
+21 Preposiciones y posición,with,con,/wɪð/
+21 Preposiciones y posición,without,sin,/wɪˈðaʊt/
+21 Preposiciones y posición,for,para,/fɔːr/
+21 Preposiciones y posición,to,a; hacia,/tuː/
+21 Preposiciones y posición,from,de; desde,/frəm/
+21 Preposiciones y posición,into,dentro de,/ˈɪntuː/
+21 Preposiciones y posición,out of,fuera de,/aʊt əv/
+21 Preposiciones y posición,around,alrededor de,/əˈraʊnd/
+21 Preposiciones y posición,across,a través de,/əˈkrɔːs/
+21 Preposiciones y posición,through,a través de,/θruː/
+21 Preposiciones y posición,up,arriba,/ʌp/
+21 Preposiciones y posición,down,abajo,/daʊn/
+21 Preposiciones y posición,before,antes de,/bɪˈfɔːr/
+21 Preposiciones y posición,after,después de,/ˈæftər/
+21 Preposiciones y posición,during,durante,/ˈdʊrɪŋ/
+21 Preposiciones y posición,inside,dentro,/ˌɪnˈsaɪd/
+21 Preposiciones y posición,outside,fuera,/ˌaʊtˈsaɪd/
+21 Preposiciones y posición,here,aquí,/hɪr/
+21 Preposiciones y posición,there,allí,/ðer/
+21 Preposiciones y posición,away,lejos,/əˈweɪ/
+22 Preguntas y palabras funcionales,who,quién,/huː/
+22 Preguntas y palabras funcionales,what,qué,/wʌt/
+22 Preguntas y palabras funcionales,where,dónde,/wer/
+22 Preguntas y palabras funcionales,when,cuándo,/wen/
+22 Preguntas y palabras funcionales,why,por qué,/waɪ/
+22 Preguntas y palabras funcionales,how,cómo,/haʊ/
+22 Preguntas y palabras funcionales,which,cuál,/wɪtʃ/
+22 Preguntas y palabras funcionales,whose,de quién,/huːz/
+22 Preguntas y palabras funcionales,this,esto; este,/ðɪs/
+22 Preguntas y palabras funcionales,that,eso; ese,/ðæt/
+22 Preguntas y palabras funcionales,these,estos,/ðiːz/
+22 Preguntas y palabras funcionales,those,esos,/ðoʊz/
+22 Preguntas y palabras funcionales,I,yo,/aɪ/
+22 Preguntas y palabras funcionales,you,tú; usted,/juː/
+22 Preguntas y palabras funcionales,he,él,/hiː/
+22 Preguntas y palabras funcionales,she,ella,/ʃiː/
+22 Preguntas y palabras funcionales,it,eso,/ɪt/
+22 Preguntas y palabras funcionales,we,nosotros,/wiː/
+22 Preguntas y palabras funcionales,they,ellos,/ðeɪ/
+22 Preguntas y palabras funcionales,my,mi,/maɪ/
+22 Preguntas y palabras funcionales,your,tu; su,/jʊr/
+22 Preguntas y palabras funcionales,his,su de él,/hɪz/
+22 Preguntas y palabras funcionales,her,su de ella,/hɜːr/
+22 Preguntas y palabras funcionales,our,nuestro,/ˈaʊər/
+22 Preguntas y palabras funcionales,their,su de ellos,/ðer/
+22 Preguntas y palabras funcionales,and,y,/ænd/
+22 Preguntas y palabras funcionales,but,pero,/bʌt/
+22 Preguntas y palabras funcionales,or,o,/ɔːr/
+22 Preguntas y palabras funcionales,because,porque,/bɪˈkɔːz/
+22 Preguntas y palabras funcionales,if,si,/ɪf/
+22 Preguntas y palabras funcionales,very,muy,/ˈveri/
+22 Preguntas y palabras funcionales,also,también,/ˈɔːlsoʊ/
+23 Restaurante y servicios,restaurant,restaurante,/ˈrestərɑːnt/
+23 Restaurante y servicios,table,mesa,/ˈteɪbəl/
+23 Restaurante y servicios,menu,menú,/ˈmenjuː/
+23 Restaurante y servicios,order,pedir,/ˈɔːrdər/
+23 Restaurante y servicios,bill,cuenta,/bɪl/
+23 Restaurante y servicios,check,cuenta,/tʃek/
+23 Restaurante y servicios,waiter,mesero,/ˈweɪtər/
+23 Restaurante y servicios,waitress,mesera,/ˈweɪtrəs/
+23 Restaurante y servicios,plate,plato,/pleɪt/
+23 Restaurante y servicios,cup,taza,/kʌp/
+23 Restaurante y servicios,glass,vaso,/ɡlæs/
+23 Restaurante y servicios,fork,tenedor,/fɔːrk/
+23 Restaurante y servicios,knife,cuchillo,/naɪf/
+23 Restaurante y servicios,spoon,cuchara,/spuːn/
+23 Restaurante y servicios,breakfast,desayuno,/ˈbrekfəst/
+23 Restaurante y servicios,lunch,almuerzo,/lʌntʃ/
+23 Restaurante y servicios,dinner,cena,/ˈdɪnər/
+23 Restaurante y servicios,meal,comida,/miːl/
+23 Restaurante y servicios,starter,entrada,/ˈstɑːrtər/
+23 Restaurante y servicios,main course,plato principal,/ˌmeɪn ˈkɔːrs/
+23 Restaurante y servicios,dessert,postre,/dɪˈzɜːrt/
+23 Restaurante y servicios,salt,sal,/sɔːlt/
+23 Restaurante y servicios,sugar,azúcar,/ˈʃʊɡər/
+23 Restaurante y servicios,pepper,pimienta,/ˈpepər/
+23 Restaurante y servicios,tip,propina,/tɪp/
+23 Restaurante y servicios,service,servicio,/ˈsɜːrvɪs/
+23 Restaurante y servicios,reservation,reserva,/ˌrezərˈveɪʃən/
+23 Restaurante y servicios,ready,listo,/ˈredi/
+23 Restaurante y servicios,more,más,/mɔːr/
+23 Restaurante y servicios,another,otro,/əˈnʌðər/
+23 Restaurante y servicios,please,por favor,/pliːz/
+23 Restaurante y servicios,thank you,gracias,/ˈθæŋk juː/
+24 Sentimientos y estados,happy,feliz,/ˈhæpi/
+24 Sentimientos y estados,sad,triste,/sæd/
+24 Sentimientos y estados,tired,cansado,/ˈtaɪərd/
+24 Sentimientos y estados,hungry,hambriento,/ˈhʌŋɡri/
+24 Sentimientos y estados,thirsty,sediento,/ˈθɜːrsti/
+24 Sentimientos y estados,afraid,asustado,/əˈfreɪd/
+24 Sentimientos y estados,scared,asustado,/skerd/
+24 Sentimientos y estados,angry,enojado,/ˈæŋɡri/
+24 Sentimientos y estados,worried,preocupado,/ˈwɜːrid/
+24 Sentimientos y estados,excited,emocionado,/ɪkˈsaɪtɪd/
+24 Sentimientos y estados,surprised,sorprendido,/sərˈpraɪzd/
+24 Sentimientos y estados,bored,aburrido,/bɔːrd/
+24 Sentimientos y estados,fine,bien,/faɪn/
+24 Sentimientos y estados,okay,bien,/oʊˈkeɪ/
+24 Sentimientos y estados,well,bien,/wel/
+24 Sentimientos y estados,sick,enfermo,/sɪk/
+24 Sentimientos y estados,busy,ocupado,/ˈbɪzi/
+24 Sentimientos y estados,free,libre,/friː/
+24 Sentimientos y estados,ready,listo,/ˈredi/
+24 Sentimientos y estados,sure,seguro,/ʃʊr/
+24 Sentimientos y estados,sorry,apenado; lo siento,/ˈsɑːri/
+24 Sentimientos y estados,glad,contento,/ɡlæd/
+24 Sentimientos y estados,feel,sentir,/fiːl/
+24 Sentimientos y estados,hope,esperar,/hoʊp/
+24 Sentimientos y estados,love,amar,/lʌv/
+24 Sentimientos y estados,like,gustar,/laɪk/
+24 Sentimientos y estados,hate,odiar,/heɪt/
+24 Sentimientos y estados,want,querer,/wɑːnt/
+24 Sentimientos y estados,need,necesitar,/niːd/
+24 Sentimientos y estados,good,bien; bueno,/ɡʊd/
+24 Sentimientos y estados,bad,mal; malo,/bæd/
+24 Sentimientos y estados,great,genial,/ɡreɪt/
+25 Inglés cotidiano,again,otra vez,/əˈɡen/
+25 Inglés cotidiano,maybe,quizás,/ˈmeɪbi/
+25 Inglés cotidiano,really,realmente,/ˈriːəli/
+25 Inglés cotidiano,only,solo,/ˈoʊnli/
+25 Inglés cotidiano,too,también; demasiado,/tuː/
+25 Inglés cotidiano,very,muy,/ˈveri/
+25 Inglés cotidiano,more,más,/mɔːr/
+25 Inglés cotidiano,less,menos,/les/
+25 Inglés cotidiano,all,todo,/ɔːl/
+25 Inglés cotidiano,every,cada,/ˈevri/
+25 Inglés cotidiano,each,cada,/iːtʃ/
+25 Inglés cotidiano,other,otro,/ˈʌðər/
+25 Inglés cotidiano,another,otro,/əˈnʌðər/
+25 Inglés cotidiano,something,algo,/ˈsʌmθɪŋ/
+25 Inglés cotidiano,nothing,nada,/ˈnʌθɪŋ/
+25 Inglés cotidiano,someone,alguien,/ˈsʌmwʌn/
+25 Inglés cotidiano,everyone,todos,/ˈevriwʌn/
+25 Inglés cotidiano,here,aquí,/hɪr/
+25 Inglés cotidiano,there,allí,/ðer/
+25 Inglés cotidiano,now,ahora,/naʊ/
+25 Inglés cotidiano,then,entonces,/ðen/
+25 Inglés cotidiano,soon,pronto,/suːn/
+25 Inglés cotidiano,already,ya,/ɔːlˈredi/
+25 Inglés cotidiano,still,todavía,/stɪl/
+25 Inglés cotidiano,about,sobre; aproximadamente,/əˈbaʊt/
+25 Inglés cotidiano,with,con,/wɪð/
+25 Inglés cotidiano,without,sin,/wɪˈðaʊt/
+25 Inglés cotidiano,together,juntos,/təˈɡeðər/
+25 Inglés cotidiano,again,de nuevo,/əˈɡen/
+25 Inglés cotidiano,of course,por supuesto,/əv ˈkɔːrs/
+25 Inglés cotidiano,excuse me,disculpe,/ɪkˈskjuːz miː/
+25 Inglés cotidiano,see you,nos vemos,/siː juː/

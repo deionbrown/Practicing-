@@ -1,5 +1,3 @@
-# German A1 Trainer
+# Inglés A1 para hispanohablantes
 
-Modern gamified Streamlit language-learning interface.
-
-Main file: `app.py`
+Aplicación Streamlit. Archivo principal: `app.py`.
