@@ -382,6 +382,106 @@ div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
   .vocab-main-ipa{font-size:1rem;}
 }
 
+
+/* ===== v5.3 focused single-card exercise ===== */
+.vocab-shell{
+  background:#101a2d;
+  border:1px solid #263754;
+  border-radius:24px;
+  padding:34px 34px 30px;
+  margin:8px 0 14px;
+  box-shadow:0 16px 40px rgba(0,0,0,.16);
+}
+.vocab-shell-top{
+  text-align:center;
+}
+.vocab-shell .vocab-topic-pill{
+  display:inline-flex;
+}
+.vocab-shell .vocab-card-counter{
+  margin-top:12px;
+}
+.vocab-shell .vocab-main-word{
+  margin-top:28px;
+}
+.vocab-shell .vocab-main-ipa{
+  margin-top:10px;
+}
+.vocab-shell .vocab-prompt{
+  margin-top:22px;
+  margin-bottom:10px;
+}
+.audio-direct-wrap{
+  display:flex;
+  justify-content:center;
+  margin:14px 0 4px;
+}
+.audio-direct-note{
+  color:#9fb0c7;
+  font-size:.76rem;
+  text-align:center;
+  margin-top:3px;
+}
+
+/* Full-width buttons */
+div[data-testid="stButton"]{
+  max-width:885px;
+  margin-left:auto;
+  margin-right:auto;
+}
+div[data-testid="stButton"] > button{
+  width:100%!important;
+  min-height:54px!important;
+  border-radius:15px!important;
+  font-size:1rem!important;
+  font-weight:950!important;
+}
+div[data-testid="stButton"] > button[kind="primary"],
+div[data-testid="stFormSubmitButton"] > button{
+  width:100%!important;
+}
+
+/* Continue button: purple and wide */
+button[kind="primary"]{
+  background:linear-gradient(90deg,#6d5dfb,#8b5cf6)!important;
+  border:none!important;
+}
+button[kind="primary"]:hover{
+  background:linear-gradient(90deg,#755fff,#9567ff)!important;
+}
+
+/* Keep the check-answer button green inside form */
+div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button{
+  background:#48d400!important;
+  color:#fff!important;
+}
+div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
+  background:#53df09!important;
+}
+
+/* Remove wasted vertical height from old card styling */
+.vocab-study-card{
+  min-height:0!important;
+  padding:0!important;
+  margin:0!important;
+  border:none!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+
+/* Hide native audio UI when we autoplay after button press */
+.autoplay-audio{
+  height:0;
+  overflow:hidden;
+}
+
+@media(max-width:760px){
+  .vocab-shell{
+    padding:26px 15px 22px;
+    border-radius:20px;
+  }
+}
+
 </style>
 """,unsafe_allow_html=True)
 
@@ -461,6 +561,22 @@ def audio_bytes(text):
 def audio(text):
     try: st.audio(audio_bytes(text),format="audio/mp3")
     except Exception: st.caption("Internet is needed the first time this audio is generated.")
+
+
+def direct_audio_button(text, key):
+    if st.button("🔊 Listen", key=key):
+        try:
+            data=audio_bytes(text)
+            encoded=base64.b64encode(data).decode("ascii")
+            st.markdown(
+                f'<div class="autoplay-audio">'
+                f'<audio autoplay>'
+                f'<source src="data:audio/mp3;base64,{encoded}" type="audio/mp3">'
+                f'</audio></div>',
+                unsafe_allow_html=True
+            )
+        except Exception:
+            st.warning("Internet is needed the first time this audio is generated.")
 
 def read_progress():
     d=supabase.table("reading_progress").select("reading_id,completed").eq("user_id",uid()).execute().data or []
@@ -633,7 +749,7 @@ with vocab:
             )
 
             st.markdown(
-                f'<div class="vocab-study-card">'
+                f'<div class="vocab-shell"><div class="vocab-shell-top">'
                 f'<div class="vocab-topic-pill">▣&nbsp; {c["topic"]}</div>'
                 f'<div class="vocab-card-counter">Card {i+1} of {len(session)}</div>'
                 f'<div class="vocab-main-word">{front}</div>'
@@ -643,8 +759,7 @@ with vocab:
                 unsafe_allow_html=True
             )
 
-            with st.expander("🔊 Listen"):
-                audio(c["german"])
+            direct_audio_button(c["german"], key=f"listen_{i}_{c['id']}")
 
             if st.session_state.fb is None:
                 with st.form("answer"):
@@ -694,6 +809,8 @@ with vocab:
                     st.session_state.idx+=1
                     st.session_state.fb=None
                     st.rerun()
+
+            st.markdown("</div>", unsafe_allow_html=True)
 
 with progress:
     st.markdown('<div class="hero"><div class="small-label">Progress</div><h1>Your learning dashboard</h1><p>Vocabulary, readings, reviews and accuracy in one place.</p></div>',unsafe_allow_html=True)
