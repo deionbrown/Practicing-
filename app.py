@@ -3,6 +3,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import streamlit as st
+import streamlit.components.v1 as components
 from supabase import create_client
 import edge_tts
 
@@ -642,16 +643,6 @@ div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
   border:1px solid rgba(239,68,68,.34);
 }
 
-/* Hidden autoplay player */
-.repeat-audio-player{
-  height:0 !important;
-  width:0 !important;
-  overflow:hidden !important;
-  position:absolute !important;
-  opacity:0 !important;
-  pointer-events:none !important;
-}
-
 @media(max-width:760px){
   .st-key-vocab_card{
     padding:25px 15px 22px !important;
@@ -751,29 +742,63 @@ def audio(text):
 
 
 def direct_audio_button(text, key):
-    counter_key=f"audio_counter_{key}"
-    if counter_key not in st.session_state:
-        st.session_state[counter_key]=0
+    try:
+        data=audio_bytes(text)
+        encoded=base64.b64encode(data).decode("ascii")
 
-    if st.button("🔊 Listen", key="listen_btn"):
-        st.session_state[counter_key]+=1
-        try:
-            data=audio_bytes(text)
-            encoded=base64.b64encode(data).decode("ascii")
-            nonce=st.session_state[counter_key]
+        # Client-side button: no Streamlit rerun.
+        # Every click rewinds the same audio to 0 and plays it again.
+        html=f"""
+        <div style="
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            padding:4px 0 2px 0;
+        ">
+          <audio id="word_audio_{key}" preload="auto">
+            <source src="data:audio/mp3;base64,{encoded}" type="audio/mpeg">
+          </audio>
 
-            # A unique element is generated every click so the browser
-            # treats it as a new playback request and replays the word.
-            st.markdown(
-                f'<div class="repeat-audio-player">'
-                f'<audio id="audio_{nonce}" autoplay preload="auto">'
-                f'<source src="data:audio/mp3;base64,{encoded}" type="audio/mp3">'
-                f'</audio>'
-                f'</div>',
-                unsafe_allow_html=True
-            )
-        except Exception:
-            st.warning("Internet is needed the first time this audio is generated.")
+          <button
+            id="word_audio_btn_{key}"
+            onclick="
+              const a=document.getElementById('word_audio_{key}');
+              a.pause();
+              a.currentTime=0;
+              const p=a.play();
+              if (p !== undefined) {{
+                p.catch(() => {{}});
+              }}
+            "
+            style="
+              min-width:150px;
+              height:48px;
+              border-radius:14px;
+              border:1px solid #395174;
+              background:#16233a;
+              color:#f8fafc;
+              font-size:14px;
+              font-weight:800;
+              cursor:pointer;
+              font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+            "
+            onmouseover="this.style.background='#1b2b47';this.style.borderColor='#5572a0';"
+            onmouseout="this.style.background='#16233a';this.style.borderColor='#395174';"
+          >
+            🔊 Listen
+          </button>
+        </div>
+        """
+
+        components.html(
+            html,
+            height=58,
+            scrolling=False
+        )
+
+    except Exception:
+        st.warning("Internet is needed the first time this audio is generated.")
 
 
 def read_progress():
