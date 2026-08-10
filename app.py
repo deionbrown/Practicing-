@@ -1,4 +1,4 @@
-import asyncio, csv, json, random, re
+import asyncio, csv, json, random, re, base64
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -8,6 +8,12 @@ import edge_tts
 
 st.set_page_config(page_title="German A1 Complete",page_icon="🇩🇪",layout="wide",initial_sidebar_state="collapsed")
 BASE=Path(__file__).resolve().parent
+
+def image_data_uri(path):
+    data=Path(path).read_bytes()
+    return "data:image/png;base64,"+base64.b64encode(data).decode("ascii")
+
+ADLER_URI=image_data_uri(BASE/"adler_mascot.png")
 READINGS=json.loads((BASE/"readings.json").read_text(encoding="utf-8"))
 SUPPLEMENT=json.loads((BASE/"course_vocab_supplement.json").read_text(encoding="utf-8"))
 VOICE="de-DE-KatjaNeural"
@@ -43,12 +49,16 @@ st.markdown("""
 
 .block-container{
   max-width:1120px;
-  padding-top:1rem;
+  padding-top:4.8rem !important;
   padding-bottom:6rem;
 }
 
 #MainMenu, footer{visibility:hidden;}
-header[data-testid="stHeader"]{background:rgba(11,18,32,.76);backdrop-filter:blur(12px);}
+header[data-testid="stHeader"]{
+  background:rgba(11,18,32,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(38,55,84,.55);
+}
 
 .premium-brand{
   display:flex;
@@ -56,7 +66,7 @@ header[data-testid="stHeader"]{background:rgba(11,18,32,.76);backdrop-filter:blu
   justify-content:space-between;
   gap:16px;
   padding:14px 18px;
-  margin-bottom:14px;
+  margin:0 0 16px;
   background:rgba(18,28,47,.92);
   border:1px solid var(--border);
   border-radius:22px;
@@ -64,11 +74,20 @@ header[data-testid="stHeader"]{background:rgba(11,18,32,.76);backdrop-filter:blu
 }
 .brand-left{display:flex;align-items:center;gap:13px;}
 .brand-logo{
-  width:50px;height:50px;border-radius:15px;
-  background:linear-gradient(145deg,var(--accent),#5b3df5);
-  display:flex;align-items:center;justify-content:center;
-  font-weight:900;font-size:18px;color:white;
-  box-shadow:0 10px 25px rgba(124,92,255,.30);
+  width:58px;
+  height:58px;
+  border-radius:18px;
+  overflow:hidden;
+  flex:0 0 58px;
+  background:#15223a;
+  border:2px solid rgba(124,92,255,.55);
+  box-shadow:0 12px 28px rgba(124,92,255,.22);
+}
+.brand-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
 }
 .brand-title{font-size:1.25rem;font-weight:900;line-height:1.05;}
 .brand-sub{color:var(--muted);font-size:.78rem;margin-top:3px;}
@@ -263,9 +282,9 @@ div[data-testid="stExpander"]{
 }
 
 @media(max-width:760px){
-  .block-container{padding:.6rem .7rem 5.8rem;}
-  .premium-brand{padding:12px 13px;border-radius:18px;}
-  .brand-logo{width:43px;height:43px;border-radius:13px;}
+  .block-container{padding:4.2rem .7rem 5.8rem !important;}
+  .premium-brand{padding:11px 12px;border-radius:18px;}
+  .brand-logo{width:49px;height:49px;flex-basis:49px;border-radius:15px;}
   .brand-title{font-size:1.08rem;}
   .user-chip{display:none;}
   .hero{padding:18px;border-radius:20px;}
@@ -414,7 +433,7 @@ def apply_result(card,ok):
     x["due"]=nxt.isoformat();save_srs(x);save_stats(stats);return nxt
 
 if not current_user():
-    st.markdown('''<div class="premium-brand"><div class="brand-left"><div class="brand-logo">DE</div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Mobile · synced progress · natural audio</div></div></div></div>''',unsafe_allow_html=True)
+    st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo"><img src="{ADLER_URI}" alt="Adler mascot"></div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Learn with Adler · synced progress · natural audio</div></div></div></div>''',unsafe_allow_html=True)
     a,b=st.tabs(["Sign in","Create account"])
     with a:
         with st.form("login"):
@@ -435,7 +454,7 @@ if not current_user():
     st.stop()
 
 u=current_user()
-st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo">DE</div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">A1 course · SRS · natural audio</div></div></div><div class="user-chip">{u.email}</div></div>''',unsafe_allow_html=True)
+st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo"><img src="{ADLER_URI}" alt="Adler mascot"></div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Learn with Adler · A1 course · SRS · natural audio</div></div></div><div class="user-chip">{u.email}</div></div>''',unsafe_allow_html=True)
 home,course,vocab,progress,account=st.tabs(["Home","Course","Vocabulary","Progress","Account"])
 
 with home:
