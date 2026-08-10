@@ -958,7 +958,7 @@ if not current_user():
                     st.session_state.auth_session=response.session
 
                     # Clear stale login messages/state before rerunning.
-                    for key in ["srs_cache","stats_cache","session","idx","direction","fb"]:
+                    for key in ["srs_cache","stats_cache","session","idx","direction","vocab_level","fb"]:
                         st.session_state.pop(key, None)
 
                     st.rerun()
@@ -1077,18 +1077,20 @@ with vocab:
             st.session_state.session=(due_cards+new+future)[:amount]
             st.session_state.idx=0
             st.session_state.direction=direction
+            st.session_state.vocab_level=level
             st.session_state.fb=None
             st.rerun()
 
     else:
         session=st.session_state.session
         i=st.session_state.idx
+        level=st.session_state.get("vocab_level","A1")
 
         if i>=len(session):
             st.success("Session complete. Progress saved online.")
 
             if st.button("New session"):
-                for k in ["session","idx","direction","fb"]:
+                for k in ["session","idx","direction","vocab_level","fb"]:
                     st.session_state.pop(k,None)
                 st.rerun()
 
@@ -1111,14 +1113,13 @@ with vocab:
 
             # Overall vocabulary progress
             full_srs=st.session_state.setdefault("srs_cache",load_srs())
-            try:
-                total_vocab=len(vocab_rows(level))
-            except Exception:
-                total_vocab=800 if level=='A1' else 1200
+            total_vocab=len(vocab_rows(level))
 
+            level_prefix=f"{level}:"
             studied_total=sum(
-                1 for row in full_srs.values()
-                if int(row.get("reviews",0) or 0)>0
+                1 for word_id,row in full_srs.items()
+                if str(word_id).startswith(level_prefix)
+                and int(row.get("reviews",0) or 0)>0
             )
             overall_pct=min(
                 100,
