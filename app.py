@@ -543,5 +543,3 @@ with account:
         try:supabase.auth.sign_out()
         except:pass
         st.session_state.clear();st.rerun()
-
-
