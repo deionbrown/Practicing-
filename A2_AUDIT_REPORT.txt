@@ -1,0 +1,16 @@
+A2 VOCABULARY AUDIT — v6.1
+
+PASSED
+• 1,200 A2 study entries
+• 25 topics × 48 entries
+• 0 exact duplicates inside A2
+• 0 exact overlaps with the A1 800-entry vocabulary
+• v6.0 artificial numbered/filler entries removed
+• lexical cores and contextual expressions normalized
+• noun articles, reflexive forms and English glosses reviewed structurally
+
+IPA LIMITATION
+Every entry contains a broad automatic IPA field. This is not a dictionary-grade
+phonemic transcription. Microsoft/Edge natural TTS remains the pronunciation
+source used by the software. A truly exact IPA audit requires a German
+pronunciation lexicon.
