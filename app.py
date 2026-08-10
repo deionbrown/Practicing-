@@ -482,6 +482,193 @@ div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
   }
 }
 
+
+/* ===== v5.5 integrated vocabulary card ===== */
+.st-key-vocab_card{
+  background:#101a2d !important;
+  border:1px solid #263754 !important;
+  border-radius:24px !important;
+  padding:34px 34px 30px !important;
+  margin-top:8px !important;
+  margin-bottom:14px !important;
+  box-shadow:0 16px 40px rgba(0,0,0,.16);
+}
+
+.st-key-vocab_card .vocab-card-head{
+  text-align:center;
+}
+.st-key-vocab_card .vocab-topic-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:#18371f;
+  color:#7ef443;
+  border-radius:999px;
+  padding:7px 16px;
+  font-size:.78rem;
+  font-weight:950;
+}
+.st-key-vocab_card .vocab-card-counter{
+  color:#9bb2d8;
+  font-size:.8rem;
+  font-weight:800;
+  margin-top:12px;
+}
+.st-key-vocab_card .vocab-main-word{
+  color:#f8fafc;
+  font-size:3rem;
+  line-height:1.08;
+  font-weight:500;
+  letter-spacing:-.025em;
+  margin-top:28px;
+}
+.st-key-vocab_card .vocab-main-ipa{
+  color:#a8b9dc;
+  font-size:1.1rem;
+  line-height:1.2;
+  margin-top:10px;
+}
+.st-key-vocab_card .vocab-prompt{
+  color:#a9bbdf;
+  font-size:.82rem;
+  font-weight:850;
+  text-align:center;
+  margin:16px 0 7px;
+}
+
+/* Direct Listen button — compact, centered, repeatable */
+.st-key-vocab_card .st-key-listen_btn{
+  max-width:180px;
+  margin:14px auto 8px;
+}
+.st-key-vocab_card .st-key-listen_btn button{
+  width:100% !important;
+  min-height:48px !important;
+  border-radius:14px !important;
+  background:#16233a !important;
+  border:1px solid #395174 !important;
+  color:#f8fafc !important;
+  font-weight:900 !important;
+  box-shadow:none !important;
+}
+.st-key-vocab_card .st-key-listen_btn button:hover{
+  background:#1b2b47 !important;
+  border-color:#5572a0 !important;
+  transform:none !important;
+}
+
+/* Input immediately after prompt */
+.st-key-vocab_card div[data-testid="stForm"]{
+  max-width:none !important;
+  width:100% !important;
+  margin:0 !important;
+}
+.st-key-vocab_card div[data-testid="stTextInput"]{
+  width:100% !important;
+  margin:0 !important;
+}
+.st-key-vocab_card div[data-testid="stTextInput"] input{
+  width:100% !important;
+  min-height:54px !important;
+  border-radius:15px !important;
+  background:#15213a !important;
+  border:1px solid #314462 !important;
+  color:#f8fafc !important;
+  font-size:1rem !important;
+  font-weight:700 !important;
+  padding-left:16px !important;
+}
+.st-key-vocab_card div[data-testid="stTextInput"] input::placeholder{
+  color:#9eb1d2 !important;
+}
+
+/* Full horizontal green Check button */
+.st-key-vocab_card div[data-testid="stFormSubmitButton"]{
+  width:100% !important;
+}
+.st-key-vocab_card div[data-testid="stFormSubmitButton"] button{
+  width:100% !important;
+  min-height:54px !important;
+  margin-top:10px !important;
+  border-radius:15px !important;
+  border:none !important;
+  background:#48d400 !important;
+  color:#fff !important;
+  font-size:1rem !important;
+  font-weight:950 !important;
+  box-shadow:none !important;
+}
+.st-key-vocab_card div[data-testid="stFormSubmitButton"] button:hover{
+  background:#55df0c !important;
+  transform:none !important;
+}
+
+/* Full horizontal Continue button */
+.st-key-vocab_card .st-key-continue_btn{
+  width:100% !important;
+  margin-top:12px !important;
+}
+.st-key-vocab_card .st-key-continue_btn button{
+  width:100% !important;
+  min-height:54px !important;
+  border-radius:15px !important;
+  border:none !important;
+  background:linear-gradient(90deg,#6d5dfb,#8b5cf6) !important;
+  color:white !important;
+  font-size:1rem !important;
+  font-weight:950 !important;
+  box-shadow:none !important;
+}
+.st-key-vocab_card .st-key-continue_btn button:hover{
+  background:linear-gradient(90deg,#755fff,#9567ff) !important;
+  transform:none !important;
+}
+
+/* Results remain inside same card */
+.st-key-vocab_card .vocab-result-good,
+.st-key-vocab_card .vocab-result-bad{
+  width:100%;
+  margin:12px 0 0;
+  text-align:left;
+  border-radius:16px;
+  padding:15px 18px;
+}
+.st-key-vocab_card .vocab-result-good{
+  background:rgba(34,197,94,.14);
+  border:1px solid rgba(34,197,94,.36);
+}
+.st-key-vocab_card .vocab-result-bad{
+  background:rgba(239,68,68,.13);
+  border:1px solid rgba(239,68,68,.34);
+}
+
+/* Hidden autoplay player */
+.repeat-audio-player{
+  height:0 !important;
+  width:0 !important;
+  overflow:hidden !important;
+  position:absolute !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+}
+
+@media(max-width:760px){
+  .st-key-vocab_card{
+    padding:25px 15px 22px !important;
+    border-radius:20px !important;
+  }
+  .st-key-vocab_card .vocab-main-word{
+    font-size:2.35rem;
+    margin-top:24px;
+  }
+  .st-key-vocab_card .vocab-main-ipa{
+    font-size:1rem;
+  }
+  .st-key-vocab_card .st-key-listen_btn{
+    max-width:160px;
+  }
+}
+
 </style>
 """,unsafe_allow_html=True)
 
@@ -564,19 +751,30 @@ def audio(text):
 
 
 def direct_audio_button(text, key):
-    if st.button("🔊 Listen", key=key):
+    counter_key=f"audio_counter_{key}"
+    if counter_key not in st.session_state:
+        st.session_state[counter_key]=0
+
+    if st.button("🔊 Listen", key="listen_btn"):
+        st.session_state[counter_key]+=1
         try:
             data=audio_bytes(text)
             encoded=base64.b64encode(data).decode("ascii")
+            nonce=st.session_state[counter_key]
+
+            # A unique element is generated every click so the browser
+            # treats it as a new playback request and replays the word.
             st.markdown(
-                f'<div class="autoplay-audio">'
-                f'<audio autoplay>'
+                f'<div class="repeat-audio-player">'
+                f'<audio id="audio_{nonce}" autoplay preload="auto">'
                 f'<source src="data:audio/mp3;base64,{encoded}" type="audio/mp3">'
-                f'</audio></div>',
+                f'</audio>'
+                f'</div>',
                 unsafe_allow_html=True
             )
         except Exception:
             st.warning("Internet is needed the first time this audio is generated.")
+
 
 def read_progress():
     d=supabase.table("reading_progress").select("reading_id,completed").eq("user_id",uid()).execute().data or []
@@ -643,17 +841,51 @@ if not current_user():
             email=st.text_input("Email");password=st.text_input("Password",type="password");go=st.form_submit_button("Sign in",type="primary")
         if go:
             try:
-                r=supabase.auth.sign_in_with_password({"email":email,"password":password});st.session_state.user=r.user;st.rerun()
-            except:st.error("Could not sign in.")
+                response=supabase.auth.sign_in_with_password({
+                    "email":email.strip(),
+                    "password":password
+                })
+
+                if response.user is not None and response.session is not None:
+                    st.session_state.user=response.user
+                    st.session_state.auth_session=response.session
+
+                    # Clear stale login messages/state before rerunning.
+                    for key in ["srs_cache","stats_cache","session","idx","direction","fb"]:
+                        st.session_state.pop(key, None)
+
+                    st.rerun()
+                else:
+                    st.error("Could not sign in. Please check your email and password.")
+            except Exception as exc:
+                message=str(exc).lower()
+                if "email not confirmed" in message:
+                    st.error("Your email has not been confirmed yet.")
+                elif "invalid login credentials" in message:
+                    st.error("Incorrect email or password.")
+                else:
+                    st.error("Could not sign in. Please try again.")
     with b:
         with st.form("signup"):
             e=st.text_input("Email",key="se");p=st.text_input("Password",type="password",key="sp");go2=st.form_submit_button("Create account")
         if go2:
             try:
-                r=supabase.auth.sign_up({"email":e,"password":p})
-                if r.session:st.session_state.user=r.user;st.rerun()
-                else:st.success("Account created. Check your email to confirm it, then sign in.")
-            except:st.error("Could not create account.")
+                r=supabase.auth.sign_up({
+                    "email":e.strip(),
+                    "password":p
+                })
+                if r.session is not None and r.user is not None:
+                    st.session_state.user=r.user
+                    st.session_state.auth_session=r.session
+                    st.rerun()
+                else:
+                    st.success("Account created. Check your email to confirm it, then sign in.")
+            except Exception as exc:
+                message=str(exc).lower()
+                if "already registered" in message or "user already registered" in message:
+                    st.warning("This email already has an account. Use Sign in.")
+                else:
+                    st.error("Could not create account.")
     st.stop()
 
 u=current_user()
@@ -687,130 +919,200 @@ with course:
 
 with vocab:
     if "session" not in st.session_state:
-        st.markdown('<div class="hero"><div class="small-label">Practice</div><h1>Vocabulary Trainer</h1><p>Type every answer. Your SRS schedules the next review automatically.</p></div>',unsafe_allow_html=True)
-        t=st.selectbox("Topic",["All topics"]+sorted({r["topic"] for r in READINGS}),key="vt")
-        direction=st.radio("Direction",["German → English","English → German"],horizontal=True)
-        amount=st.select_slider("Number of words",options=[5,10,20,30,50],value=10)
-        pool=vocab_pool(t);due_cards=[];new=[];future=[]
+        st.markdown(
+            '<div class="hero"><div class="small-label">Practice</div>'
+            '<h1>Vocabulary Trainer</h1>'
+            '<p>Type every answer. Your SRS schedules the next review automatically.</p></div>',
+            unsafe_allow_html=True
+        )
+
+        t=st.selectbox(
+            "Topic",
+            ["All topics"]+sorted({r["topic"] for r in READINGS}),
+            key="vt"
+        )
+        direction=st.radio(
+            "Direction",
+            ["German → English","English → German"],
+            horizontal=True
+        )
+        amount=st.select_slider(
+            "Number of words",
+            options=[5,10,20,30,50],
+            value=10
+        )
+
+        pool=vocab_pool(t)
+        due_cards=[];new=[];future=[]
+
         for c in pool:
             x=srs(c["id"])
-            if int(x.get("reviews",0))==0:new.append(c)
-            elif due(c["id"]):due_cards.append(c)
-            else:future.append(c)
-        random.shuffle(due_cards);random.shuffle(new);future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
+            if int(x.get("reviews",0))==0:
+                new.append(c)
+            elif due(c["id"]):
+                due_cards.append(c)
+            else:
+                future.append(c)
+
+        random.shuffle(due_cards)
+        random.shuffle(new)
+        future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
+
         st.caption(f"{len(pool)} words · {len(due_cards)} due · {len(new)} new")
+
         if st.button("Start practice →",type="primary"):
             st.session_state.session=(due_cards+new+future)[:amount]
             st.session_state.idx=0
             st.session_state.direction=direction
             st.session_state.fb=None
             st.rerun()
+
     else:
         session=st.session_state.session
         i=st.session_state.idx
 
         if i>=len(session):
             st.success("Session complete. Progress saved online.")
+
             if st.button("New session"):
                 for k in ["session","idx","direction","fb"]:
                     st.session_state.pop(k,None)
                 st.rerun()
+
         else:
             c=session[i]
             direction=st.session_state.direction
 
             if direction=="German → English":
-                front=c["german"];sub=c["ipa"];expected=c["english"]
-                prompt="Type the English meaning";ans=c["english"]
+                front=c["german"]
+                sub=c["ipa"]
+                expected=c["english"]
+                prompt="Type the English meaning"
+                ans=c["english"]
             else:
-                front=c["english"];sub="";expected=c["german"]
-                prompt="Type the German word";ans=f'{c["german"]} · {c["ipa"]}'
+                front=c["english"]
+                sub=""
+                expected=c["german"]
+                prompt="Type the German word"
+                ans=f'{c["german"]} · {c["ipa"]}'
 
-            # Overall progress across the full vocabulary database
+            # Overall vocabulary progress
             full_srs=st.session_state.setdefault("srs_cache",load_srs())
             try:
                 total_vocab=len(vocab_rows())
             except Exception:
                 total_vocab=800
+
             studied_total=sum(
                 1 for row in full_srs.values()
                 if int(row.get("reviews",0) or 0)>0
             )
-            overall_pct=min(100,max(0,(studied_total/total_vocab*100) if total_vocab else 0))
+            overall_pct=min(
+                100,
+                max(0,(studied_total/total_vocab*100) if total_vocab else 0)
+            )
 
             st.markdown(
                 f'<div class="vocab-overall">'
-                f'<div class="vocab-overall-row"><span>Overall progress</span>'
-                f'<span class="vocab-overall-value">{studied_total} / {total_vocab} words</span></div>'
+                f'<div class="vocab-overall-row">'
+                f'<span>Overall progress</span>'
+                f'<span class="vocab-overall-value">{studied_total} / {total_vocab} words</span>'
+                f'</div>'
                 f'<div class="vocab-overall-track">'
                 f'<div class="vocab-overall-fill" style="width:{overall_pct:.1f}%"></div>'
                 f'</div></div>',
                 unsafe_allow_html=True
             )
 
-            st.markdown(
-                f'<div class="vocab-shell"><div class="vocab-shell-top">'
-                f'<div class="vocab-topic-pill">▣&nbsp; {c["topic"]}</div>'
-                f'<div class="vocab-card-counter">Card {i+1} of {len(session)}</div>'
-                f'<div class="vocab-main-word">{front}</div>'
-                f'<div class="vocab-main-ipa">{sub}</div>'
-                f'<div class="vocab-prompt">{prompt}</div>'
-                f'</div>',
-                unsafe_allow_html=True
-            )
+            # TRUE integrated card: native Streamlit container holds all widgets.
+            with st.container(border=True, key="vocab_card"):
+                st.markdown(
+                    f'<div class="vocab-card-head">'
+                    f'<div class="vocab-topic-pill">▣&nbsp; {c["topic"]}</div>'
+                    f'<div class="vocab-card-counter">Card {i+1} of {len(session)}</div>'
+                    f'<div class="vocab-main-word">{front}</div>'
+                    f'<div class="vocab-main-ipa">{sub}</div>'
+                    f'</div>',
+                    unsafe_allow_html=True
+                )
 
-            direct_audio_button(c["german"], key=f"listen_{i}_{c['id']}")
+                # One-click direct audio, repeatable as many times as wanted.
+                direct_audio_button(
+                    c["german"],
+                    key=f"{i}_{c['id']}"
+                )
 
-            if st.session_state.fb is None:
-                with st.form("answer"):
-                    a=st.text_input(
-                        prompt,
-                        placeholder="Type your answer here...",
-                        label_visibility="collapsed"
-                    )
-                    check=st.form_submit_button("Check answer",type="primary")
+                st.markdown(
+                    f'<div class="vocab-prompt">{prompt}</div>',
+                    unsafe_allow_html=True
+                )
 
-                if check:
-                    if not a.strip():
-                        st.warning("Write an answer first.")
-                    else:
-                        ok=matches(a,expected)
-                        nxt=apply_result(c,ok)
-                        st.session_state.fb={
-                            "ok":ok,
-                            "user":a,
-                            "answer":ans,
-                            "due":nxt.isoformat()
-                        }
-                        st.rerun()
-            else:
-                f=st.session_state.fb
-                review_text=due_text(datetime.fromisoformat(f["due"]))
+                if st.session_state.fb is None:
+                    with st.form("answer"):
+                        a=st.text_input(
+                            prompt,
+                            placeholder="Type your answer here...",
+                            label_visibility="collapsed"
+                        )
+                        check=st.form_submit_button(
+                            "Check answer",
+                            type="primary"
+                        )
 
-                if f["ok"]:
-                    st.markdown(
-                        f'<div class="vocab-result-good">'
-                        f'<div class="vocab-result-title" style="color:#65e88a">✓ Correct</div>'
-                        f'<div class="vocab-result-meta">Correct answer: <b>{f["answer"]}</b><br>'
-                        f'Next review: <b>{review_text}</b></div></div>',
-                        unsafe_allow_html=True
-                    )
+                    if check:
+                        if not a.strip():
+                            st.warning("Write an answer first.")
+                        else:
+                            ok=matches(a,expected)
+                            nxt=apply_result(c,ok)
+
+                            st.session_state.fb={
+                                "ok":ok,
+                                "user":a,
+                                "answer":ans,
+                                "due":nxt.isoformat()
+                            }
+                            st.rerun()
+
                 else:
-                    st.markdown(
-                        f'<div class="vocab-result-bad">'
-                        f'<div class="vocab-result-title" style="color:#ff8e8e">Review this one</div>'
-                        f'<div class="vocab-result-meta">Your answer: <b>{f["user"]}</b><br>'
-                        f'Correct answer: <b>{f["answer"]}</b><br>'
-                        f'Next review: <b>{review_text}</b></div></div>',
-                        unsafe_allow_html=True
+                    f=st.session_state.fb
+                    review_text=due_text(
+                        datetime.fromisoformat(f["due"])
                     )
 
-                if st.button("Continue →",type="primary"):
-                    st.session_state.idx+=1
-                    st.session_state.fb=None
-                    st.rerun()
+                    if f["ok"]:
+                        st.markdown(
+                            f'<div class="vocab-result-good">'
+                            f'<div class="vocab-result-title" style="color:#65e88a">'
+                            f'✓ Correct</div>'
+                            f'<div class="vocab-result-meta">'
+                            f'Correct answer: <b>{f["answer"]}</b><br>'
+                            f'Next review: <b>{review_text}</b>'
+                            f'</div></div>',
+                            unsafe_allow_html=True
+                        )
+                    else:
+                        st.markdown(
+                            f'<div class="vocab-result-bad">'
+                            f'<div class="vocab-result-title" style="color:#ff8e8e">'
+                            f'Review this one</div>'
+                            f'<div class="vocab-result-meta">'
+                            f'Your answer: <b>{f["user"]}</b><br>'
+                            f'Correct answer: <b>{f["answer"]}</b><br>'
+                            f'Next review: <b>{review_text}</b>'
+                            f'</div></div>',
+                            unsafe_allow_html=True
+                        )
 
-            st.markdown("</div>", unsafe_allow_html=True)
+                    if st.button(
+                        "Continue →",
+                        type="primary",
+                        key="continue_btn"
+                    ):
+                        st.session_state.idx+=1
+                        st.session_state.fb=None
+                        st.rerun()
+
 
 with progress:
     st.markdown('<div class="hero"><div class="small-label">Progress</div><h1>Your learning dashboard</h1><p>Vocabulary, readings, reviews and accuracy in one place.</p></div>',unsafe_allow_html=True)
