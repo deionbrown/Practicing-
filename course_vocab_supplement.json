@@ -1,0 +1,92 @@
+{
+  "zentrum": {
+    "German": "das Zentrum",
+    "IPA": "/das ˈtsɛntrʊm/",
+    "English": "center / city center"
+  },
+  "kollegen": {
+    "German": "die Kollegen",
+    "IPA": "/diː kɔˈleːɡn̩/",
+    "English": "colleagues"
+  },
+  "aufgaben": {
+    "German": "die Aufgaben",
+    "IPA": "/diː ˈaʊ̯fˌɡaːbn̩/",
+    "English": "tasks / duties"
+  },
+  "hausaufgaben": {
+    "German": "die Hausaufgaben",
+    "IPA": "/diː ˈhaʊ̯sˌaʊ̯fɡaːbn̩/",
+    "English": "homework"
+  },
+  "notruf": {
+    "German": "der Notruf",
+    "IPA": "/deːɐ̯ ˈnoːtˌʁuːf/",
+    "English": "emergency call"
+  },
+  "kontakt": {
+    "German": "der Kontakt",
+    "IPA": "/deːɐ̯ kɔnˈtakt/",
+    "English": "contact"
+  },
+  "gegend": {
+    "German": "die Gegend",
+    "IPA": "/diː ˈɡeːɡn̩t/",
+    "English": "area / neighborhood"
+  },
+  "einweihungsfeier": {
+    "German": "die Einweihungsfeier",
+    "IPA": "/diː ˈaɪ̯nvaɪ̯ʊŋsˌfaɪ̯ɐ/",
+    "English": "housewarming party"
+  },
+  "smartphone": {
+    "German": "das Smartphone",
+    "IPA": "/das ˈsmaːɐ̯tˌfoːn/",
+    "English": "smartphone"
+  },
+  "wald": {
+    "German": "der Wald",
+    "IPA": "/deːɐ̯ valt/",
+    "English": "forest"
+  },
+  "see": {
+    "German": "der See",
+    "IPA": "/deːɐ̯ zeː/",
+    "English": "lake"
+  },
+  "tiere": {
+    "German": "die Tiere",
+    "IPA": "/diː ˈtiːʁə/",
+    "English": "animals"
+  },
+  "umwelt": {
+    "German": "die Umwelt",
+    "IPA": "/diː ˈʊmˌvɛlt/",
+    "English": "environment"
+  },
+  "geburtstag": {
+    "German": "der Geburtstag",
+    "IPA": "/deːɐ̯ ɡəˈbuːɐ̯tstaːk/",
+    "English": "birthday"
+  },
+  "einladung": {
+    "German": "die Einladung",
+    "IPA": "/diː ˈaɪ̯nˌlaːdʊŋ/",
+    "English": "invitation"
+  },
+  "geschenk": {
+    "German": "das Geschenk",
+    "IPA": "/das ɡəˈʃɛŋk/",
+    "English": "gift / present"
+  },
+  "feier": {
+    "German": "die Feier",
+    "IPA": "/diː ˈfaɪ̯ɐ/",
+    "English": "celebration / party"
+  },
+  "freunde": {
+    "German": "die Freunde",
+    "IPA": "/diː ˈfʁɔɪ̯ndə/",
+    "English": "friends"
+  }
+}
