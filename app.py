@@ -14,18 +14,268 @@ VOICE="de-DE-KatjaNeural"
 
 st.markdown("""
 <style>
-:root{--bg:#0f172a;--panel:#172033;--border:#2b3a50;--text:#f8fafc;--muted:#94a3b8;--accent:#6d5dfb;--blue:#38bdf8;}
-.stApp{background:var(--bg);color:var(--text)} .block-container{max-width:1000px;padding-top:.8rem;padding-bottom:5rem}
-#MainMenu,footer{visibility:hidden}
-.brand,.card,.hero,.stat{background:var(--panel);border:1px solid var(--border);border-radius:18px}
-.brand{display:flex;gap:12px;align-items:center;padding:14px 16px;margin-bottom:12px}
-.logo{background:var(--accent);width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-weight:900}
-.title{font-size:1.22rem;font-weight:900}.muted{color:var(--muted);font-size:.82rem}
-.hero{padding:20px;margin:10px 0 14px}.hero h1{font-size:1.7rem;margin:0 0 4px}.hero p{color:var(--muted);margin:0}
-.card{padding:17px;margin:9px 0}.word{text-align:center;font-size:2.3rem;font-weight:900}.ipa{text-align:center;color:var(--blue);font-weight:800;font-size:1.08rem}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stat{padding:13px}.sl{font-size:.72rem;color:var(--muted);font-weight:800}.sv{font-size:1.3rem;font-weight:900}
-div.stButton>button,div.stFormSubmitButton>button{width:100%;min-height:48px;border-radius:13px;font-weight:800}
-@media(max-width:700px){.block-container{padding:.6rem .65rem 5rem}.stats{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:1.4rem}.word{font-size:2rem}}
+:root{
+  --bg:#0b1220;
+  --bg2:#0f172a;
+  --panel:#121c2f;
+  --panel2:#17243a;
+  --panel3:#1b2a43;
+  --border:#263754;
+  --text:#f8fafc;
+  --muted:#9fb0c7;
+  --accent:#7c5cff;
+  --accent2:#9b7dff;
+  --blue:#38bdf8;
+  --green:#22c55e;
+  --green2:#16a34a;
+  --red:#ef4444;
+  --yellow:#f59e0b;
+  --shadow:0 18px 50px rgba(0,0,0,.22);
+}
+
+.stApp{
+  background:
+    radial-gradient(circle at 15% 0%, rgba(124,92,255,.09), transparent 30%),
+    radial-gradient(circle at 100% 10%, rgba(56,189,248,.05), transparent 25%),
+    linear-gradient(180deg,var(--bg),var(--bg2));
+  color:var(--text);
+}
+
+.block-container{
+  max-width:1120px;
+  padding-top:1rem;
+  padding-bottom:6rem;
+}
+
+#MainMenu, footer{visibility:hidden;}
+header[data-testid="stHeader"]{background:rgba(11,18,32,.76);backdrop-filter:blur(12px);}
+
+.premium-brand{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:14px 18px;
+  margin-bottom:14px;
+  background:rgba(18,28,47,.92);
+  border:1px solid var(--border);
+  border-radius:22px;
+  box-shadow:var(--shadow);
+}
+.brand-left{display:flex;align-items:center;gap:13px;}
+.brand-logo{
+  width:50px;height:50px;border-radius:15px;
+  background:linear-gradient(145deg,var(--accent),#5b3df5);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:18px;color:white;
+  box-shadow:0 10px 25px rgba(124,92,255,.30);
+}
+.brand-title{font-size:1.25rem;font-weight:900;line-height:1.05;}
+.brand-sub{color:var(--muted);font-size:.78rem;margin-top:3px;}
+.user-chip{
+  color:#d9dff0;background:var(--panel2);border:1px solid var(--border);
+  border-radius:999px;padding:8px 12px;font-size:.78rem;font-weight:700;
+}
+
+.hero{
+  background:linear-gradient(135deg,rgba(124,92,255,.12),rgba(23,36,58,.96));
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:24px;
+  margin:12px 0 18px;
+  box-shadow:var(--shadow);
+}
+.hero h1{font-size:1.8rem;line-height:1.1;margin:0 0 6px;font-weight:900;letter-spacing:-.02em;}
+.hero p{color:var(--muted);margin:0;font-size:.95rem;}
+
+.section-title{
+  font-size:1rem;font-weight:900;margin:18px 0 8px;color:#eaf0ff;
+}
+
+.card{
+  background:linear-gradient(180deg,var(--panel),#101a2d);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:18px;
+  margin:10px 0;
+  box-shadow:0 12px 30px rgba(0,0,0,.14);
+}
+
+.topic-card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:17px;
+  padding:15px 17px;
+  margin:8px 0;
+}
+
+.word-card{
+  background:linear-gradient(180deg,#16233a,#121c2f);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:28px 22px 24px;
+  margin:14px 0 10px;
+  box-shadow:var(--shadow);
+  text-align:center;
+}
+.word{
+  font-size:2.7rem;
+  line-height:1.05;
+  font-weight:950;
+  letter-spacing:-.03em;
+  margin:2px 0 8px;
+}
+.ipa{
+  color:var(--blue);
+  font-size:1.08rem;
+  font-weight:850;
+  margin-top:5px;
+}
+.small-label{
+  color:var(--muted);
+  font-size:.76rem;
+  font-weight:850;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.answer-line{
+  font-size:1.15rem;
+  font-weight:850;
+  margin-top:8px;
+}
+
+.progress-shell{
+  height:10px;border-radius:999px;background:#21304a;overflow:hidden;margin:8px 0 4px;
+}
+.progress-fill{
+  height:100%;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent2));
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin:10px 0 18px;
+}
+.stat{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:15px;
+  min-height:90px;
+}
+.sl{
+  color:var(--muted);
+  font-size:.72rem;
+  font-weight:850;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.sv{
+  font-size:1.45rem;
+  font-weight:950;
+  margin-top:7px;
+  letter-spacing:-.02em;
+}
+
+.result-good{
+  background:linear-gradient(135deg,rgba(34,197,94,.22),rgba(22,163,74,.12));
+  border:1px solid rgba(34,197,94,.42);
+  border-radius:19px;
+  padding:18px;
+  margin-top:14px;
+}
+.result-bad{
+  background:linear-gradient(135deg,rgba(239,68,68,.20),rgba(185,28,28,.10));
+  border:1px solid rgba(239,68,68,.38);
+  border-radius:19px;
+  padding:18px;
+  margin-top:14px;
+}
+.result-title{font-size:1.15rem;font-weight:950;margin-bottom:4px;}
+.result-sub{color:#dce7f6;font-size:.92rem;}
+.review-chip{
+  display:inline-block;margin-top:10px;padding:7px 10px;border-radius:999px;
+  background:rgba(255,255,255,.07);color:#dce7f6;font-size:.78rem;font-weight:800;
+}
+
+.reading-line{
+  font-size:1.06rem;
+  line-height:1.72;
+  margin:8px 0;
+  color:#e8edf7;
+}
+
+div.stButton>button,
+div.stFormSubmitButton>button{
+  width:100%;
+  min-height:50px;
+  border-radius:15px;
+  font-weight:900;
+  border:1px solid var(--border);
+  transition:.18s ease;
+}
+div.stButton>button:hover,
+div.stFormSubmitButton>button:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 24px rgba(124,92,255,.18);
+}
+
+div[data-testid="stTextInput"] input{
+  min-height:52px;
+  border-radius:15px;
+  font-size:1rem;
+  background:#111b2e;
+  border:1px solid var(--border);
+}
+div[data-testid="stTextInput"] input:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 2px rgba(124,92,255,.16);
+}
+
+[data-baseweb="select"]>div{
+  border-radius:15px!important;
+  min-height:48px;
+}
+.stRadio > div{gap:8px;}
+.stTabs [data-baseweb="tab-list"]{
+  gap:6px;
+  flex-wrap:wrap;
+  border-bottom:1px solid var(--border);
+  padding-bottom:7px;
+}
+.stTabs [data-baseweb="tab"]{
+  background:transparent;
+  border-radius:12px;
+  padding:10px 13px;
+  color:var(--muted);
+  font-weight:850;
+}
+.stTabs [aria-selected="true"]{
+  background:rgba(124,92,255,.12)!important;
+  color:#fff!important;
+}
+
+div[data-testid="stExpander"]{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:15px;
+}
+
+@media(max-width:760px){
+  .block-container{padding:.6rem .7rem 5.8rem;}
+  .premium-brand{padding:12px 13px;border-radius:18px;}
+  .brand-logo{width:43px;height:43px;border-radius:13px;}
+  .brand-title{font-size:1.08rem;}
+  .user-chip{display:none;}
+  .hero{padding:18px;border-radius:20px;}
+  .hero h1{font-size:1.43rem;}
+  .word-card{padding:23px 16px 20px;border-radius:20px;}
+  .word{font-size:2.15rem;}
+  .stats{grid-template-columns:repeat(2,1fr);}
+  .stat{min-height:82px;padding:13px;}
+  .stTabs [data-baseweb="tab"]{padding:8px 10px;font-size:.82rem;}
+}
 </style>
 """,unsafe_allow_html=True)
 
@@ -164,7 +414,7 @@ def apply_result(card,ok):
     x["due"]=nxt.isoformat();save_srs(x);save_stats(stats);return nxt
 
 if not current_user():
-    st.markdown('<div class="brand"><div class="logo">DE</div><div><div class="title">German A1 Complete</div><div class="muted">Mobile · synced progress · natural audio</div></div></div>',unsafe_allow_html=True)
+    st.markdown('''<div class="premium-brand"><div class="brand-left"><div class="brand-logo">DE</div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Mobile · synced progress · natural audio</div></div></div></div>''',unsafe_allow_html=True)
     a,b=st.tabs(["Sign in","Create account"])
     with a:
         with st.form("login"):
@@ -185,19 +435,19 @@ if not current_user():
     st.stop()
 
 u=current_user()
-st.markdown(f'<div class="brand"><div class="logo">DE</div><div><div class="title">German A1 Complete</div><div class="muted">{u.email}</div></div></div>',unsafe_allow_html=True)
+st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo">DE</div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">A1 course · SRS · natural audio</div></div></div><div class="user-chip">{u.email}</div></div>''',unsafe_allow_html=True)
 home,course,vocab,progress,account=st.tabs(["Home","Course","Vocabulary","Progress","Account"])
 
 with home:
     rp=read_progress();done=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics");ss=load_srs()
     studied=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0);mastered=sum(1 for c in pool if ss.get(c["id"],{}).get("mastered",False))
     stats=load_stats();att=int(stats.get("attempts",0));acc=int(stats.get("correct",0))/att*100 if att else 0
-    st.markdown('<div class="hero"><h1>Ready for German?</h1><p>Your progress is synced between your phone and PC.</p></div>',unsafe_allow_html=True)
+    st.markdown('<div class="hero"><div class="small-label">Today</div><h1>Ready for German?</h1><p>Continue your course, review due vocabulary, and keep your progress moving.</p></div>',unsafe_allow_html=True)
     st.progress(done/125);st.caption(f"{done}/125 readings completed")
     st.markdown(f'<div class="stats"><div class="stat"><div class="sl">Studied</div><div class="sv">{studied}</div></div><div class="stat"><div class="sl">Mastered</div><div class="sv">{mastered}</div></div><div class="stat"><div class="sl">Accuracy</div><div class="sv">{acc:.0f}%</div></div><div class="stat"><div class="sl">Attempts</div><div class="sv">{att}</div></div></div>',unsafe_allow_html=True)
 
 with course:
-    st.markdown('<div class="hero"><h1>German A1 Course</h1><p>25 topics · 5 readings per topic</p></div>',unsafe_allow_html=True)
+    st.markdown('<div class="hero"><div class="small-label">Course</div><h1>German A1</h1><p>25 topics · 5 progressive readings per topic</p></div>',unsafe_allow_html=True)
     rp=read_progress();tn=sorted({r["topic"] for r in READINGS});t=st.selectbox("Topic",tn);rs=[r for r in READINGS if r["topic"]==t]
     labels=[f"{'✓' if rp.get(r['id']) else '○'} Text {r['reading']} · {r['title']}" for r in rs];choice=st.radio("Reading",labels);r=rs[labels.index(choice)]
     st.markdown(f'<div class="card"><b>{r["title"]}</b>',unsafe_allow_html=True)
@@ -214,7 +464,7 @@ with course:
         set_reading(r["id"],not done);st.rerun()
 
 with vocab:
-    st.markdown('<div class="hero"><h1>Vocabulary Trainer</h1><p>Type every answer. SRS schedules reviews automatically.</p></div>',unsafe_allow_html=True)
+    st.markdown('<div class="hero"><div class="small-label">Practice</div><h1>Vocabulary Trainer</h1><p>Type every answer. Your SRS schedules the next review automatically.</p></div>',unsafe_allow_html=True)
     if "session" not in st.session_state:
         t=st.selectbox("Topic",["All topics"]+sorted({r["topic"] for r in READINGS}),key="vt")
         direction=st.radio("Direction",["German → English","English → German"],horizontal=True)
@@ -227,7 +477,7 @@ with vocab:
             else:future.append(c)
         random.shuffle(due_cards);random.shuffle(new);future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
         st.caption(f"{len(pool)} words · {len(due_cards)} due · {len(new)} new")
-        if st.button("Start session",type="primary"):
+        if st.button("Start practice →",type="primary"):
             st.session_state.session=(due_cards+new+future)[:amount];st.session_state.idx=0;st.session_state.direction=direction;st.session_state.fb=None;st.rerun()
     else:
         session=st.session_state.session;i=st.session_state.idx
@@ -240,8 +490,17 @@ with vocab:
             c=session[i];direction=st.session_state.direction
             if direction=="German → English":front=c["german"];sub=c["ipa"];expected=c["english"];prompt="Type the English meaning";ans=c["english"]
             else:front=c["english"];sub="";expected=c["german"];prompt="Type the German word";ans=f'{c["german"]} · {c["ipa"]}'
-            st.caption(f"Card {i+1}/{len(session)} · {c['topic']}")
-            st.markdown(f'<div class="card"><div class="word">{front}</div><div class="ipa">{sub}</div></div>',unsafe_allow_html=True)
+            pct=int(((i+1)/len(session))*100)
+            st.markdown(
+                f'<div class="small-label">{c["topic"]} · Card {i+1} of {len(session)}</div>'
+                f'<div class="progress-shell"><div class="progress-fill" style="width:{pct}%"></div></div>',
+                unsafe_allow_html=True
+            )
+            st.markdown(
+                f'<div class="word-card"><div class="word">{front}</div>'
+                f'<div class="ipa">{sub}</div></div>',
+                unsafe_allow_html=True
+            )
             with st.expander("🔊 Listen"):audio(c["german"])
             if st.session_state.fb is None:
                 with st.form("answer"):
@@ -250,15 +509,27 @@ with vocab:
                     ok=matches(a,expected);nxt=apply_result(c,ok);st.session_state.fb={"ok":ok,"user":a,"answer":ans,"due":nxt.isoformat()};st.rerun()
             else:
                 f=st.session_state.fb
+                review_text=due_text(datetime.fromisoformat(f["due"]))
                 if f["ok"]:
-                    st.success("Correct")
+                    st.markdown(
+                        f'<div class="result-good"><div class="result-title">✓ Correct</div>'
+                        f'<div class="result-sub">Correct answer: <b>{f["answer"]}</b></div>'
+                        f'<div class="review-chip">Next review · {review_text}</div></div>',
+                        unsafe_allow_html=True
+                    )
                 else:
-                    st.error("Review this one")
-                st.write("**Your answer:**",f["user"]);st.write("**Correct answer:**",f["answer"]);st.write("**Next review:**",due_text(datetime.fromisoformat(f["due"])))
-                if st.button("Next card",type="primary"):
+                    st.markdown(
+                        f'<div class="result-bad"><div class="result-title">Review this one</div>'
+                        f'<div class="result-sub">Your answer: <b>{f["user"]}</b><br>'
+                        f'Correct answer: <b>{f["answer"]}</b></div>'
+                        f'<div class="review-chip">Next review · {review_text}</div></div>',
+                        unsafe_allow_html=True
+                    )
+                if st.button("Continue →",type="primary"):
                     st.session_state.idx+=1;st.session_state.fb=None;st.rerun()
 
 with progress:
+    st.markdown('<div class="hero"><div class="small-label">Progress</div><h1>Your learning dashboard</h1><p>Vocabulary, readings, reviews and accuracy in one place.</p></div>',unsafe_allow_html=True)
     rp=read_progress();rd=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics");ss=load_srs();stt=load_stats()
     studied=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0);mastered=sum(1 for c in pool if ss.get(c["id"],{}).get("mastered",False))
     due_now=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0 and due(c["id"]))
@@ -266,9 +537,11 @@ with progress:
     st.markdown(f'<div class="stats"><div class="stat"><div class="sl">Readings</div><div class="sv">{rd}/125</div></div><div class="stat"><div class="sl">Studied</div><div class="sv">{studied}</div></div><div class="stat"><div class="sl">Mastered</div><div class="sv">{mastered}</div></div><div class="stat"><div class="sl">Due</div><div class="sv">{due_now}</div></div><div class="stat"><div class="sl">Correct</div><div class="sv">{cor}</div></div><div class="stat"><div class="sl">Wrong</div><div class="sv">{wrong}</div></div><div class="stat"><div class="sl">Attempts</div><div class="sv">{att}</div></div><div class="stat"><div class="sl">Accuracy</div><div class="sv">{acc:.1f}%</div></div></div>',unsafe_allow_html=True)
 
 with account:
+    st.markdown('<div class="hero"><div class="small-label">Account</div><h1>Your profile</h1><p>Your progress stays synced across devices.</p></div>',unsafe_allow_html=True)
     st.write(u.email);st.caption("Your progress is stored in Supabase under this account.")
     if st.button("Sign out"):
         try:supabase.auth.sign_out()
         except:pass
         st.session_state.clear();st.rerun()
+
 
