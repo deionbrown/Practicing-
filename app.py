@@ -660,6 +660,32 @@ div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
   }
 }
 
+
+/* ===== v5.7 full-width Check answer ===== */
+.st-key-vocab_card div[data-testid="stForm"] {
+    width:100% !important;
+    max-width:100% !important;
+}
+.st-key-vocab_card div[data-testid="stFormSubmitButton"],
+.st-key-vocab_card div[data-testid="stFormSubmitButton"] > div,
+.st-key-vocab_card div[data-testid="stFormSubmitButton"] button,
+.st-key-vocab_card form button[kind="primaryFormSubmit"],
+.st-key-vocab_card form button {
+    width:100% !important;
+    max-width:100% !important;
+    display:block !important;
+}
+.st-key-vocab_card div[data-testid="stFormSubmitButton"] button,
+.st-key-vocab_card form button[kind="primaryFormSubmit"] {
+    min-height:54px !important;
+    border-radius:15px !important;
+    background:#48d400 !important;
+    border:none !important;
+    color:#fff !important;
+    font-size:1rem !important;
+    font-weight:950 !important;
+}
+
 </style>
 """,unsafe_allow_html=True)
 
