@@ -827,58 +827,62 @@ def direct_audio_button(text, key):
     try:
         data=audio_bytes(text)
         encoded=base64.b64encode(data).decode("ascii")
-
-        # Client-side button: no Streamlit rerun.
-        # Every click rewinds the same audio to 0 and plays it again.
         html=f"""
-        <div style="
+        <html>
+        <head>
+        <style>
+          html,body {{
+            margin:0;
+            padding:0;
+            background:transparent;
+            overflow:hidden;
+          }}
+          .audio-wrap {{
             display:flex;
             justify-content:center;
             align-items:center;
             width:100%;
-            padding:4px 0 2px 0;
-        ">
-          <audio id="word_audio_{key}" preload="auto">
-            <source src="data:audio/mp3;base64,{encoded}" type="audio/mpeg">
-          </audio>
-
-          <button
-            id="word_audio_btn_{key}"
-            onclick="
+            padding:7px 8px;
+            box-sizing:border-box;
+          }}
+          .listen-btn {{
+            min-width:154px;
+            height:48px;
+            box-sizing:border-box;
+            border-radius:14px;
+            border:1px solid #486287;
+            background:#16233a;
+            color:#f8fafc;
+            font-size:14px;
+            font-weight:800;
+            cursor:pointer;
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+            outline:none;
+            box-shadow:none;
+          }}
+          .listen-btn:hover {{
+            background:#1b2b47;
+            border-color:#6a84ad;
+          }}
+        </style>
+        </head>
+        <body>
+          <div class="audio-wrap">
+            <audio id="word_audio_{key}" preload="auto">
+              <source src="data:audio/mp3;base64,{encoded}" type="audio/mpeg">
+            </audio>
+            <button class="listen-btn" onclick="
               const a=document.getElementById('word_audio_{key}');
               a.pause();
               a.currentTime=0;
               const p=a.play();
-              if (p !== undefined) {{
-                p.catch(() => {{}});
-              }}
-            "
-            style="
-              min-width:150px;
-              height:48px;
-              border-radius:14px;
-              border:1px solid #395174;
-              background:#16233a;
-              color:#f8fafc;
-              font-size:14px;
-              font-weight:800;
-              cursor:pointer;
-              font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-            "
-            onmouseover="this.style.background='#1b2b47';this.style.borderColor='#5572a0';"
-            onmouseout="this.style.background='#16233a';this.style.borderColor='#395174';"
-          >
-            🔊 Listen
-          </button>
-        </div>
+              if (p !== undefined) {{ p.catch(() => {{}}); }}
+            ">🔊 Listen</button>
+          </div>
+        </body>
+        </html>
         """
-
-        components.html(
-            html,
-            height=58,
-            scrolling=False
-        )
-
+        components.html(html,height=66,scrolling=False)
     except Exception:
         st.warning("Internet is needed the first time this audio is generated.")
 
@@ -1230,12 +1234,94 @@ with vocab:
 
 
 with progress:
-    st.markdown('<div class="hero"><div class="small-label">Progress</div><h1>Your learning dashboard</h1><p>Vocabulary, readings, reviews and accuracy in one place.</p></div>',unsafe_allow_html=True)
-    rp=read_progress();rd=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics","A1")+vocab_pool("All topics","A2");ss=load_srs();stt=load_stats()
-    studied=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0);mastered=sum(1 for c in pool if ss.get(c["id"],{}).get("mastered",False))
-    due_now=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0 and due(c["id"]))
-    att=int(stt.get("attempts",0));cor=int(stt.get("correct",0));wrong=int(stt.get("wrong",0));acc=cor/att*100 if att else 0
-    st.markdown(f'<div class="stats"><div class="stat"><div class="sl">Readings</div><div class="sv">{rd}/125</div></div><div class="stat"><div class="sl">Studied</div><div class="sv">{studied}</div></div><div class="stat"><div class="sl">Mastered</div><div class="sv">{mastered}</div></div><div class="stat"><div class="sl">Due</div><div class="sv">{due_now}</div></div><div class="stat"><div class="sl">Correct</div><div class="sv">{cor}</div></div><div class="stat"><div class="sl">Wrong</div><div class="sv">{wrong}</div></div><div class="stat"><div class="sl">Attempts</div><div class="sv">{att}</div></div><div class="stat"><div class="sl">Accuracy</div><div class="sv">{acc:.1f}%</div></div></div>',unsafe_allow_html=True)
+    st.markdown(
+        '<div class="hero"><div class="small-label">Progress</div>'
+        '<h1>Your learning dashboard</h1>'
+        '<p>Track A1 and A2 independently, plus your total German vocabulary progress.</p></div>',
+        unsafe_allow_html=True
+    )
+
+    rp=read_progress()
+    readings_done=sum(bool(rp.get(r["id"])) for r in READINGS)
+    stats=load_stats()
+    total_attempts=int(stats.get("attempts",0) or 0)
+    total_correct=int(stats.get("correct",0) or 0)
+    total_wrong=int(stats.get("wrong",0) or 0)
+    total_accuracy=(total_correct/total_attempts*100) if total_attempts else 0
+    srs_data=load_srs()
+
+    def level_progress_stats(level):
+        pool=vocab_pool("All topics",level)
+        ids={c["id"] for c in pool}
+        studied=mastered=due_count=correct=wrong=0
+        for word_id in ids:
+            row=srs_data.get(word_id,{})
+            reviews=int(row.get("reviews",0) or 0)
+            if reviews>0:
+                studied+=1
+            if bool(row.get("mastered",False)):
+                mastered+=1
+            if reviews>0 and due(word_id):
+                due_count+=1
+            correct+=int(row.get("correct",0) or 0)
+            wrong+=int(row.get("wrong",0) or 0)
+        attempts=correct+wrong
+        accuracy=(correct/attempts*100) if attempts else 0
+        return {
+            "total":len(pool),"studied":studied,"mastered":mastered,
+            "due":due_count,"correct":correct,"wrong":wrong,
+            "attempts":attempts,"accuracy":accuracy
+        }
+
+    a1s=level_progress_stats("A1")
+    a2s=level_progress_stats("A2")
+
+    overall_total=a1s["total"]+a2s["total"]
+    overall_studied=a1s["studied"]+a2s["studied"]
+    overall_mastered=a1s["mastered"]+a2s["mastered"]
+    overall_due=a1s["due"]+a2s["due"]
+    overall_pct=(overall_studied/overall_total*100) if overall_total else 0
+
+    st.markdown(
+        f'<div class="vocab-overall" style="margin-top:18px">'
+        f'<div class="vocab-overall-row"><span>Overall vocabulary progress</span>'
+        f'<span class="vocab-overall-value">{overall_studied} / {overall_total} words</span></div>'
+        f'<div class="vocab-overall-track">'
+        f'<div class="vocab-overall-fill" style="width:{overall_pct:.1f}%"></div>'
+        f'</div></div>',
+        unsafe_allow_html=True
+    )
+
+    c1,c2,c3,c4=st.columns(4)
+    c1.metric("Readings",f"{readings_done}/125")
+    c2.metric("Studied",overall_studied)
+    c3.metric("Mastered",overall_mastered)
+    c4.metric("Due",overall_due)
+
+    st.markdown("### A1 Vocabulary")
+    st.progress(a1s["studied"]/a1s["total"] if a1s["total"] else 0)
+    st.caption(f'{a1s["studied"]} / {a1s["total"]} words studied')
+    a,b,c,d=st.columns(4)
+    a.metric("A1 Studied",a1s["studied"])
+    b.metric("A1 Mastered",a1s["mastered"])
+    c.metric("A1 Due",a1s["due"])
+    d.metric("A1 Accuracy",f'{a1s["accuracy"]:.1f}%')
+
+    st.markdown("### A2 Vocabulary")
+    st.progress(a2s["studied"]/a2s["total"] if a2s["total"] else 0)
+    st.caption(f'{a2s["studied"]} / {a2s["total"]} words studied')
+    a,b,c,d=st.columns(4)
+    a.metric("A2 Studied",a2s["studied"])
+    b.metric("A2 Mastered",a2s["mastered"])
+    c.metric("A2 Due",a2s["due"])
+    d.metric("A2 Accuracy",f'{a2s["accuracy"]:.1f}%')
+
+    st.markdown("### Combined performance")
+    a,b,c,d=st.columns(4)
+    a.metric("Correct",total_correct)
+    b.metric("Wrong",total_wrong)
+    c.metric("Attempts",total_attempts)
+    d.metric("Accuracy",f"{total_accuracy:.1f}%")
 
 with account:
     st.markdown('<div class="hero"><div class="small-label">Account</div><h1>Your profile</h1><p>Your progress stays synced across devices.</p></div>',unsafe_allow_html=True)
