@@ -295,6 +295,93 @@ div[data-testid="stExpander"]{
   .stat{min-height:82px;padding:13px;}
   .stTabs [data-baseweb="tab"]{padding:8px 10px;font-size:.82rem;}
 }
+
+/* ===== Focused vocabulary card ===== */
+.vocab-overall{
+  background:#101a2d;border:1px solid #263754;border-radius:20px;
+  padding:16px 18px 14px;margin:8px 0 16px;
+}
+.vocab-overall-row{
+  display:flex;justify-content:space-between;gap:12px;
+  font-size:.82rem;font-weight:900;color:#f8fafc;
+}
+.vocab-overall-value{color:#9fb7e9;white-space:nowrap;}
+.vocab-overall-track{
+  width:100%;height:14px;margin-top:11px;border-radius:999px;
+  overflow:hidden;background:#25354f;
+}
+.vocab-overall-fill{
+  height:100%;border-radius:999px;background:#48d400;
+}
+
+.vocab-study-card{
+  background:#101a2d;border:1px solid #263754;border-radius:24px;
+  padding:42px 34px 34px;margin:8px 0 14px;min-height:460px;
+  box-shadow:0 16px 40px rgba(0,0,0,.16);text-align:center;
+}
+.vocab-topic-pill{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:#18371f;color:#7ef443;border-radius:999px;
+  padding:7px 16px;font-size:.78rem;font-weight:950;
+}
+.vocab-card-counter{
+  color:#9bb2d8;font-size:.8rem;font-weight:800;margin-top:12px;
+}
+.vocab-main-word{
+  color:#f8fafc;font-size:3rem;line-height:1.08;font-weight:500;
+  letter-spacing:-.025em;margin-top:28px;
+}
+.vocab-main-ipa{
+  color:#a8b9dc;font-size:1.1rem;line-height:1.2;margin-top:10px;
+}
+.vocab-prompt{
+  color:#a9bbdf;font-size:.82rem;font-weight:850;
+  margin-top:27px;margin-bottom:10px;
+}
+.vocab-result-good,.vocab-result-bad{
+  max-width:885px;margin:14px auto 0;text-align:left;
+  border-radius:16px;padding:15px 18px;
+}
+.vocab-result-good{
+  background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.36);
+}
+.vocab-result-bad{
+  background:rgba(239,68,68,.13);border:1px solid rgba(239,68,68,.34);
+}
+.vocab-result-title{font-weight:950;font-size:1.03rem;margin-bottom:5px;}
+.vocab-result-meta{color:#c7d4eb;font-size:.86rem;line-height:1.45;}
+
+div[data-testid="stForm"]{
+  max-width:885px;margin:0 auto;border:none!important;
+  padding:0!important;background:transparent!important;
+}
+div[data-testid="stForm"] div[data-testid="stTextInput"] input{
+  min-height:54px!important;border-radius:15px!important;
+  background:#15213a!important;border:1px solid #314462!important;
+  color:#f8fafc!important;font-size:1rem!important;font-weight:700!important;
+}
+div[data-testid="stForm"] div[data-testid="stTextInput"] input::placeholder{
+  color:#9eb1d2!important;
+}
+div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button{
+  min-height:54px!important;margin-top:10px!important;border-radius:15px!important;
+  border:none!important;background:#48d400!important;color:white!important;
+  font-size:1rem!important;font-weight:950!important;box-shadow:none!important;
+}
+div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
+  background:#53df09!important;transform:none!important;box-shadow:none!important;
+}
+.vocab-audio-wrap{
+  max-width:885px;margin:0 auto 10px;
+}
+@media(max-width:760px){
+  .vocab-overall{padding:14px 14px 12px;border-radius:17px;}
+  .vocab-overall-track{height:12px;}
+  .vocab-study-card{min-height:390px;border-radius:20px;padding:30px 16px 25px;}
+  .vocab-main-word{font-size:2.35rem;margin-top:24px;}
+  .vocab-main-ipa{font-size:1rem;}
+}
+
 </style>
 """,unsafe_allow_html=True)
 
@@ -483,8 +570,8 @@ with course:
         set_reading(r["id"],not done);st.rerun()
 
 with vocab:
-    st.markdown('<div class="hero"><div class="small-label">Practice</div><h1>Vocabulary Trainer</h1><p>Type every answer. Your SRS schedules the next review automatically.</p></div>',unsafe_allow_html=True)
     if "session" not in st.session_state:
+        st.markdown('<div class="hero"><div class="small-label">Practice</div><h1>Vocabulary Trainer</h1><p>Type every answer. Your SRS schedules the next review automatically.</p></div>',unsafe_allow_html=True)
         t=st.selectbox("Topic",["All topics"]+sorted({r["topic"] for r in READINGS}),key="vt")
         direction=st.radio("Direction",["German → English","English → German"],horizontal=True)
         amount=st.select_slider("Number of words",options=[5,10,20,30,50],value=10)
@@ -497,55 +584,116 @@ with vocab:
         random.shuffle(due_cards);random.shuffle(new);future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
         st.caption(f"{len(pool)} words · {len(due_cards)} due · {len(new)} new")
         if st.button("Start practice →",type="primary"):
-            st.session_state.session=(due_cards+new+future)[:amount];st.session_state.idx=0;st.session_state.direction=direction;st.session_state.fb=None;st.rerun()
+            st.session_state.session=(due_cards+new+future)[:amount]
+            st.session_state.idx=0
+            st.session_state.direction=direction
+            st.session_state.fb=None
+            st.rerun()
     else:
-        session=st.session_state.session;i=st.session_state.idx
+        session=st.session_state.session
+        i=st.session_state.idx
+
         if i>=len(session):
             st.success("Session complete. Progress saved online.")
             if st.button("New session"):
-                for k in ["session","idx","direction","fb"]:st.session_state.pop(k,None)
+                for k in ["session","idx","direction","fb"]:
+                    st.session_state.pop(k,None)
                 st.rerun()
         else:
-            c=session[i];direction=st.session_state.direction
-            if direction=="German → English":front=c["german"];sub=c["ipa"];expected=c["english"];prompt="Type the English meaning";ans=c["english"]
-            else:front=c["english"];sub="";expected=c["german"];prompt="Type the German word";ans=f'{c["german"]} · {c["ipa"]}'
-            pct=int(((i+1)/len(session))*100)
+            c=session[i]
+            direction=st.session_state.direction
+
+            if direction=="German → English":
+                front=c["german"];sub=c["ipa"];expected=c["english"]
+                prompt="Type the English meaning";ans=c["english"]
+            else:
+                front=c["english"];sub="";expected=c["german"]
+                prompt="Type the German word";ans=f'{c["german"]} · {c["ipa"]}'
+
+            # Overall progress across the full vocabulary database
+            full_srs=st.session_state.setdefault("srs_cache",load_srs())
+            try:
+                total_vocab=len(vocab_rows())
+            except Exception:
+                total_vocab=800
+            studied_total=sum(
+                1 for row in full_srs.values()
+                if int(row.get("reviews",0) or 0)>0
+            )
+            overall_pct=min(100,max(0,(studied_total/total_vocab*100) if total_vocab else 0))
+
             st.markdown(
-                f'<div class="small-label">{c["topic"]} · Card {i+1} of {len(session)}</div>'
-                f'<div class="progress-shell"><div class="progress-fill" style="width:{pct}%"></div></div>',
+                f'<div class="vocab-overall">'
+                f'<div class="vocab-overall-row"><span>Overall progress</span>'
+                f'<span class="vocab-overall-value">{studied_total} / {total_vocab} words</span></div>'
+                f'<div class="vocab-overall-track">'
+                f'<div class="vocab-overall-fill" style="width:{overall_pct:.1f}%"></div>'
+                f'</div></div>',
                 unsafe_allow_html=True
             )
+
             st.markdown(
-                f'<div class="word-card"><div class="word">{front}</div>'
-                f'<div class="ipa">{sub}</div></div>',
+                f'<div class="vocab-study-card">'
+                f'<div class="vocab-topic-pill">▣&nbsp; {c["topic"]}</div>'
+                f'<div class="vocab-card-counter">Card {i+1} of {len(session)}</div>'
+                f'<div class="vocab-main-word">{front}</div>'
+                f'<div class="vocab-main-ipa">{sub}</div>'
+                f'<div class="vocab-prompt">{prompt}</div>'
+                f'</div>',
                 unsafe_allow_html=True
             )
-            with st.expander("🔊 Listen"):audio(c["german"])
+
+            with st.expander("🔊 Listen"):
+                audio(c["german"])
+
             if st.session_state.fb is None:
                 with st.form("answer"):
-                    a=st.text_input(prompt);check=st.form_submit_button("Check answer",type="primary")
-                if check and a.strip():
-                    ok=matches(a,expected);nxt=apply_result(c,ok);st.session_state.fb={"ok":ok,"user":a,"answer":ans,"due":nxt.isoformat()};st.rerun()
+                    a=st.text_input(
+                        prompt,
+                        placeholder="Type your answer here...",
+                        label_visibility="collapsed"
+                    )
+                    check=st.form_submit_button("Check answer",type="primary")
+
+                if check:
+                    if not a.strip():
+                        st.warning("Write an answer first.")
+                    else:
+                        ok=matches(a,expected)
+                        nxt=apply_result(c,ok)
+                        st.session_state.fb={
+                            "ok":ok,
+                            "user":a,
+                            "answer":ans,
+                            "due":nxt.isoformat()
+                        }
+                        st.rerun()
             else:
                 f=st.session_state.fb
                 review_text=due_text(datetime.fromisoformat(f["due"]))
+
                 if f["ok"]:
                     st.markdown(
-                        f'<div class="result-good"><div class="result-title">✓ Correct</div>'
-                        f'<div class="result-sub">Correct answer: <b>{f["answer"]}</b></div>'
-                        f'<div class="review-chip">Next review · {review_text}</div></div>',
+                        f'<div class="vocab-result-good">'
+                        f'<div class="vocab-result-title" style="color:#65e88a">✓ Correct</div>'
+                        f'<div class="vocab-result-meta">Correct answer: <b>{f["answer"]}</b><br>'
+                        f'Next review: <b>{review_text}</b></div></div>',
                         unsafe_allow_html=True
                     )
                 else:
                     st.markdown(
-                        f'<div class="result-bad"><div class="result-title">Review this one</div>'
-                        f'<div class="result-sub">Your answer: <b>{f["user"]}</b><br>'
-                        f'Correct answer: <b>{f["answer"]}</b></div>'
-                        f'<div class="review-chip">Next review · {review_text}</div></div>',
+                        f'<div class="vocab-result-bad">'
+                        f'<div class="vocab-result-title" style="color:#ff8e8e">Review this one</div>'
+                        f'<div class="vocab-result-meta">Your answer: <b>{f["user"]}</b><br>'
+                        f'Correct answer: <b>{f["answer"]}</b><br>'
+                        f'Next review: <b>{review_text}</b></div></div>',
                         unsafe_allow_html=True
                     )
+
                 if st.button("Continue →",type="primary"):
-                    st.session_state.idx+=1;st.session_state.fb=None;st.rerun()
+                    st.session_state.idx+=1
+                    st.session_state.fb=None
+                    st.rerun()
 
 with progress:
     st.markdown('<div class="hero"><div class="small-label">Progress</div><h1>Your learning dashboard</h1><p>Vocabulary, readings, reviews and accuracy in one place.</p></div>',unsafe_allow_html=True)
