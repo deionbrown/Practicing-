@@ -686,6 +686,41 @@ div[data-testid="stForm"] div[data-testid="stFormSubmitButton"] button:hover{
     font-weight:950 !important;
 }
 
+
+/* ===== v5.8 FORCE Check answer to input width ===== */
+.st-key-vocab_card [data-testid="stForm"] {
+    width:100% !important;
+}
+.st-key-vocab_card [data-testid="stForm"] [data-testid="stFormSubmitButton"],
+.st-key-vocab_card [data-testid="stForm"] [data-testid="stFormSubmitButton"] > div,
+.st-key-vocab_card [data-testid="stForm"] [data-testid="stFormSubmitButton"] > div > div {
+    width:100% !important;
+    max-width:none !important;
+    flex:1 1 100% !important;
+}
+.st-key-vocab_card [data-testid="stForm"] [data-testid="stFormSubmitButton"] button,
+.st-key-vocab_card [data-testid="stForm"] button[kind="primaryFormSubmit"] {
+    width:100% !important;
+    max-width:none !important;
+    min-width:100% !important;
+    display:flex !important;
+    flex:1 1 100% !important;
+    justify-content:center !important;
+    align-items:center !important;
+    min-height:54px !important;
+    border-radius:15px !important;
+    background:#48d400 !important;
+    border:0 !important;
+    color:white !important;
+    font-weight:950 !important;
+}
+
+/* Modern Streamlit wrappers */
+.st-key-vocab_card div:has(> [data-testid="stFormSubmitButton"]) {
+    width:100% !important;
+    max-width:none !important;
+}
+
 </style>
 """,unsafe_allow_html=True)
 
@@ -1107,7 +1142,8 @@ with vocab:
                         )
                         check=st.form_submit_button(
                             "Check answer",
-                            type="primary"
+                            type="primary",
+                            use_container_width=True
                         )
 
                     if check:
