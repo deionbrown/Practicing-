@@ -250,7 +250,10 @@ with vocab:
                     ok=matches(a,expected);nxt=apply_result(c,ok);st.session_state.fb={"ok":ok,"user":a,"answer":ans,"due":nxt.isoformat()};st.rerun()
             else:
                 f=st.session_state.fb
-                st.success("Correct") if f["ok"] else st.error("Review this one")
+                if f["ok"]:
+                    st.success("Correct")
+                else:
+                    st.error("Review this one")
                 st.write("**Your answer:**",f["user"]);st.write("**Correct answer:**",f["answer"]);st.write("**Next review:**",due_text(datetime.fromisoformat(f["due"])))
                 if st.button("Next card",type="primary"):
                     st.session_state.idx+=1;st.session_state.fb=None;st.rerun()
@@ -268,3 +271,4 @@ with account:
         try:supabase.auth.sign_out()
         except:pass
         st.session_state.clear();st.rerun()
+
