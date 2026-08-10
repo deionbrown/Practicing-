@@ -7,7 +7,7 @@ import streamlit.components.v1 as components
 from supabase import create_client
 import edge_tts
 
-st.set_page_config(page_title="German A1 Complete",page_icon="🇩🇪",layout="wide",initial_sidebar_state="collapsed")
+st.set_page_config(page_title="German A1 + A2",page_icon="🇩🇪",layout="wide",initial_sidebar_state="collapsed")
 BASE=Path(__file__).resolve().parent
 
 def image_data_uri(path):
@@ -738,8 +738,10 @@ def current_user(): return st.session_state.get("user")
 def uid(): return current_user().id
 
 @st.cache_data
-def vocab_rows():
-    with (BASE/"German_A1_800_with_IPA.csv").open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
+def vocab_rows(level="A1"):
+    filename="German_A1_800_with_IPA.csv" if level=="A1" else "German_A2_1200_with_IPA.csv"
+    with (BASE/filename).open(encoding="utf-8-sig",newline="") as f:
+        return list(csv.DictReader(f))
 
 @st.cache_data
 def lookup_maps():
@@ -762,15 +764,34 @@ def resolve(word):
     return SUPPLEMENT.get(k)
 
 @st.cache_data
-def vocab_pool(topic):
-    out=[];seen=set()
-    for r in READINGS:
-        if topic!="All topics" and r["topic"]!=topic:continue
-        for w in r["vocabulary"]:
-            if w.lower() in seen:continue
-            seen.add(w.lower());item=resolve(w) or {"German":w,"IPA":"—","English":""}
-            g=(item.get("German") or w).strip()
-            out.append({"id":g.lower(),"german":g,"ipa":item.get("IPA","—"),"english":item.get("English",""),"topic":r["topic"]})
+def vocabulary_topics(level="A1"):
+    return sorted({
+        (row.get("Topic") or "Uncategorized").strip()
+        for row in vocab_rows(level)
+        if (row.get("Topic") or "").strip()
+    })
+
+@st.cache_data
+def vocab_pool(topic, level="A1"):
+    out=[]
+    for row in vocab_rows(level):
+        g=(row.get("German") or "").strip()
+        ipa=(row.get("IPA") or "—").strip()
+        eng=(row.get("English") or "").strip()
+        row_topic=(row.get("Topic") or "Uncategorized").strip()
+
+        if not g:
+            continue
+        if topic!="All topics" and row_topic!=topic:
+            continue
+
+        out.append({
+            "id":f"{level}:{g.lower()}",
+            "german":g,
+            "ipa":ipa,
+            "english":eng,
+            "topic":row_topic
+        })
     return out
 
 def norm(s):
@@ -920,7 +941,7 @@ def apply_result(card,ok):
     x["due"]=nxt.isoformat();save_srs(x);save_stats(stats);return nxt
 
 if not current_user():
-    st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo"><img src="{ADLER_URI}" alt="Adler mascot"></div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Learn with Adler · synced progress · natural audio</div></div></div></div>''',unsafe_allow_html=True)
+    st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo"><img src="{ADLER_URI}" alt="Adler mascot"></div><div><div class="brand-title">German A1 + A2</div><div class="brand-sub">Learn with Adler · synced progress · natural audio</div></div></div></div>''',unsafe_allow_html=True)
     a,b=st.tabs(["Sign in","Create account"])
     with a:
         with st.form("login"):
@@ -975,11 +996,11 @@ if not current_user():
     st.stop()
 
 u=current_user()
-st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo"><img src="{ADLER_URI}" alt="Adler mascot"></div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Learn with Adler · A1 course · SRS · natural audio</div></div></div><div class="user-chip">{u.email}</div></div>''',unsafe_allow_html=True)
+st.markdown(f'''<div class="premium-brand"><div class="brand-left"><div class="brand-logo"><img src="{ADLER_URI}" alt="Adler mascot"></div><div><div class="brand-title">German A1 Complete</div><div class="brand-sub">Learn with Adler · A1 + A2 vocabulary · SRS · natural audio</div></div></div><div class="user-chip">{u.email}</div></div>''',unsafe_allow_html=True)
 home,course,vocab,progress,account=st.tabs(["Home","Course","Vocabulary","Progress","Account"])
 
 with home:
-    rp=read_progress();done=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics");ss=load_srs()
+    rp=read_progress();done=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics","A1")+vocab_pool("All topics","A2");ss=load_srs()
     studied=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0);mastered=sum(1 for c in pool if ss.get(c["id"],{}).get("mastered",False))
     stats=load_stats();att=int(stats.get("attempts",0));acc=int(stats.get("correct",0))/att*100 if att else 0
     st.markdown('<div class="hero"><div class="small-label">Today</div><h1>Ready for German?</h1><p>Continue your course, review due vocabulary, and keep your progress moving.</p></div>',unsafe_allow_html=True)
@@ -1012,10 +1033,16 @@ with vocab:
             unsafe_allow_html=True
         )
 
+        level=st.segmented_control(
+            "Vocabulary level",
+            options=["A1","A2"],
+            default="A1",
+            key="vlevel"
+        ) or "A1"
         t=st.selectbox(
             "Topic",
-            ["All topics"]+sorted({r["topic"] for r in READINGS}),
-            key="vt"
+            ["All topics"]+vocabulary_topics(level),
+            key=f"vt_{level}"
         )
         direction=st.radio(
             "Direction",
@@ -1028,7 +1055,7 @@ with vocab:
             value=10
         )
 
-        pool=vocab_pool(t)
+        pool=vocab_pool(t,level)
         due_cards=[];new=[];future=[]
 
         for c in pool:
@@ -1085,9 +1112,9 @@ with vocab:
             # Overall vocabulary progress
             full_srs=st.session_state.setdefault("srs_cache",load_srs())
             try:
-                total_vocab=len(vocab_rows())
+                total_vocab=len(vocab_rows(level))
             except Exception:
-                total_vocab=800
+                total_vocab=800 if level=='A1' else 1200
 
             studied_total=sum(
                 1 for row in full_srs.values()
@@ -1203,7 +1230,7 @@ with vocab:
 
 with progress:
     st.markdown('<div class="hero"><div class="small-label">Progress</div><h1>Your learning dashboard</h1><p>Vocabulary, readings, reviews and accuracy in one place.</p></div>',unsafe_allow_html=True)
-    rp=read_progress();rd=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics");ss=load_srs();stt=load_stats()
+    rp=read_progress();rd=sum(bool(rp.get(r["id"])) for r in READINGS);pool=vocab_pool("All topics","A1")+vocab_pool("All topics","A2");ss=load_srs();stt=load_stats()
     studied=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0);mastered=sum(1 for c in pool if ss.get(c["id"],{}).get("mastered",False))
     due_now=sum(1 for c in pool if int(ss.get(c["id"],{}).get("reviews",0) or 0)>0 and due(c["id"]))
     att=int(stt.get("attempts",0));cor=int(stt.get("correct",0));wrong=int(stt.get("wrong",0));acc=cor/att*100 if att else 0
