@@ -1043,47 +1043,95 @@ with vocab:
             default="A1",
             key="vlevel"
         ) or "A1"
+
         t=st.selectbox(
             "Topic",
             ["All topics"]+vocabulary_topics(level),
             key=f"vt_{level}"
         )
+
         direction=st.radio(
             "Direction",
             ["German → English","English → German"],
             horizontal=True
         )
-        amount=st.select_slider(
-            "Number of words",
-            options=[5,10,20,30,50],
-            value=10
-        )
 
         pool=vocab_pool(t,level)
-        due_cards=[];new=[];future=[]
 
-        for c in pool:
-            x=srs(c["id"])
-            if int(x.get("reviews",0))==0:
-                new.append(c)
-            elif due(c["id"]):
-                due_cards.append(c)
-            else:
-                future.append(c)
+        if not pool:
+            st.warning("No vocabulary was found for this selection.")
+        else:
+            max_words=len(pool)
 
-        random.shuffle(due_cards)
-        random.shuffle(new)
-        future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
+            amount_options=[5,10,20,30,50,100,200,400,800,1200]
+            amount_options=[x for x in amount_options if x <= max_words]
 
-        st.caption(f"{len(pool)} words · {len(due_cards)} due · {len(new)} new")
+            if max_words not in amount_options:
+                amount_options.append(max_words)
 
-        if st.button("Start practice →",type="primary"):
-            st.session_state.session=(due_cards+new+future)[:amount]
-            st.session_state.idx=0
-            st.session_state.direction=direction
-            st.session_state.vocab_level=level
-            st.session_state.fb=None
-            st.rerun()
+            amount_options=sorted(set(amount_options))
+            default_amount=10 if max_words >= 10 else max_words
+
+            st.markdown("#### Number of words")
+
+            quick_amount=st.select_slider(
+                "Quick selection",
+                options=amount_options,
+                value=default_amount if default_amount in amount_options else amount_options[0],
+                key=f"quick_amount_{level}_{t}",
+                label_visibility="collapsed"
+            )
+
+            manual_amount=st.number_input(
+                "Or enter an exact number",
+                min_value=1,
+                max_value=max_words,
+                value=int(quick_amount),
+                step=1,
+                key=f"manual_amount_{level}_{t}",
+                help=f"You can choose any number from 1 to {max_words}."
+            )
+
+            amount=int(manual_amount)
+
+            due_cards=[]
+            new=[]
+            future=[]
+
+            for c in pool:
+                x=srs(c["id"])
+                if int(x.get("reviews",0) or 0)==0:
+                    new.append(c)
+                elif due(c["id"]):
+                    due_cards.append(c)
+                else:
+                    future.append(c)
+
+            random.shuffle(due_cards)
+            random.shuffle(new)
+            future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
+
+            st.caption(
+                f"{len(pool)} words · {len(due_cards)} due · {len(new)} new"
+            )
+
+            if st.button(
+                "Start practice →",
+                type="primary",
+                use_container_width=True,
+                key=f"start_{level}_{t}"
+            ):
+                selected=(due_cards+new+future)[:amount]
+
+                if not selected:
+                    st.warning("There are no cards available for this selection.")
+                else:
+                    st.session_state.session=selected
+                    st.session_state.idx=0
+                    st.session_state.direction=direction
+                    st.session_state.vocab_level=level
+                    st.session_state.fb=None
+                    st.rerun()
 
     else:
         session=st.session_state.session
