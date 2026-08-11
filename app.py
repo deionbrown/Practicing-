@@ -1094,25 +1094,19 @@ with vocab:
 
             amount=int(manual_amount)
 
-            due_cards=[]
-            new=[]
-            future=[]
+            # Render count and Start button immediately.
+            # This avoids processing 800/1200 SRS records before the UI appears.
+            srs_snapshot=st.session_state.setdefault("srs_cache",load_srs())
 
-            for c in pool:
-                x=srs(c["id"])
-                if int(x.get("reviews",0) or 0)==0:
-                    new.append(c)
-                elif due(c["id"]):
-                    due_cards.append(c)
-                else:
-                    future.append(c)
-
-            random.shuffle(due_cards)
-            random.shuffle(new)
-            future.sort(key=lambda c:srs(c["id"]).get("due") or "9999")
+            pool_ids={c["id"] for c in pool}
+            reviewed_count=sum(
+                1 for word_id,row in srs_snapshot.items()
+                if word_id in pool_ids and int(row.get("reviews",0) or 0)>0
+            )
+            new_count=max(0,len(pool)-reviewed_count)
 
             st.caption(
-                f"{len(pool)} words · {len(due_cards)} due · {len(new)} new"
+                f"{len(pool)} words available · {new_count} not yet studied"
             )
 
             if st.button(
@@ -1121,7 +1115,38 @@ with vocab:
                 use_container_width=True,
                 key=f"start_{level}_{t}"
             ):
-                selected=(due_cards+new+future)[:amount]
+                # Only calculate SRS priority after the user presses Start.
+                due_cards=[]
+                new_cards=[]
+                future=[]
+
+                for c in pool:
+                    row=srs_snapshot.get(c["id"],{})
+                    reviews=int(row.get("reviews",0) or 0)
+
+                    if reviews==0:
+                        new_cards.append(c)
+                    else:
+                        due_value=row.get("due")
+                        if due_value:
+                            try:
+                                due_dt=datetime.fromisoformat(due_value)
+                                if due_dt <= now_utc():
+                                    due_cards.append(c)
+                                else:
+                                    future.append(c)
+                            except Exception:
+                                due_cards.append(c)
+                        else:
+                            due_cards.append(c)
+
+                random.shuffle(due_cards)
+                random.shuffle(new_cards)
+                future.sort(
+                    key=lambda c:srs_snapshot.get(c["id"],{}).get("due") or "9999"
+                )
+
+                selected=(due_cards+new_cards+future)[:amount]
 
                 if not selected:
                     st.warning("There are no cards available for this selection.")
